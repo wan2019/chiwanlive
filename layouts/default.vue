@@ -37,7 +37,6 @@
     <!-- main -->
     <v-main>
       <v-container>
-        {{drawer}}
         <nuxt />
       </v-container>
     </v-main>
