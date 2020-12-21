@@ -1,6 +1,16 @@
 import colors from 'vuetify/es5/util/colors'
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/chiwanlive/'
+        }
+      }
+    : {}
+
 export default {
+  ...routerBase,
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - chiwanlive',
@@ -59,7 +69,6 @@ export default {
       }
     }
   },
-
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }
