@@ -39,7 +39,9 @@ export default {
 .imgBox {
   // border: 1px solid blue;
   &__img {
-    border-radius: 50%;
+    // border-radius: 50%;
+    border-radius: 10%;
+    // border: 1rem;
     // height: 200px;
     // width: 200px;
     max-height: 200px;
