@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-
+// GH_PAGES
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
@@ -71,5 +71,6 @@ export default {
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+  target: 'static'
 }
