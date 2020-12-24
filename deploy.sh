@@ -10,8 +10,8 @@ set -e
 cd docs
 git init
 # //因為dist資料夾預設是被ignore的，因此在進入dist資料夾後初始化git
-# git add -A
-# git commit -m 'deploy'
+git add -A
+git commit -m 'deploy'
 # 部署到 https://github.com/chou0728/eric-project.git 分支為 gh-pages
 # https://github.com/wan2019/chiwanlive.git
 git push -f https://github.com/wan2019/chiwanlive.git master:gh-pages
