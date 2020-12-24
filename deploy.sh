@@ -7,6 +7,7 @@ set -e
 # yarn generate
 # // 打包靜態資源的是在 docs 目錄
 # 移動至到打包後的dist目錄 
+# cd dist
 cd docs
 git init
 # //因為dist資料夾預設是被ignore的，因此在進入dist資料夾後初始化git

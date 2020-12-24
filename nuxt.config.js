@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
-// GH_PAGES
+// GH_PAGES production
 const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
+  process.env.DEPLOY_ENV === 'production'
     ? {
         router: {
           base: '/chiwanlive/'
@@ -72,5 +72,5 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   },
-  target: 'static'
+  // target: 'static'
 }
