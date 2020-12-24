@@ -24,7 +24,6 @@
               :alt="item.alt"
               class="imgBox"
             ></v-img>
-            test
           </div>
         </v-row>
       </v-sheet>

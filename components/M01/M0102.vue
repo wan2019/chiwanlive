@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12">
       <br>
-      <TitleBox title="電視台品質的專業直播" ></TitleBox>
+      <TitleBox title="電視台品質的專業直播~" ></TitleBox>
     </v-col>
     <v-col v-for="(item, i) in list" cols="6" sm="6" md="3" :key="i"  class="test__red">
       <ImgBox :item="item"></ImgBox>
