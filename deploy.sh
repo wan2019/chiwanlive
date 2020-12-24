@@ -3,11 +3,11 @@
 # 當發生錯誤時終止腳本運行
 set -e
 # 打包
-# yarn build
-yarn generate
+yarn build
+# yarn generate
 # 移動至到打包後的dist目錄 
 cd dist
-git init 
+git init
 # //因為dist資料夾預設是被ignore的，因此在進入dist資料夾後初始化git
 git add -A
 git commit -m 'deploy'
