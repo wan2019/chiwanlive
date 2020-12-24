@@ -29,8 +29,8 @@ $ test 2
 # .sh 執行腳本
 sh ./deploy.sh
 // "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    // "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    // "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+// "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+// "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
 
 
 ```
