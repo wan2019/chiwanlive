@@ -8,7 +8,7 @@
     <v-img
       :src="item.src"
       :alt="item.alt"
-      class="imgBox__img VuetifyLogo"
+      class="imgBox__img Logo"
     ></v-img>
     <!-- <v-img
         :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .imgBox {
-  // border: 1px solid blue;
+  border: 1px solid blue;
   &__img {
     // border-radius: 50%;
     border-radius: 10%;
@@ -58,12 +58,12 @@ export default {
 .center {
   text-align: center;
 }
-.VuetifyLogo {
+.Logo {
   overflow: hidden;
-  height: 170px;
+  height: 100px;
   width: 170px;
-  transform: rotateY(180deg);
-  animation: turn 2.5s ease-out forwards 1s;
+  // transform: rotateY(180deg);
+  // animation: turn 2.5s ease-out forwards 1s;
 }
 
 @keyframes turn {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <M0101></M0101> -->
+    <M0101></M0101>
     <M0102></M0102>
     <M0103></M0103>
     <M0104></M0104>
@@ -12,7 +12,6 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import ImgBox from '../components/general/ImgBox'
 import M0101 from '../components/M01/M0101'
 import M0102 from '../components/M01/M0102'
@@ -25,7 +24,6 @@ import M0107 from '../components/M01/M0107'
 export default {
   components: {
     Logo,
-    VuetifyLogo,
     ImgBox,
     M0101,
     M0102,

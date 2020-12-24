@@ -6,7 +6,7 @@
     show-arrows-on-hover
   >
     <v-carousel-item
-      v-for="(slide, i) in slides"
+      v-for="(item, i) in list"
       :key="i"
     >
       <v-sheet
@@ -19,7 +19,11 @@
           justify="center"
         >
           <div class="display-3">
-            {{ slide }} Slide
+            <v-img
+              :src="item.src"
+              :alt="item.alt"
+              class="imgBox"
+            ></v-img>
           </div>
         </v-row>
       </v-sheet>
@@ -46,11 +50,27 @@ export default {
         'Fourth',
         'Fifth',
       ],
+      list: [
+        {
+          alt: '科技報橘',
+          src: 'photo/16.png'
+        },
+        {
+          alt: '蝦皮購物',
+          src: 'photo/17.jpg'
+        },
+        {
+          alt: '商業周刊',
+          src: 'photo/18.jpg'
+        },
+      ]
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
+.imgBox {
+  height: 100%;
+}
 </style>

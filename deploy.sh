@@ -3,8 +3,9 @@
 # 當發生錯誤時終止腳本運行
 set -e
 # 打包
-# yarn build
+yarn build
 # yarn generate
+# // 打包靜態資源的是在 docs 目錄
 # 移動至到打包後的dist目錄 
 cd docs
 git init

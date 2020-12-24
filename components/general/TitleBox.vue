@@ -1,7 +1,7 @@
 <template>
   <div class="titleBox">
     <div class="titleBox__imgBox">
-      <img class="imgLogo" src="LOGO/onlyLogo.png" alt="logo">
+      <!-- <img class="imgLogo" src="LOGO/onlyLogo.png" alt="logo"> -->
     </div>
     <div>
       <h1 class="mainColor">{{title}}</h1>

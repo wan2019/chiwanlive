@@ -10,11 +10,11 @@ $ yarn install
 $ yarn dev
 
 # build for production and launch server
-$ yarn build
+$ yarn build // 打包出來的是 dist （會配合 yarn star 才可以起起來的）
 $ yarn start
 
 # generate static project
-$ yarn generate
+$ yarn generate //打包出來的是 docs （靜態資源）
 
 # test others
 $ 
@@ -28,6 +28,8 @@ $ git subtree push --prefix dist origin gh-pages （加入一個）
 $ test 2
 # .sh 執行腳本
 sh ./deploy.sh
+
+// 
 // "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
 // "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
 // "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
