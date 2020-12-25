@@ -1,8 +1,9 @@
 <template>
   <v-carousel
+    id="top"
     cycle
     height="400"
-    hide-delimiter-background
+    hide-delimiters
     show-arrows-on-hover
   >
     <v-carousel-item
@@ -10,7 +11,6 @@
       :key="i"
     >
       <v-sheet
-        :color="colors[i]"
         height="100%"
       >
         <v-row
@@ -23,6 +23,7 @@
               :src="item.src"
               :alt="item.alt"
               class="imgBox"
+              eager
             ></v-img>
           </div>
         </v-row>
@@ -53,15 +54,19 @@ export default {
       list: [
         {
           alt: '科技報橘',
-          src: 'photo/16.png'
+          src: 'LOGO/fb__1.jpg'
+        },
+        {
+          alt: '科技報橘',
+          src: 'LOGO/fb__2.jpg'
         },
         {
           alt: '蝦皮購物',
-          src: 'photo/17.jpg'
+          src: 'LOGO/fb__3.jpg'
         },
         {
           alt: '商業周刊',
-          src: 'photo/18.jpg'
+          src: 'LOGO/fb__4.jpg'
         },
       ]
     };

@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row id="advantage" justify="center" align="center">
     <v-col cols="12">
       <br>
       <TitleBox title="直播優勢"></TitleBox>

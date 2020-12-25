@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 // GH_PAGES production
 const routerBase =
-  process.env.DEPLOY_ENV === 'production'
+  process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
           base: '/chiwanlive/'

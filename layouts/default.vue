@@ -13,11 +13,12 @@
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
+          @click="gotoTarget(item)"
           router
-          exact
+          
         >
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <!-- <v-icon>{{ item.icon }}</v-icon> -->
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -56,26 +57,52 @@ export default {
       clipped: true,
       drawer: false,
       fixed: false,
+      options: { duration: 300, offset: 0, easing: "easeInOutCubic"},
       items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+         {
+          title: '首頁',
+          to: '/',
+          target: '#top'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'test',
-          to: '/#about'
+          title: '專業直播',
+          to: '/',
+          target: '#profession'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'info',
-          to: '/info'
+          title: '服務項目',
+          to: '/',
+          target: '#service'
+        },
+        {
+          title: '直播優勢',
+          to: '/',
+          target: '#advantage'
+        },
+        {
+          title: '精選合作',
+          to: '/',
+          target: '#cooperation'
+        },
+        {
+          title: '關於我們',
+          to: '/',
+          target: '#aboutUs'
+        },
+        {
+          title: '聯絡我們',
+          to: '/',
+          target: '#contactUs'
         }
       ],
       miniVariant: false,
-      
       title: '趣玩影像'
+    }
+  },
+  methods: {
+    gotoTarget (item) {
+      this.$vuetify.goTo(item.target, this.options)
+      this.drawer = false
     }
   }
 }
@@ -83,5 +110,9 @@ export default {
 <style lang="scss" scoped>
 .test {
   border: 1px solid red;
+}
+.theme--light.v-list-item--active:hover::before,
+.theme--light.v-list-item--active::before {
+  opacity: 0;
 }
 </style>

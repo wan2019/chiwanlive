@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row id="contactUs" justify="center" align="center">
     <v-col cols="12">
       <br>
       <TitleBox title="聯絡我們"></TitleBox>

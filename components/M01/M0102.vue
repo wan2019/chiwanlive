@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row id="profession" justify="center" align="center">
     <v-col cols="12">
       <br>
       <TitleBox title="電視台品質的專業直播~" ></TitleBox>
