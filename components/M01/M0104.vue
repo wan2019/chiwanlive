@@ -1,13 +1,12 @@
 <template>
-  <v-row id="advantage" justify="center" align="center">
+  <v-row id="advantage" class="advantage" >
     <v-col cols="12">
       <br>
       <TitleBox title="直播優勢"></TitleBox>
     </v-col>
-    <v-col v-for="(item, i) in list" cols="6" sm="6" md="3" :key="i"  class="test__red">
+    <v-col v-for="(item, i) in list" cols="6" sm="4" md="4" :key="i"  class="test__red">
       <ImgBox :item="item"></ImgBox>
     </v-col>
-    
   </v-row>
 </template>
 
@@ -26,33 +25,19 @@ export default {
       list: [
         {
           alt: '線下活動 線上互動 活動直播線上線下兩者兼顧 增加品牌、產品、資訊曝光',
-          src: 'photo/13.jpg'
+          text: ['線下活動 線上互動 ', '活動直播 線上線下兩者兼顧', '增加品牌、產品、資訊曝光'],
+          src: 'img/Live_13.JPG'
         },
         {
           alt: '同時串流各大平台 一場直播同時串流數平台 FB、YouTube 、LINE Zoom、Cisco Webex GoToWebinar、Teams',
-          src: 'photo/14.jpg'
+          text: ['同時串流各大平台', '一場直播同時串流數平台', 'FB、YouTube 、LINE','Zoom、Cisco Webex','GoToWebinar、Teams'],
+          src: 'img/liveStream_14.jpg'
         },
         {
           alt: '直播就是活動記錄 直播後的影片不需剪輯 即是完整的活動記錄 網路上回放再增觀看數',
-          src: 'photo/15.jpg'
-        },{
-          alt: '現場轉播－多機畫面　大螢幕現場LIVE',
-          src: 'photo/11.jpg'
+          text: ['直播就是活動記錄', '直播後的影片不需後製', '即是完整活動記錄', '網路上回放再增觀看數'],
+          src: 'img/ActivityRecord_15.jpg'
         }
-        // ,{
-        //   alt: '4G包直播－機動性高　外景直播不受限',
-        //   src: 'photo/12.jpg'
-        // },
-        // {
-        //   alt: '直播特效',
-        //   src: 'photo/6.gif'
-        // },{
-        //   alt: '到府直播',
-        //   src: 'photo/7.jpg'
-        // },{
-        //   alt: '虛擬攝影棚',
-        //   src: 'photo/22.jpg'
-        // }
       ]
     };
   },
@@ -72,7 +57,9 @@ export default {
 .test__red {
   // border: 1px solid red;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.advantage {
+  // background-color: var(--second-color);
+  margin-bottom: 2rem;
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <v-row id="cooperation" justify="center" align="center">
+  <v-row id="cooperation" class="cooperation" justify="center" align="center">
     <v-col cols="12">
       <br>
       <TitleBox title="精選合作"></TitleBox>
     </v-col>
-    <v-col v-for="(item, i) in list" cols="6" sm="6" md="3" :key="i"  class="test__red">
+    <v-col v-for="(item, i) in list" cols="6" sm="4" md="4" :key="i"  class="test__red">
       <ImgBox :item="item"></ImgBox>
     </v-col>
     
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ImgBox from '~/components/general/ImgBox'
+import ImgBox from '~/components/general/ImgBoxM0105'
 import TitleBox from '~/components/general/TitleBox'
 
 export default {
@@ -26,34 +26,23 @@ export default {
       list: [
         {
           alt: '科技報橘',
-          src: 'photo/16.png'
+          src: 'img/LiveWorks_16.png',
+          text: ['科技報橘'],
+          href: 'https://www.facebook.com/TechOrange/videos/212676336655250'
         },
         {
           alt: '蝦皮購物',
-          src: 'photo/17.jpg'
+          text: ['蝦皮購物'],
+          src: 'img/LiveWorks_17.jpg',
+          href: 'https://www.youtube.com/watch?v=OlIFCuCkl1o'
         },
         {
           alt: '商業周刊',
-          src: 'photo/18.jpg'
+          text: ['商業周刊'],
+          src: 'img/LiveWorks_18.jpg',
+          href: 'https://www.facebook.com/bwnet.fans/videos/3430742300304487'
         },
-        // {
-        //   alt: '現場轉播－多機畫面　大螢幕現場LIVE',
-        //   src: 'photo/11.jpg'
-        // }
-        // ,{
-        //   alt: '4G包直播－機動性高　外景直播不受限',
-        //   src: 'photo/12.jpg'
-        // },
-        // {
-        //   alt: '直播特效',
-        //   src: 'photo/6.gif'
-        // },{
-        //   alt: '到府直播',
-        //   src: 'photo/7.jpg'
-        // },{
-        //   alt: '虛擬攝影棚',
-        //   src: 'photo/22.jpg'
-        // }
+        
       ]
     };
   },
@@ -73,7 +62,12 @@ export default {
 .test__red {
   // border: 1px solid red;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
+}
+.cooperation {
+  // background-color: var(--second-color);
+  // margin: 1rem;
+  // margin-bottom: 2rem;
 }
 </style>

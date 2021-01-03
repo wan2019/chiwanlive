@@ -28,7 +28,7 @@ export default {
   display:flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   &__imgBox {
     display:flex;
     align-items: center;

@@ -3,9 +3,11 @@ import colors from 'vuetify/es5/util/colors'
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          base: '/chiwanlive/'
-        }
+        // router: {
+          // base: '/chiwanlive.com.tw/'
+          // base: '/chiwanlive.com.tw/'
+        //   base: '/http://chiwanlive.com.tw//'
+        // }
       }
     : {}
 
@@ -13,22 +15,25 @@ export default {
   ...routerBase,
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - chiwanlive',
-    title: 'chiwanlive',
+    titleTemplate: '%s - ChiWan Live',
+    title: '趣玩影像',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/apple-touch-icon.png' },
+      { rel: 'apple-touch-icon', type: 'image/png', href: '/apple-touch-icon.png' },
+      { rel: 'apple-touch-startup-image', type: 'image/png', href: '/apple-touch-icon.png' },
     ]
   },
-
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    "@/assets/variables.scss"
   ],
-
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
   ],

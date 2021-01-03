@@ -29,6 +29,7 @@ $ git subtree push --prefix dist origin gh-pages （加入一個）
 
 # .sh 執行腳本（直接部署）
 sh ./deploy.sh
+# 上版完成後需要重新設定網址位置
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -5,20 +5,34 @@
       :alt="item.alt"
       :src="item.src"
     > -->
-    <v-img
+    <!-- <v-img
       :src="item.src"
       :alt="item.alt"
       class="imgBox__img Logo"
       eager
+    ></v-img> -->
+    <v-img
+      :src="item.src"
+      :alt="item.alt"
+      :aspect-ratio="aspectRatio"
+      class="imgBox__img"
+      eager
     ></v-img>
+    <h6
+      v-for="(each ,k) in item.text"
+      :key="k"
+      class="imgBox__text"
+    >
+    <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
+    {{each}}</h6>
     <!-- <v-img
         :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
         :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
         aspect-ratio="1"
         class="grey lighten-2"
       > -->
-    <p class="center imgBox__text">
-      <v-icon class="icon__sty mainColor">mdi-play-circle-outline</v-icon>{{item.alt}}</p>
+    <!-- <p class="center imgBox__text">
+      <v-icon class="icon__sty mainColor">mdi-play-circle-outline</v-icon>{{item.alt}}</p> -->
   </div>
 </template>
 
@@ -27,7 +41,11 @@
 export default {
   name: 'ImgBox',
   props: {
-    item: [Object]
+    item: [Object],
+    aspectRatio: {
+      type: [Number, String],
+      default: 6/4,
+    }
   },
   data () {
     return {
@@ -39,37 +57,16 @@ export default {
 <style lang="scss" scoped>
 .imgBox {
   // border: 1px solid blue;
+  background-color: #eee;
+  padding: 1rem 0.75rem;
+  width: 100%;
   &__img {
-    // border-radius: 50%;
-    border-radius: 10%;
-    // border: 1rem;
-    // height: 200px;
-    // width: 200px;
-    max-height: 200px;
-    max-width: 200px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
   }
   &__text {
-    margin-top: 0.5rem;
-    font-size: 1.125rem;
-  }
-  .icon__sty {
-    font-size: 0.9em;
-  }
-}
-.center {
-  text-align: center;
-}
-.Logo {
-  overflow: hidden;
-  height: 170px;
-  width: 170px;
-  // transform: rotateY(180deg);
-  // animation: turn 2.5s ease-out forwards 1s;
-}
-
-@keyframes turn {
-  100% {
-    transform: rotateY(0deg);
+    margin-top: 0.25rem;
+    font-size: 1rem;
   }
 }
 </style>

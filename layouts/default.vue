@@ -12,11 +12,12 @@
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
-          :to="item.to"
+          
           @click="gotoTarget(item)"
           router
           
         >
+        <!-- :to="item.to" -->
           <v-list-item-action>
             <!-- <v-icon>{{ item.icon }}</v-icon> -->
           </v-list-item-action>
@@ -30,10 +31,25 @@
       :clipped-left="clipped"
       fixed
       app
+      class="app__bar"
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
+      <v-app-bar-nav-icon class="app__drawer" @click.stop="drawer = !drawer" />
+      <div class="app__icon" @click="doHome">
+        <v-img
+          max-width="2.5rem"
+          :src="icon.src"
+          :alt="icon.alt"
+        ></v-img>
+      </div>
+      <div class="app__info">
+        <v-btn
+          v-for="(item, i) in items"
+          @click="gotoTarget(item)"
+          :key="i"
+          text
+        >{{item.title}}</v-btn>
+      </div>
+      <!-- <v-spacer /> -->
     </v-app-bar>
     <!-- main -->
     <v-main>
@@ -58,6 +74,10 @@ export default {
       drawer: false,
       fixed: false,
       options: { duration: 300, offset: 0, easing: "easeInOutCubic"},
+      icon: {
+        src: 'apple-touch-icon-precomposed.png',
+        alt: 'logo'
+      },
       items: [
          {
           title: '首頁',
@@ -93,16 +113,45 @@ export default {
           title: '聯絡我們',
           to: '/',
           target: '#contactUs'
-        }
+        },
+        // {
+        //   title: '作品集',
+        //   to: '/portfolio',
+        //   target: ''
+        // }
       ],
       miniVariant: false,
       title: '趣玩影像'
     }
   },
   methods: {
-    gotoTarget (item) {
-      this.$vuetify.goTo(item.target, this.options)
-      this.drawer = false
+     gotoTarget (item) {
+      // TODO: 之後修正路由
+      if (this.$route.path === '/') {
+        // console.log('say yes');
+        if (item.target) {
+          this.$vuetify.goTo(item.target, this.options)
+        } else {
+          this.$router.push({ path: `${item.to}` })
+        }
+      } else {
+        // console.log('say no');
+        this.$router.push({ path: `/` })
+        setTimeout(()=>{
+          this.$vuetify.goTo(item.target, this.options)
+        },500);
+      }
+      // this.$vuetify.goTo(item.target, this.options)
+      if (this.drawer) {
+        this.drawer = false
+      }
+    },
+    async doHome () {
+      if (this.$route.path === '/') {
+        this.$vuetify.goTo('#top', this.options)
+      } else {
+        this.$router.push({ path: `/` })
+      }
     }
   }
 }
@@ -114,5 +163,35 @@ export default {
 .theme--light.v-list-item--active:hover::before,
 .theme--light.v-list-item--active::before {
   opacity: 0;
+}
+.app {
+  &__bar {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+  &__drawer {
+    display: none;
+    @include pc {
+      display: inline;
+    }
+  }
+  &__icon {
+    // border: 1px solid blue;
+    cursor: pointer;
+    @include pc {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #666666;
+    // border: 1px solid red;
+    @include pc {
+      display: none;
+    }
+  }
 }
 </style>

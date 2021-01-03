@@ -2,6 +2,36 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+:root {
+  // --main-color: #F3C631;
+  // --main-color: #F3C631;
+  // --second-color: #f6f0e2;
+  --main-color: #71bef1;
+  --second-color: #fafafa;
+  --blue-color: #5CB6FF;
+  --yellow-color: #FFE700;
+  --orange-color: #FF573F;
+  --green-color: #619D27;
+  --grey-color: #616161;
+}
+$redColor: red;
 .mainColor {
   color: #ff573f;
 }
+
+// rwd
+
+$pc-media:960px;
+$pad-media:700px;
+
+@mixin pc {
+  @media (max-width: $pc-media) {
+    @content;
+  }
+}
+@mixin pad {
+  @media (max-width: $pad-media) {
+    @content;
+  }
+}
+
