@@ -8,6 +8,19 @@
     </v-col>
   </v-row>
 </template>
+
+<script>
+import IframeBox from '~/components/general/IframeBox'
+
+export default {
+  name: '',
+  data () {
+    return {
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .test {
   background-color: rgb(226, 212, 212) ;

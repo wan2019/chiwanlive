@@ -34,9 +34,13 @@
     </v-carousel-item>
   </v-carousel> -->
   <div class="box">
-  <v-carousel
+    <v-carousel
     id="top"
-    hide-delimiters height="275">
+    cycle
+    height="275"
+    hide-delimiters
+    show-arrows-on-hover
+  >
       <v-carousel-item
         v-for="(item,i) in list"
         :key="i"

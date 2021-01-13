@@ -15,7 +15,7 @@
       <br>
       <TitleBox title="直播作品"></TitleBox>
     </v-col>
-    <v-col v-for="(item, i) in list" cols="6" sm="4" md="4" :key="i"  class="test__red">
+    <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
       <ImgBox :item="item"></ImgBox>
     </v-col>
     <!-- <v-col cols="12" class="btn__box">

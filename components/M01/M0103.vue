@@ -2,6 +2,10 @@
   <v-row id="service">
     <v-col cols="12">
       <br>
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+     服務項目XXX
+      </div>
       <TitleBox title="服務項目"></TitleBox>
     </v-col>
     <v-col v-for="(item, i) in list" cols="12" sm="6" md="6" :key="i"  class="test__red">
@@ -49,9 +53,9 @@ export default {
           text: ['視訊直播','遠端視訊　即時對話','全球來賓任你邀']
         },
         {
-          alt: '4G包直播 8張網卡聚合  外景直播不斷線',
+          alt: '現場轉播 多機畫面 大螢幕現場LIVE',
           src: 'img/LiveBroadcast_11.jpg',
-          text: ['4G包直播','8張網卡聚合','外景直播不斷線']
+          text: ['現場轉播','多機畫面','大螢幕現場LIVE']
         }
       ]
     };
