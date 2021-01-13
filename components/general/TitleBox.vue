@@ -3,8 +3,8 @@
     <div class="titleBox__imgBox">
       <!-- <img class="imgLogo" src="LOGO/onlyLogo.png" alt="logo"> -->
     </div>
-    <div>
-      <h1 class="mainColor">{{title}}</h1>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <h1 class="mainColor size">{{title}}</h1>
     </div>
   </div>
 </template>
@@ -38,6 +38,9 @@ export default {
   .imgLogo {
     height: 2em;
   }
+}
+.size {
+  font-size: 3rem;
 }
 
 </style>

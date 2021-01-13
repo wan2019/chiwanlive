@@ -1,14 +1,15 @@
 <template>
-  <v-row id="cooperation" class="cooperation" justify="center" align="center">
-    <v-col cols="12">
-      <br>
-      <TitleBox title="精選合作"></TitleBox>
-    </v-col>
-    <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
-      <ImgBox :item="item"></ImgBox>
-    </v-col>
-    
-  </v-row>
+  <section class="box">
+    <v-row id="cooperation" class="cooperation" justify="center" align="center">
+      <v-col cols="12">
+        <br>
+        <TitleBox title="精選合作"></TitleBox>
+      </v-col>
+      <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+    </v-row>
+  </section>
 </template>
 
 <script>
@@ -65,7 +66,10 @@ export default {
   // align-items: center;
   // justify-content: center;
 }
-.cooperation {
+.box {
+  min-height: 100vh;
+  border: 1px solid blue;
+  padding: 3rem;
   // background-color: var(--second-color);
   // margin: 1rem;
   // margin-bottom: 2rem;

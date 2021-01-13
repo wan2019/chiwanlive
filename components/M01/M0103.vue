@@ -2,10 +2,6 @@
   <v-row id="service">
     <v-col cols="12">
       <br>
-      <div data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
-     服務項目XXX
-      </div>
       <TitleBox title="服務項目"></TitleBox>
     </v-col>
     <v-col v-for="(item, i) in list" cols="12" sm="6" md="6" :key="i"  class="test__red">

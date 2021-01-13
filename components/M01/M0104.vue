@@ -1,4 +1,6 @@
 <template>
+<section class="box">
+  <div class="triangle3"></div>
   <v-row id="advantage" class="advantage" >
     <v-col cols="12">
       <br>
@@ -8,6 +10,7 @@
       <ImgBox :item="item"></ImgBox>
     </v-col>
   </v-row>
+</section>
 </template>
 
 <script>
@@ -65,4 +68,25 @@ export default {
   // background-color: var(--second-color);
   margin-bottom: 2rem;
 }
+.box {
+  position: relative;
+  min-height: 100vh;
+  border: 1px solid blue;
+  padding: 3rem;
+}
+.triangle3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-color: orangered orangered transparent transparent;
+  border-style: solid solid solid solid;
+ 
+    /* 設定邊框（上、下；左、右）大小相同的數值，可拼湊出任意形狀的三角形 */
+    border-width: 45px 100px; 
+ 
+    /* 設定 width、height 可更好理解原理 */
+    height: 0px; 
+    width: 0px; 
+}
+
 </style>

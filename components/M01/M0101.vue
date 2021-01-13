@@ -33,21 +33,32 @@
       </v-sheet>
     </v-carousel-item>
   </v-carousel> -->
-  <div class="box">
-    <v-carousel
-    id="top"
-    cycle
-    height="275"
-    hide-delimiters
-    show-arrows-on-hover
-  >
-      <v-carousel-item
-        v-for="(item,i) in list"
-        :key="i"
-        :src="item.src"
-      ></v-carousel-item>
-    </v-carousel>
-  </div>
+  <section class="box">
+    <div>
+      <v-carousel
+      id="top"
+      cycle
+      height="425"
+      hide-delimiters
+      show-arrows-on-hover
+    >
+        <v-carousel-item
+          v-for="(item,i) in list"
+          :key="i"
+          :src="item.src"
+        ></v-carousel-item>
+      </v-carousel>
+    </div>
+    <div class="box__textBox">
+      <div class="text__container">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h2>直播就是我們的生活</h2>
+          <h2>熱愛直播的即時性</h2>
+          <h2>我們活在當下，做好每一個現在</h2>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -107,7 +118,14 @@ export default {
   background-color: gold;
 }
 .box {
-  padding: 1rem;
-  background-color: #eee;
+  border-bottom: 1px solid red;
+  min-height: 90vh;
+  &__textBox{
+    display: flex;
+    // background-color: gold;
+  }
+}
+.text__container {
+  margin: 100px auto;
 }
 </style>
