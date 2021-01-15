@@ -41,6 +41,13 @@
           :alt="icon.alt"
         ></v-img>
       </div>
+      <div class="app__iconLong" @click="doHome">
+        <v-img
+          max-width="7rem"
+          :src="iconLong.src"
+          :alt="iconLong.alt"
+        ></v-img>
+      </div>
       <div class="app__info">
         <v-btn
           v-for="(item, i) in items"
@@ -60,8 +67,9 @@
     <v-footer
       :absolute="!fixed"
       app
+      class="footer"
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span class="footer__span">&copy; Copyright © 2021 趣玩影像工作室 - All Rights Reserved.</span>
     </v-footer>
   </v-app>
 </template>
@@ -76,6 +84,10 @@ export default {
       options: { duration: 300, offset: 0, easing: "easeInOutCubic"},
       icon: {
         src: 'apple-touch-icon-precomposed.png',
+        alt: 'logo'
+      },
+      iconLong: {
+        src: 'LOGO/logoLong.png',
         alt: 'logo'
       },
       items: [
@@ -175,12 +187,16 @@ export default {
     }
   }
   &__icon {
+    display: none;
     // border: 1px solid blue;
     cursor: pointer;
     @include pc {
       width: 100%;
       display: flex;
       justify-content: center;
+      &Long {
+        display: none;
+      }
     }
   }
   &__info {
@@ -193,5 +209,10 @@ export default {
       display: none;
     }
   }
+}
+.footer {
+  background-color: #1b1b1b;
+  color: rgba(255, 255, 255, 0.6);
+  justify-content: center;
 }
 </style>

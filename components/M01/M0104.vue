@@ -76,7 +76,7 @@ export default {
 }
 .triangle3 {
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 0;
   border-color: orangered orangered transparent transparent;
   border-style: solid solid solid solid;

@@ -4,6 +4,7 @@
       <v-col cols="12">
         <br>
         <TitleBox title="精選合作"></TitleBox>
+        <br>
       </v-col>
       <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
         <ImgBox :item="item"></ImgBox>
@@ -51,9 +52,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.imgLogo {
-  height: 1em;
-  vertical-align:middle;
+.cooperation {
+  padding-top: 50px;
+  // height: 100%;
 }
 .text {
   &__center {
@@ -63,12 +64,13 @@ export default {
 .test__red {
   // border: 1px solid red;
   display: flex;
+  // border: blue 1px solid;
+  padding: 1.5rem;
   // align-items: center;
   // justify-content: center;
 }
 .box {
   min-height: 100vh;
-  border: 1px solid blue;
   padding: 3rem;
   // background-color: var(--second-color);
   // margin: 1rem;

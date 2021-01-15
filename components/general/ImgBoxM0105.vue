@@ -20,13 +20,14 @@
       eager
     ></v-img>
     </a>
-    <!-- <h6
+    <br>
+    <h6
       v-for="(each ,k) in item.text"
       :key="k"
       class="imgBox__text"
     >
     <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
-    {{each}}</h6> -->
+    {{each}}</h6>
     <!-- <v-img
         :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
         :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
@@ -65,22 +66,24 @@ export default {
   cursor: pointer;
   // transition: 2s ease-out 2s;
   // transform: translate(-6%, -6%);
-  box-shadow: 15px 15px 0px var(--orange-color);
-  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  &:hover {
-    box-shadow: 30px 30px 0px var(--orange-color);
-    transform: translate(-15px, -15px);
-        // box-shadow: 15px 15px 0px var(--orange-color);
-        
-        
-  }
+  // box-shadow: 15px 15px 0px var(--orange-color);
+  // transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
   &__img {
+    box-shadow: 20px 20px 0px var(--orange-color);
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     // border-radius: 0.5rem;
     // margin-bottom: 1rem;
+    &:hover {
+      box-shadow: 30px 30px 0px var(--orange-color);
+      transform: translate(-15px, -15px);
+      // box-shadow: 15px 15px 0px var(--orange-color);
+    }
   }
   &__text {
     margin-top: 0.25rem;
-    font-size: 1rem;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 </style>
