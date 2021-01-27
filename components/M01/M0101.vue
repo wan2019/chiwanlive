@@ -1,38 +1,4 @@
 <template>
-  <!-- <v-carousel
-    id="top"
-    cycle
-    height="400"
-    hide-delimiters
-    show-arrows-on-hover
-    class="carousel__box"
-  >
-    <v-carousel-item
-      v-for="(item, i) in list"
-      :key="i"
-    >
-      <v-sheet
-        height="100%"
-        class="test__sheet"
-      >
-        <v-row
-          class="fill-height"
-          align="center"
-          justify="center"
-        >
-          <div class="display-3 img__box" >
-            <v-img
-              :src="item.src"
-              :alt="item.alt"
-              class="imgBox"
-              :aspect-ratio="16/5"
-              eager
-            ></v-img>
-          </div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel> -->
   <section class="box">
     <div>
       <v-carousel
@@ -51,7 +17,7 @@
     </div>
     <div class="box__textBox">
       <div class="text__container">
-        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div data-aos="fade-right" data-aos-duration="1000">
           <h2>直播就是我們的生活</h2>
           <h2>熱愛直播的即時性</h2>
           <h2>我們活在當下，做好每一個現在</h2>
@@ -66,20 +32,6 @@ export default {
   name: '',
   data() {
     return {
-      colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
-      ],
-      slides: [
-        'First',
-        'Second',
-        'Third',
-        'Fourth',
-        'Fifth',
-      ],
       // TODO: 改名
       list: [
         {
@@ -101,31 +53,19 @@ export default {
       ]
     };
   },
+  computed: {
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.imgBox {
-  height: 100%;
-}
-.img__box {
-  width: 90%;
-}
-.carousel__box {
-  background-color: green;
-}
-.test__sheet {
-  background-color: gold;
-}
 .box {
-  border-bottom: 1px solid red;
   min-height: 90vh;
   &__textBox{
     display: flex;
-    // background-color: gold;
+    .text__container {
+      margin: 100px auto;
+    }
   }
-}
-.text__container {
-  margin: 100px auto;
 }
 </style>

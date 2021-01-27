@@ -1,37 +1,25 @@
 <template>
   <div>
-    <M0101></M0101>
-    <M0108></M0108>
-    <!-- <M0102></M0102> -->
-    <br>
-    <v-row id="service" justify="center" align="center" class="video">
+    <LoadingLogo v-if="logoStatus"></LoadingLogo>
+    <!-- <M0101 title="輪播封面"></M0101> -->
+    <!-- <M0108 title="直播200場"></M0108> -->
+    <!-- <M0102 title="電視台品質的專業直播"></M0102> -->
+    <!-- <v-row id="service" justify="center" align="center" class="video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/0n-o9SeJ3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </v-row>
-    <M0103></M0103>
-    <M0104></M0104>
-    <M0105></M0105>
-    
-    <v-row >
-    <v-col cols="12">
-      <br>
-      <TitleBox title="直播作品"></TitleBox>
-    </v-col>
-    <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
-      <ImgBox :item="item"></ImgBox>
-    </v-col>
-    <!-- <v-col cols="12" class="btn__box">
-      <v-btn class="btn" @click="doOther">更多作品</v-btn>
-    </v-col> -->
-    
-  </v-row>
-    <M0106></M0106>
-    <M0107></M0107>
+    </v-row> -->
+    <!-- <M0103 title="服務項目 未完成"></M0103> -->
+    <M0104 title="直播優勢 （剩對齊）"></M0104>
+    <!-- <M0105 title="精選合作 已完成"></M0105> -->
+    <!-- <M0109 title="直播作品 剩btn跳轉（加繞圈動畫）"></M0109> -->
+    <M0106 title="關於我們"></M0106>
+    <!-- <M0107 title="聯絡我們"></M0107> -->
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import ImgBox from '../components/general/ImgBoxM0105'
+import LoadingLogo from '../components/general/LoadingLogo'
 import TitleBox from '~/components/general/TitleBox'
 import M0101 from '../components/M01/M0101'
 import M0102 from '../components/M01/M0102'
@@ -41,6 +29,7 @@ import M0105 from '../components/M01/M0105'
 import M0106 from '../components/M01/M0106'
 import M0107 from '../components/M01/M0107'
 import M0108 from '../components/M01/M0108'
+import M0109 from '../components/M01/M0109'
 
 export default {
   scrollToTop: true,
@@ -55,9 +44,12 @@ export default {
     M0106,
     M0107,
     M0108,
+    M0109,
+    LoadingLogo,
   },
   data() {
     return {
+      logoStatus: true,
       list: [
         {
           alt: '2020 達梭系統臺灣用戶大會',
@@ -79,6 +71,11 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.logoStatus = false
+    }, 3000)
   },
   methods: {
     doOther () {
@@ -110,5 +107,12 @@ export default {
 .btn {
   background-color: var(--orange-color)!important;
   color: white!important;
+}
+.box {
+  min-height: 100vh;
+  // padding: 3rem;
+  // background-color: var(--second-color);
+  // margin: 1rem;
+  // margin-bottom: 2rem;
 }
 </style>

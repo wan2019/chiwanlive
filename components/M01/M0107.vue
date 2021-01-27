@@ -29,7 +29,6 @@
         <iframe  frame :src="`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchichiwanwanlive%2F&amp;tabs=timeline&amp;width=340&amp;height=${fbHight}&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId`" width="340" :height="fbHight" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
     </v-col>
-    
     <v-col cols="12" sm="4" md="4">
       <div class="lineQrCard">
         <img src="https://qr-official.line.me/sid/M/kqa0233a.png">
@@ -60,22 +59,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.imgLogo {
-  height: 1em;
-  vertical-align:middle;
-}
 .text {
   &__center {
     text-align: center;
   }
 }
-.test__red {
-  // border: 1px solid red;
-  display: flex;
-}
 .contactUsBox {
-  // background-color: var(--second-color);
-  background-color: #1b1b1b;
+  background-color: var(--orange-color);
   padding-bottom: 100px;
 }
 .titleBox {
@@ -90,15 +80,15 @@ export default {
 }
 .infoCard {
   height: 100%;
-  // border: 1px red solid;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.25rem;
+  // color: rgba(255, 255, 255, 0.6);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 .lineQrCard {
   height: 100%;
-  // border: 1px red solid;
 }
 .img__box {
   display: flex;

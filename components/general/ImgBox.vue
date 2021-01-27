@@ -57,14 +57,15 @@ export default {
 <style lang="scss" scoped>
 .imgBox {
   // border: 1px solid blue;
-  background-color: #eee;
-  padding: 1rem 0.75rem;
+  // background-color: #eee;
+  // padding: 1rem 0.75rem;
   width: 100%;
   &__img {
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
     margin-bottom: 1rem;
   }
   &__text {
+    z-index: 100;
     margin-top: 0.25rem;
     font-size: 1rem;
   }

@@ -3,7 +3,8 @@
     <div class="titleBox__imgBox">
       <!-- <img class="imgLogo" src="LOGO/onlyLogo.png" alt="logo"> -->
     </div>
-    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <!-- <div data-aos="fade-right" data-aos-anchor-placement="center-bottom"> -->
+    <div data-aos="fade-right">
       <h1 class="mainColor size">{{title}}</h1>
     </div>
   </div>
@@ -27,7 +28,8 @@ export default {
 .titleBox {
   display:flex;
   text-align: center;
-  justify-content: center;
+  padding-left: 2rem;
+  // justify-content: center;
   margin-top: 1rem;
   &__imgBox {
     display:flex;
@@ -41,6 +43,7 @@ export default {
 }
 .size {
   font-size: 3rem;
+  letter-spacing:0.05em;
 }
 
 </style>

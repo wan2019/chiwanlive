@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --mode --open",
     "build": "nuxt build",
     "start": "nuxt start",
     "deploy": "gh-pages -d dist",
@@ -14,7 +14,8 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "vue-cli-plugin-pug": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",

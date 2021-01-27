@@ -1,10 +1,19 @@
 <template>
 <v-row class="box">
     <v-col cols="12" sm="6" md="6" class="box__left">
-      <h1 class="box__left__title">導播資歷 <span class="box__left__number">10</span> 年</h1>
+      <div data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+        <h1 class="box__left__title">電視台品質的專業直播</h1>
+      </div>
+      <div data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+        <div class="box__left__photo">
+          <v-img src="material/Daco_2499475.png" width="500"></v-img>
+        </div>
+      </div>
     </v-col>
     <v-col cols="12" sm="6" md="6" class="box__right">
-      456
+      <div data-aos="fade-right">
+        <h1 class="box__right__title">每年直播場次 <span class="box__right__number">200</span><i class="mdi mdi-trending-up trending"></i></h1>
+      </div>
     </v-col>
 </v-row>
 </template>
@@ -29,7 +38,7 @@ export default {
 <style lang="scss" scoped>
 .box {
   min-height: 100vh;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   &__left {
     background-color: var(--orange-color);
     text-align: center;
@@ -37,14 +46,32 @@ export default {
     &__title {
       font-size: 3rem;
       color: white;
+      letter-spacing:0.05em;
+    }
+    &__number {
+      font-size: 5rem;
+    }
+    &__photo {
+      float: right;
+      margin-right: 2rem;
+      margin-top: 7rem;
+    }
+  }
+  &__right {
+    text-align: center;
+    padding-top: 350px;
+    &__title {
+      letter-spacing:0.05em;
+      font-size: 3.5rem;
+      color: var(--orange-color);
     }
     &__number {
       // color: yellow;
       font-size: 5rem;
     }
   }
-  &__right {
-    // background-color: gold;
-  }
+}
+.trending {
+  font-size: 100px;
 }
 </style>

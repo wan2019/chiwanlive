@@ -2,31 +2,23 @@
   <div class="imgBox">
     <!-- 精選合作 -->
     <div data-aos="fade-right" :data-aos-delay="aosDelay" >
-    <a :href="item.href" target="_blank" rel="noopener noreferrer">
-    <v-img
-      :src="item.src"
-      :alt="item.alt"
-      :aspect-ratio="aspectRatio"
-      class="imgBox__img"
-      eager
-    ></v-img>
-    </a>
-    <br>
-    <h6
-      v-for="(each ,k) in item.text"
-      :key="k"
-      class="imgBox__text"
-    >
-    <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
-    {{each}}</h6>
-    <!-- <v-img
-        :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-        :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-        aspect-ratio="1"
-        class="grey lighten-2"
-      > -->
-    <!-- <p class="center imgBox__text">
-      <v-icon class="icon__sty mainColor">mdi-play-circle-outline</v-icon>{{item.alt}}</p> -->
+      <a :href="item.href" target="_blank" rel="noopener noreferrer">
+        <v-img
+          :src="item.src"
+          :alt="item.alt"
+          :aspect-ratio="aspectRatio"
+          class="imgBox__img"
+          eager
+        ></v-img>
+      </a>
+      <br>
+      <h6
+        v-for="(each ,k) in item.text"
+        :key="k"
+        class="imgBox__text"
+      >
+        <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
+      {{each}}</h6>
   </div>
   </div>
 </template>
@@ -72,7 +64,7 @@ export default {
   }
   &__text {
     margin-top: 0.25rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
