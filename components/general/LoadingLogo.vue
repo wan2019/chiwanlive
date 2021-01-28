@@ -2,11 +2,14 @@
   .LoadingLogo
     //- img.testImg(src="LOGO/onlyLogo.png")
     .mainBox
-      div(data-aos="zoom-in-right" :data-aos-once="false" :data-aos-delay="aosDelay_blueOne")
+      div.blueOne__out
         .blueOne
-      div(data-aos="fade-right" :data-aos-delay="aosDelay_orangeOne")
+      //- div(data-aos="fade-right" :data-aos-delay="aosDelay_blueOne")
+      //- div(data-aos="fade-right" :data-aos-delay="aosDelay_orangeOne")
+      div
         .orangeOne
-      div(data-aos="fade-up" :data-aos-delay="aosDelay_rightGroup")
+      //- div(data-aos="fade-up" :data-aos-delay="aosDelay_rightGroup")
+      div
         .rightGroup
           .yellowOne
           .yellowOne
@@ -31,20 +34,54 @@ export default {
 .LoadingLogo {
   background-color: white;
   height: 100vh;
-  width: 100vw;
+  width: 0;
   position: fixed;
   top: 0;
   z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: LoadingLogo;
+  animation-duration: 4s;
+}
+@keyframes LoadingLogo{
+  0% {
+    width: 100vw;
+  }
+  77% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    background-color: rgb(69, 69, 184);
+    width: 0;
+    height: 0;
+  }
 }
 .mainBox {
-  height: 132px;
-  width: 171px;
+  height: 0;
+  width: 0;
   // border: 1px solid red;
   position: relative;
   overflow: hidden;
+  animation: mainBox;
+  animation-duration: 4s;
+}
+@keyframes mainBox{
+  0% {
+    height: 132px;
+    width: 171px;
+  }
+  77% {
+    height: 132px;
+    width: 171px;
+  }
+  85% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+  }
 }
 .blueOne {
   height: 91px;
@@ -53,6 +90,16 @@ export default {
   background-color: var(--blue-color);
   // border: 1px solid red;
   position: absolute;
+  animation: blueOne;
+  animation-duration: 1s;
+}
+@keyframes blueOne{
+  from {
+    left:-113px;
+  }
+  to {
+    left:0;
+  }
 }
 .orangeOne {
   height: 31px;
@@ -61,7 +108,20 @@ export default {
   background-color: var(--orange-color);
   // border: 1px solid black;
   position: absolute;
-  top: 98px
+  top: 98px;
+  animation: orangeOne;
+  animation-duration: 2s;
+}
+@keyframes orangeOne{
+  0% {
+    left:-113px;
+  }
+  50% {
+    left:-113px;
+  }
+  100% {
+    left:0;
+  }
 }
 .rightGroup {
   height: 131px;
@@ -73,6 +133,19 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  animation: rightGroup;
+  animation-duration: 3s;
+}
+@keyframes rightGroup{
+  0% {
+    top: 132px;
+  }
+  66% {
+    top: 132px;
+  }
+  100% {
+    top: 0;
+  }
 }
 .yellowOne {
   background-color: var(--yellow-color);

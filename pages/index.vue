@@ -72,10 +72,11 @@ export default {
       ]
     }
   },
-  mounted() {
-    setTimeout(() => {
-      this.logoStatus = false
-    }, 3000)
+  mounted () {
+    // this.logoStatus = true
+    // setTimeout(() => {
+    //   this.logoStatus = false
+    // }, 3000)
   },
   methods: {
     doOther () {
