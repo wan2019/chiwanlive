@@ -64,7 +64,6 @@ export default {
   }
 }
 .test__red {
-  // border: 1px solid red;
   display: flex;
   // border: blue 1px solid;
   padding: 1.5rem;
@@ -74,6 +73,7 @@ export default {
 .box {
   min-height: 100vh;
   padding: 3rem;
+  background-color: #eee;
   // background-color: var(--second-color);
   // margin: 1rem;
   // margin-bottom: 2rem;

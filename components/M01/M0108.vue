@@ -11,7 +11,7 @@
       </div>
     </v-col>
     <v-col cols="12" sm="6" md="6" class="box__right">
-      <div data-aos="fade-right">
+      <div data-aos="fade-right" data-aos-delay="300">
         <h1 class="box__right__title">每年直播場次 <span class="box__right__number">200</span><i class="mdi mdi-trending-up trending"></i></h1>
       </div>
     </v-col>

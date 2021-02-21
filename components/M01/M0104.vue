@@ -28,7 +28,7 @@ export default {
       list: [
         {
           alt: '線下活動 線上互動 活動直播線上線下兩者兼顧 增加品牌、產品、資訊曝光',
-          text: ['線下活動 線上互動 ', '活動直播 線上線下兩者兼顧', '增加品牌、產品、資訊曝光'],
+          text: ['線下活動 線上互動 ', '活動直播', '線上線下兩者兼顧', '增加品牌、產品、資訊曝光'],
           src: 'material/macbookAir.png',
           href: '',
           width: 220,
@@ -37,7 +37,7 @@ export default {
         },
         {
           alt: '同時串流各大平台 一場直播同時串流數平台 FB、YouTube 、LINE Zoom、Cisco Webex GoToWebinar、Teams',
-          text: ['同時串流各大平台', '一場直播同時串流數平台', 'FB、YouTube 、LINE','Zoom、Cisco Webex','GoToWebinar、Teams'],
+          text: ['同時串流各大平台', '一場直播同時串流數平台', 'FB、YouTube 、LINE 、Zoom', 'Cisco Webex、GoToWebinar'],
           src: 'material/pngwing.com.png',
           href: '',
           width: 230,

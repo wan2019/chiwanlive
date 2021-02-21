@@ -1,4 +1,5 @@
 <template>
+<section class="box">
   <v-row id="profession">
     <v-col cols="12">
       <!-- <TitleBox title="電視台品質的專業直播" ></TitleBox> -->
@@ -12,14 +13,16 @@
           class="imgBox__img"
           eager
         ></v-img>
-        <h6
-          v-for="(each ,k) in item.text"
-          :key="k"
-          class="imgBox__text"
-        >{{each}}</h6>
+        <div class="imgBox__textBox">
+          <h6
+            v-for="(each ,k) in item.text"
+            :key="k"
+            class="imgBox__text"
+          >{{each}}</h6>
+        </div>
       </div>
     </v-col>
-    <v-col v-for="(item, i) in list2" cols="12" sm="6" md="6" :key="`list2${i}`"  class="test__red">
+    <!-- <v-col v-for="(item, i) in list2" cols="12" sm="6" md="6" :key="`list2${i}`"  class="test__red">
       <div class="imgBox">
         <v-img
           :src="item.src"
@@ -34,18 +37,13 @@
           class="imgBox__text"
         >{{each}}</h4>
       </div>
-    </v-col>
+    </v-col> -->
     <!-- youtube 影片 -->
     <!-- <v-col cols="12" class="youtubeBox" justify="center" align="center"> -->
       
     <!-- </v-col> -->
-    <div class="phone">
-      <div class="phone__img"></div>
-      <div class="phone__circle"></div>
-      <div class="phone__circle2"></div>
-      <div class="phone__circle3"></div>
-    </div>
   </v-row>
+</section>
 </template>
 
 <script>
@@ -106,46 +104,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.phone {
+.box {
   position: relative;
-  height: 300px;
-  width: 500px;
-  background-color: black;
-  border-radius: 40px;
-  margin: 1rem;
-  &__img {
-    margin: 5px 0 5px 70px;
-    height: 290px;
-    width: 350px;
-    background-color: yellow;
-  }
-  &__circle {
-    position: absolute;
-    right: 15px;
-    top: 125px;
-    background-color: orangered;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-  }
-  &__circle2 {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: green;
-    left: 24px;
-    top: 183px;
-  }
-  &__circle3 {
-    height: 64px;
-    width: 7px;
-    border-radius: 5px;
-    position: absolute;
-    background-color: green;
-    left: 26px;
-    top: 105px;
-  }
+  min-height: 100vh;
+  // border: 1px solid red;
+  padding: 3rem;
 }
 .test__red {
   // border: 1px solid red;
@@ -154,14 +117,19 @@ export default {
 .imgBox {
   // border: 1px solid blue;
   background-color: #eee;
-  padding: 1rem 0.75rem;
+  // padding: 1rem 0.75rem;
   width: 100%;
   &__img {
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    // border-radius: 0.5rem;
+    // margin-bottom: 1rem;
+  }
+  &__textBox {
+    background-color: #eee;
+    padding: 1rem;
   }
   &__text {
     margin-top: 0.25rem;
+    // padding-left: 1rem;
     font-size: 1rem;
   }
 }

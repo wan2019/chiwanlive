@@ -72,7 +72,7 @@ export default {
 .box {
   position: relative;
   min-height: 100vh;
-  border: 1px solid red;
+  // border: 1px solid red;
   padding: 3rem;
 }
 .aboutUsBox {

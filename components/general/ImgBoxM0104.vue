@@ -16,12 +16,19 @@
       </div>
     </div>
     <div class="imgBox__textBox">
-      <h6
+      <!-- <h6
         v-for="(each ,k) in item.text"
         :key="k"
         :class="{imgBox__text: true, imgBox__textFirst: k === 0}"
       >
-      {{each}}</h6>
+      {{each}}</h6> -->
+      <template v-for="(each ,k) in item.text" >
+        <h4 v-if="k === 0" :key="k" class="imgBox__text imgBox__title">
+          <!-- <v-icon class="icon__sty mainColor">mdi-play-circle-outline</v-icon> -->
+          {{each}}
+        </h4>
+        <h6 v-else :key="k" class="imgBox__text">{{each}}</h6>
+      </template>
     </div>
   </div>  
   </div>
@@ -74,7 +81,19 @@ export default {
     font-size: 1.5rem;
   }
 }
-.borderBox {
-  // border: 1px solid blue;
+h6 {
+  font-size: 16px;
+}
+.imgBox {
+  &__text {
+    text-align: center;
+    z-index: 100;
+    margin-top: 0.25rem;
+    font-size: 1rem;
+  }
+  &__title {
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+  }
 }
 </style>
