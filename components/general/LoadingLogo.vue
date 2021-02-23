@@ -47,15 +47,17 @@ export default {
 @keyframes LoadingLogo{
   0% {
     width: 100vw;
+    opacity: 0.8;
   }
   77% {
+    opacity: 0.8;
     width: 100vw;
     height: 100vh;
   }
   100% {
-    background-color: rgb(69, 69, 184);
-    width: 0;
-    height: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
   }
 }
 .mainBox {
