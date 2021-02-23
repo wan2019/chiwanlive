@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LoadingLogo v-if="logoStatus" title="logoLoading"></LoadingLogo>
+    <!-- <LoadingLogo v-if="logoStatus" title="logoLoading"></LoadingLogo> -->
     <M0101 title="輪播封面"></M0101>
     <M0108 title="直播200場"></M0108>
     <M0102 title="電視台品質的專業直播"></M0102>

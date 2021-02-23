@@ -51,7 +51,7 @@ export default {
   width: 100%;
   // border: 1px solid blue;
   &__out {
-    background-color: var(--yellow-color);
+    // background-color: var(--yellow-color);
   }
   &__container {
     display: flex;

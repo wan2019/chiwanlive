@@ -11,23 +11,17 @@
       <ImgBox :item="item1"></ImgBox>
     </v-col>
     <v-col  cols="12" sm="12" md="4" class="test__red">
-        <div class="infoCard">
-          <div data-aos="fade-right" :data-aos-delay="2000" >
+        <div class="infoCard__out infoCard">
+          <div data-aos="fade-right" :data-aos-delay="600" >
             <div class="infoCard__in">
-              <p>
-                我們是Chichi & Wanwan　ChiWanLIVE
-                <br>
-                直播就是我們的生活
-                <br>
-                熱愛直播的即時性
-                <br>
-                我們活在當下，做好每一個現在
-                <br>
-                導播資歷9年
-                <br>
-                電視台導播│新創媒體導播│直播平台導播
-              </p>
-              <h2 class="text__center">直播場次每年逾百場</h2>
+              <h3>我們是Chichi & Wanwan　ChiWanLIVE</h3>
+              <h3>直播就是我們的生活</h3>
+              <h3>熱愛直播的即時性</h3>
+              <h3>我們活在當下，做好每一個現在</h3>
+              <h3>導播資歷9年</h3>
+              <h3>電視台導播│新創媒體導播│直播平台導播</h3>
+              <br>
+              <h2 class="text__label text__center">直播場次每年逾百場</h2>
           </div>
         </div>
       </div>
@@ -86,20 +80,17 @@ export default {
   }
 }
 .infoCard {
-  // background-color: #eee;
-  border: 1px solid blue;
   width: 100%;
   height: 100%;
   &__in {
-    height: 100%;
     padding: 1rem 0.75rem;
-    background-color: gold;
+    padding-top: 6rem;
   }
   &__out {
-    
     padding: 0;
     display: flex;
     justify-content: center;
+    position: relative;
   }
 }
 .test__red {
@@ -118,5 +109,12 @@ export default {
     height: 170px;
     width: 170px;
   }
+}
+h3 {
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.text__label {
+  color: var(--orange-color);;
 }
 </style>

@@ -6,7 +6,7 @@
       </div>
       <div data-aos="fade-right" data-aos-anchor-placement="center-bottom">
         <div class="box__left__photo">
-          <v-img src="material/Daco_2499475.png" width="500"></v-img>
+          <v-img src="material/Daco_2499475.png" width="550"></v-img>
         </div>
       </div>
     </v-col>
