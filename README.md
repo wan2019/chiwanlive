@@ -7,7 +7,7 @@
 $ yarn install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ yarn serve
 
 # build for production and launch server
 $ yarn build // 打包出來的是 dist （會配合 yarn star 才可以起起來的）

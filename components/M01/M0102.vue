@@ -6,20 +6,46 @@
     </v-col>
     <v-col v-for="(item, i) in list" cols="12" sm="6" md="4" :key="i"  class="test__red">
       <div class="imgBox">
-        <v-img
+        <!-- <v-img
           :src="item.src"
           :alt="item.alt"
           :aspect-ratio="6/4"
           class="imgBox__img"
           eager
-        ></v-img>
-        <div class="imgBox__textBox">
+        ></v-img> -->
+        <v-hover v-slot="{ hover }">
+              <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
+                  <v-img 
+                    :src="item.src"
+                    :alt="item.alt"
+                    :aspect-ratio="6/4"
+                    class="imgBox__img"
+                    eager
+                    height="225px">
+                      <v-card-title class="title white--text">
+                          <v-row class="fill-height flex-column" justify="space-between">
+                              <p class="mt-4 subheading text-left">
+                                  {{ item.title }}
+                              </p>
+                              <div v-if="!hover" class="align-self-center" :class="{ 'show-btns': !hover ,transparent: true}">
+                                <p class="title__text" >{{item.text[0]}}</p>
+                              </div>
+                              <div class="align-self-center" :class="{ 'show-btns': hover ,transparent: true}">
+                                <p  v-for="(eachText, idx) in item.text" :key="idx">{{eachText}}</p>
+                              </div>
+
+                          </v-row>
+                      </v-card-title>
+                  </v-img>
+              </v-card>
+          </v-hover>
+        <!-- <div class="imgBox__textBox">
           <h6
             v-for="(each ,k) in item.text"
             :key="k"
             class="imgBox__text"
           >{{each}}</h6>
-        </div>
+        </div> -->
       </div>
     </v-col>
     <!-- <v-col v-for="(item, i) in list2" cols="12" sm="6" md="6" :key="`list2${i}`"  class="test__red">
@@ -47,7 +73,7 @@
 </template>
 
 <script>
-import ImgBox from '~/components/general/ImgBox'
+import ImgBox from '~/components/general/ImgBoxM0102'
 import TitleBox from '~/components/general/TitleBox'
 
 export default {
@@ -58,6 +84,8 @@ export default {
   },
   data() {
     return {
+      // transparent: "rgba(255, 255, 255, 0)",
+      transparent: "rgba(0, 0, 0, 0)",
       list: [
         {
           alt: '高品質影像',
@@ -104,6 +132,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#profession {
+  padding-top: 3rem;
+}
 .box {
   position: relative;
   min-height: 100vh;
@@ -135,5 +166,38 @@ export default {
 }
 .youtubeBox {
   background-color: #eee;
+}
+
+// test test
+
+.v-card {
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.v-card:not(.on-hover) {
+    opacity: 1;
+}
+.transparent {
+  color: transparent;
+}
+
+.show-btns {
+     color: rgba(255, 255, 255, 1) !important;
+
+}
+
+.test__text {
+    color: transparent;
+    color: red;
+    &:hover {
+        /*         color: rgba(255, 255, 255, 1) !important; */
+        color: blue;
+    }
+}
+.title__text {
+  color: white;
+  padding-top: 3rem;
 }
 </style>

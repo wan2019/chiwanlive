@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "dev": "nuxt --mode --open",
+    "serve": "nuxt --mode --open",
     "build": "nuxt build",
     "start": "nuxt start",
     "deploy": "gh-pages -d dist",
