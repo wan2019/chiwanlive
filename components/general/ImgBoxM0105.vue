@@ -41,6 +41,7 @@ export default {
       type: [Number, String],
       // default: 16/9,
       default: 1.78,
+      // default: 6/4,
     }
   },
   computed: {

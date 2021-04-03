@@ -27,7 +27,7 @@
           <!-- <v-icon class="icon__sty mainColor">mdi-play-circle-outline</v-icon> -->
           {{each}}
         </h4>
-        <h6 v-else :key="k" class="imgBox__text">{{each}}</h6>
+        <h4 v-else :key="k" class="imgBox__text">{{each}}</h4>
       </template>
     </div>
   </div>  

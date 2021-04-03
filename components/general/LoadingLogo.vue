@@ -43,19 +43,20 @@ export default {
   align-items: center;
   animation: LoadingLogo;
   animation-duration: 4s;
+  opacity: 1;
 }
 @keyframes LoadingLogo{
   0% {
     width: 100vw;
-    opacity: 0.8;
+    opacity: 1;
   }
   77% {
-    opacity: 0.8;
+    opacity: 1;
     width: 100vw;
     height: 100vh;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
     width: 100vw;
     height: 100vh;
   }
