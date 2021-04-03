@@ -27,7 +27,7 @@
           <!-- <v-icon class="icon__sty mainColor">mdi-play-circle-outline</v-icon> -->
           {{each}}
         </h4>
-        <h6 v-else :key="k" class="imgBox__text">{{each}}</h6>
+        <h4 v-else :key="k" class="imgBox__text">{{each}}</h4>
       </template>
     </div>
   </div>  
@@ -68,14 +68,14 @@ export default {
   }
   &__textBox {
     // border: 1px solid red;
-    max-width: 250px;
     margin: auto;
     // display: flex;
   }
   &__text {
     z-index: 100;
     margin-top: 0.25rem;
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   &__textFirst {
     font-size: 1.5rem;
@@ -89,10 +89,11 @@ h6 {
     text-align: center;
     z-index: 100;
     margin-top: 0.25rem;
-    font-size: 1rem;
+    // font-size: 1rem;
+    font-size: 1.5rem;
   }
   &__title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
   }
 }

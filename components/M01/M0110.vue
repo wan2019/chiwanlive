@@ -7,7 +7,7 @@
           <v-img
             :src="item1.src"
             :alt="item1.alt"
-            class="imgBox__img"
+            class="imgBox__img img__gif"
             eager
             contain
           ></v-img>
@@ -27,13 +27,13 @@
             ></v-img>
       </div>
     </div>
-    <div class="textBox__one">
-      <p class="textBox__style textBox__title">即時字卡</p>
-      <p class="textBox__style" style="font-size:1.2rem">置入LOGO 、標題、贊助、影片</p>
+    <div class="textBox__one" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+      <h4 class="textBox__style textBox__title">即時字卡</h4>
+      <h6 class="textBox__style" style="font-size:1.25rem">置入LOGO 、標題、贊助、影片</h6>
     </div>
-    <div class="textBox__two">
-      <p class="textBox__style textBox__title">直播特效</p>
-      <p class="textBox__style" style="font-size:1.2rem">獨家特效、動畫、音效</p>
+    <div class="textBox__two" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+      <h4 class="textBox__style textBox__title">直播特效</h4>
+      <h6 class="textBox__style" style="font-size:1.25rem">獨家特效、動畫、音效</h6>
     </div>
   </div>
 </v-row>
@@ -89,6 +89,8 @@ export default {
     margin: 5px 0 5px 70px;
     height: 280px;
     width: 500px;
+    // border: 1px solid red;
+    overflow: hidden;
     // background-color: yellow;
   }
   &__circle {
@@ -158,7 +160,6 @@ export default {
     z-index: 1;
   }
   &__two {
-    // border: 2px solid orange;
     padding-left: 60%;
     position: relative;
     z-index: 1;
@@ -175,6 +176,9 @@ export default {
       top: -100px;
       transform: rotate(-20deg);
     }
+  }
+  &__gif {
+    transform:scale(1.05,1.05);
   }
 }
 </style>
