@@ -31,8 +31,8 @@ export default {
     item: [Object],
     aspectRatio: {
       type: [Number, String],
-      default: 6/4,
-      // default: 1.78,
+      // default: 6/4,
+      default: 1.78,
     }
   },
   computed: {

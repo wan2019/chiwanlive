@@ -6,7 +6,6 @@
       cycle
       height="425"
       hide-delimiters
-      show-arrows-on-hover
       :show-arrows="false"
     >
         <v-carousel-item
