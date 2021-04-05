@@ -2,38 +2,42 @@
 <v-row>
   <div class="text__box">
     <div class="dialog-left"></div>
-    <div class="phone">
-      <div class="phone__img">
-          <v-img
-            :src="item1.src"
-            :alt="item1.alt"
-            class="imgBox__img img__gif"
-            eager
-            contain
-          ></v-img>
-      </div>
-      <div class="phone__circle"></div>
-      <div class="phone__circle2"></div>
-      <div class="phone__circle3"></div>
-    </div>
-    <div class="img__two">
-      <div class="img__two__in">
+    <div data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+      <div class="phone">
+        <div class="phone__img">
             <v-img
-              :src="item2.src"
-              :alt="item2.alt"
-              class="imgBox__img"
+              :src="item1.src"
+              :alt="item1.alt"
+              class="imgBox__img img__gif"
               eager
               contain
             ></v-img>
+        </div>
+        <div class="phone__circle"></div>
+        <div class="phone__circle2"></div>
+        <div class="phone__circle3"></div>
       </div>
     </div>
-    <div class="textBox__one" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-      <h4 class="textBox__style textBox__title">即時字卡</h4>
-      <h6 class="textBox__style" style="font-size:1.25rem">置入LOGO 、標題、贊助、影片</h6>
+    <div data-aos="fade-right">
+      <div class="img__two">
+        <div class="img__two__in">
+              <v-img
+                :src="item2.src"
+                :alt="item2.alt"
+                class="imgBox__img"
+                eager
+                contain
+              ></v-img>
+        </div>
+      </div>
     </div>
-    <div class="textBox__two" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+    <div class="textBox__one" data-aos="fade-right" data-aos-anchor-placement="center-bottom" :data-aos-delay="400">
+      <h4 class="textBox__style textBox__title">即時字卡</h4>
+      <h6 class="textBox__style" style="font-size:1.5rem">置入LOGO 、標題、贊助、影片</h6>
+    </div>
+    <div class="textBox__two" data-aos="fade-right" data-aos-anchor-placement="center-bottom" :data-aos-delay="400">
       <h4 class="textBox__style textBox__title">直播特效</h4>
-      <h6 class="textBox__style" style="font-size:1.25rem">獨家特效、動畫、音效</h6>
+      <h6 class="textBox__style" style="font-size:1.5rem">獨家特效、動畫、音效</h6>
     </div>
   </div>
 </v-row>
@@ -146,10 +150,10 @@ export default {
 .textBox {
   &__style {
     color: white;
+    font-weight: 700;
   }
   &__title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.75rem;
     color: white;
   }
   &__one {
