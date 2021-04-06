@@ -14,8 +14,11 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "core-js": "^3.6.5",
+    "is-svg": "^4.3.1",
+    "later": "^1.2.0",
     "node-sass": "^5.0.0",
     "nuxt": "^2.14.6",
+    "ssri": "^8.0.1",
     "vue-cli-plugin-pug": "^2.0.0"
   },
   "devDependencies": {
