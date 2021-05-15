@@ -56,7 +56,7 @@ export default {
     height: 100vh;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     width: 100vw;
     height: 100vh;
   }

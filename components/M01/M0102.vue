@@ -4,70 +4,31 @@
     <v-col cols="12">
       <!-- <TitleBox title="電視台品質的專業直播" ></TitleBox> -->
     </v-col>
-    <v-col v-for="(item, i) in list" cols="12" sm="6" md="4" :key="i"  class="test__red">
-      <div class="imgBox">
-        <!-- <v-img
-          :src="item.src"
-          :alt="item.alt"
-          :aspect-ratio="6/4"
-          class="imgBox__img"
-          eager
-        ></v-img> -->
+    <v-col v-for="(item, i) in list" cols="12" sm="6" md="4" :key="i"  class="">
+      <div class="imgBox" data-aos="fade-right" data-aos-anchor-placement="center-bottom" :data-aos-delay="i*300">
         <v-hover v-slot="{ hover }">
-              <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
-                  <v-img 
-                    :src="item.src"
-                    :alt="item.alt"
-                    :aspect-ratio="6/4"
-                    class="imgBox__img"
-                    eager
-                    height="225px">
-                      <v-card-title class="title white--text">
-                          <v-row class="fill-height flex-column" justify="space-between">
-                              <p class="mt-4 subheading text-left">
-                                  {{ item.title }}
-                              </p>
-                              <div v-if="!hover" class="align-self-center" :class="{ 'show-btns': !hover ,transparent: true}">
-                                <p class="title__text" >{{item.text[0]}}</p>
-                              </div>
-                              <div class="align-self-center" :class="{ 'show-btns': hover ,transparent: true}">
-                                <p  v-for="(eachText, idx) in item.text" :key="idx">{{eachText}}</p>
-                              </div>
-
-                          </v-row>
-                      </v-card-title>
-                  </v-img>
-              </v-card>
-          </v-hover>
-        <!-- <div class="imgBox__textBox">
-          <h6
-            v-for="(each ,k) in item.text"
-            :key="k"
-            class="imgBox__text"
-          >{{each}}</h6>
-        </div> -->
+          <v-card class="mx-auto" color="grey lighten-4" width="600">
+            <v-img
+              :src="item.src"
+              :alt="item.alt"
+              :aspect-ratio="6/4"
+              eager
+              height="225px">
+              <div v-if="!hover" class="card__title">
+                <h4>{{item.alt}}</h4>
+              </div>
+              <v-expand-transition>
+                  <div v-if="hover" class="transition-fast-in-fast-out black  darken-2 v-card--reveal white--text">
+                    <div>
+                      <h6 v-for="(item, idx) in item.text" :key="idx">{{item}}</h6>
+                    </div>
+                  </div>
+              </v-expand-transition>
+            </v-img>
+          </v-card>
+        </v-hover>
       </div>
     </v-col>
-    <!-- <v-col v-for="(item, i) in list2" cols="12" sm="6" md="6" :key="`list2${i}`"  class="test__red">
-      <div class="imgBox">
-        <v-img
-          :src="item.src"
-          :alt="item.alt"
-          :aspect-ratio="6/4"
-          class="imgBox__img"
-          eager
-        ></v-img>
-        <h4
-          v-for="(each ,k) in item.text"
-          :key="k"
-          class="imgBox__text"
-        >{{each}}</h4>
-      </div>
-    </v-col> -->
-    <!-- youtube 影片 -->
-    <!-- <v-col cols="12" class="youtubeBox" justify="center" align="center"> -->
-      
-    <!-- </v-col> -->
   </v-row>
 </section>
 </template>
@@ -84,8 +45,6 @@ export default {
   },
   data() {
     return {
-      // transparent: "rgba(255, 255, 255, 0)",
-      transparent: "rgba(0, 0, 0, 0)",
       list: [
         {
           alt: '高品質影像',
@@ -138,29 +97,13 @@ export default {
 .box {
   position: relative;
   min-height: 100vh;
-  // border: 1px solid red;
   padding: 3rem;
 }
-.test__red {
-  // border: 1px solid red;
-  display: flex;
-}
 .imgBox {
-  // border: 1px solid blue;
   background-color: #eee;
-  // padding: 1rem 0.75rem;
   width: 100%;
-  &__img {
-    // border-radius: 0.5rem;
-    // margin-bottom: 1rem;
-  }
-  &__textBox {
-    background-color: #eee;
-    padding: 1rem;
-  }
   &__text {
     margin-top: 0.25rem;
-    // padding-left: 1rem;
     font-size: 1rem;
   }
 }
@@ -168,36 +111,35 @@ export default {
   background-color: #eee;
 }
 
-// test test
-
-.v-card {
-    transition: opacity 0.4s ease-in-out;
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.v-card:not(.on-hover) {
-    opacity: 1;
-}
-.transparent {
-  color: transparent;
-}
-
-.show-btns {
-     color: rgba(255, 255, 255, 1) !important;
-
-}
-
-.test__text {
-    color: transparent;
-    color: red;
-    &:hover {
-        /*         color: rgba(255, 255, 255, 1) !important; */
-        color: blue;
-    }
-}
 .title__text {
   color: white;
   padding-top: 3rem;
+}
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100%;
+  div {
+    padding: 40px;
+  }
+  h6 {
+    margin: 15px;
+  }
+}
+.card {
+  &__title {
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
 }
 </style>
