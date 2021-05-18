@@ -1,14 +1,10 @@
 <template lang="pug">
   .LoadingLogo
-    //- img.testImg(src="LOGO/onlyLogo.png")
     .mainBox
       div.blueOne__out
         .blueOne
-      //- div(data-aos="fade-right" :data-aos-delay="aosDelay_blueOne")
-      //- div(data-aos="fade-right" :data-aos-delay="aosDelay_orangeOne")
       div
         .orangeOne
-      //- div(data-aos="fade-up" :data-aos-delay="aosDelay_rightGroup")
       div
         .rightGroup
           .yellowOne

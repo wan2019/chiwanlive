@@ -5,7 +5,7 @@
     </div>
     <!-- <div data-aos="fade-right" data-aos-anchor-placement="center-bottom"> -->
     <div data-aos="fade-right">
-      <h1 class="mainColor size">{{title}}</h1>
+      <h1 class="mainColor size" >{{title}}</h1>
     </div>
   </div>
 </template>

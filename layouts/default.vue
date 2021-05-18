@@ -126,11 +126,11 @@ export default {
           to: '/',
           target: '#contactUs'
         },
-        // {
-        //   title: '作品集',
-        //   to: '/portfolio',
-        //   target: ''
-        // }
+        {
+          title: '作品集',
+          to: '/portfolio',
+          target: ''
+        }
       ],
       miniVariant: false,
       title: '趣玩影像'
