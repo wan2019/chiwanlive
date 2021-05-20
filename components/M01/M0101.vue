@@ -1,10 +1,11 @@
 <template>
   <section class="box">
     <div>
+      <!-- TODO: 寬度要再修改 -->
       <v-carousel
       id="top"
       cycle
-      height="425"
+      width="425"
       hide-delimiters
       :show-arrows="false"
     >

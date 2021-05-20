@@ -1,10 +1,10 @@
 <template>
   <div>
-    <!-- <LoadingLogo v-if="logoStatus" title="logoLoading"></LoadingLogo> -->
+    <LoadingLogo v-if="logoStatus" title="logoLoading"></LoadingLogo>
     <M0101 title="輪播封面"></M0101>
     <M0108 title="直播200場"></M0108>
     <M0102 title="電視台品質的專業直播"></M0102>
-    <!-- <M0110 title="phone"></M0110> -->
+    <M0110 title="phone"></M0110>
     <!-- <v-row id="service" justify="center" align="center" class="video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/0n-o9SeJ3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </v-row> -->
@@ -13,6 +13,7 @@
     <M0105 title="精選合作 已完成"></M0105>
     <M0109 title="直播作品"></M0109>
     <M0106 title="關於我們"></M0106>
+    <!-- TODO: 凸出來，要維修 -->
     <M0107 title="聯絡我們"></M0107>
   </div>
 </template>

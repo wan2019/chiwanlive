@@ -1,5 +1,6 @@
 <template>
-<v-row>
+<div>
+<v-row class="mainBox">
   <div class="text__box">
     <div class="dialog-left"></div>
     <div data-aos="fade-right" data-aos-anchor-placement="center-bottom">
@@ -41,12 +42,20 @@
     </div>
   </div>
 </v-row>
+<div class="display__phone">
+  <ImgBox :item="item3" :aspectRatio="1.78"></ImgBox>
+</div>
+</div>
 </template>
 
 <script>
+import ImgBox from '~/components/general/ImgBoxM0105'
 
 export default {
   name: '',
+  comments: {
+    ImgBox,
+  },
   data() {
     return {
       item1: {
@@ -61,12 +70,24 @@ export default {
         text: ['導播　ChiChi'],
         aosDelay: 1,
       },
+      item3: {
+        alt: '',
+        src: '/img/specialEffect_6.gif',
+        text: ['即時字卡 直播特效', '置入LOGO 、標題、贊助、影片', '獨家特效、動畫、音效'], // TODO: 文字要改
+        aosDelay: 1,
+        href: ''
+      }
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.mainBox{
+  @include pad {
+    display: none;
+  }
+}
 .row {
   // 覆蓋原本的 vuetify 的內容
   margin-left: 0;
@@ -183,6 +204,15 @@ export default {
   }
   &__gif {
     transform:scale(1.05,1.05);
+  }
+}
+.display {
+  &__phone {
+    display: none;
+    @include pad {
+      padding: 1.5rem;
+      display: flex;
+    }
   }
 }
 </style>
