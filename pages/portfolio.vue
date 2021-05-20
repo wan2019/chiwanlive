@@ -2,40 +2,64 @@
   <section class="box">
     <v-row id="portfolio" class="portfolio" justify="center" align="center">
       <v-col cols="12" >
-        <h1 class="mainColor size" >直播作品</h1>
-        <br>
-        <h2 class="secondColor">活動直播│電商直播│4G包直播│直播節目│電競轉播│賽事轉播│現場轉播</h2>
+        <div data-aos="fade-right">
+          <h1 class="mainColor size" >直播作品</h1>
+          <h2>活動直播│電商直播│4G包直播│直播節目│電競轉播│賽事轉播│現場轉播</h2>
+        </div>
       </v-col>
       <!-- 影片檔 -->
       <v-col cols="12" sm="6" md="6"  class="video__box" >
-        <h3 class="video__title">2020 PROMO</h3>
-        <br>
-        <div class="video-container" >
-          <iframe  width="100%" src="https://www.youtube.com/embed/0n-o9SeJ3u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div data-aos="fade-right">
+          <h3 class="video__title">2020 PROMO</h3>
+          <br>
+          <div class="video-container" >
+            <iframe  width="100%" src="https://www.youtube.com/embed/0n-o9SeJ3u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </v-col>
       <v-col cols="12" sm="6" md="6" class="video__box">
-        <h3 class="video__title">2019 PROMO</h3>
-        <br>
-        <div class="video-container">
-          <iframe class="resize" width="100%" src="https://www.youtube.com/embed/Uc2SR--kDo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div data-aos="fade-right">
+          <h3 class="video__title">2019 PROMO</h3>
+          <br>
+          <div class="video-container">
+            <iframe class="resize" width="100%" src="https://www.youtube.com/embed/Uc2SR--kDo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </v-col>
-      <br>
-      <hr size="8px" align="center" width="100%" color="#dedede">
+      <!-- <hr size="8px" align="center" width="100%" color="#dedede"> -->
       <!-- 影片檔 end-->
-      <v-col cols="12" >
-        <br>
-        <br>
-        <br>
-        <h2 class="secondColor">活動直播│線下活動，線上直播！觀看人數倍數成長</h2>
-        <br><br>
-      </v-col>
+      <TitleBox title="活動直播│線下活動，線上直播！觀看人數倍數成長"></TitleBox>
       <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
-      
-      <v-col cols="12" align="center">
+      <TitleBox title="4G包直播│​機動性高！外景直播不受限"></TitleBox>
+      <v-col v-for="(item, i) in list1" cols="12" sm="4" md="4" :key="`list1${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+      <!--  -->
+      <TitleBox title="直播節目│低成本、高規格！直播節目就像經過後製"></TitleBox>
+      <v-col v-for="(item, i) in list2" cols="12" sm="4" md="4" :key="`list2${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+      <!--  -->
+      <TitleBox title="現場轉播│多機畫面，大小框！大螢幕轉播"></TitleBox>
+      <v-col v-for="(item, i) in list3" cols="12" sm="4" md="4" :key="`list3${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+      <!--  -->
+      <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人"></TitleBox>
+      <v-col v-for="(item, i) in list4" cols="12" sm="4" md="4" :key="`list4${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+      <!--  -->
+      <TitleBox title="電競轉播│多名玩家，遊戲對戰！串流各大直播平台"></TitleBox>
+      <v-col v-for="(item, i) in list5" cols="12" sm="4" md="4" :key="`list5${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+      <!--  -->
+      <TitleBox title="賽事轉播│即時回放，球評解說！全場記錄精彩重播"></TitleBox>
+      <v-col v-for="(item, i) in list6" cols="12" sm="4" md="4" :key="`list6${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
       </v-col>
     </v-row>
   </section>
@@ -49,8 +73,8 @@
 
 <script>
 import IframeBox from '~/components/general/IframeBox'
-import ImgBox from '~/components/general/ImgBoxM0109'
-import TitleBox from '~/components/general/TitleBox'
+import ImgBox from '~/components/portfolio/ImgBox'
+import TitleBox from '~/components/portfolio/TitleBox'
 
 export default {
   name: '',
@@ -62,27 +86,201 @@ export default {
     return {
       list: [
         {
-          alt: '2020 達梭系統臺灣用戶大會',
-          text: ['2020 達梭系統臺灣用戶大會', '線下活動 線上直播'],
-          src: 'img/livePortfolio_23.jpg',
+          alt: '蝦皮購物',
+          text: ['蝦皮購物', '2020決戰蝦皮伸展台', '直播平台：Facebook、YouTube​、蝦皮APP'],
+          src: '/portfolio/1shrimpStretchingPlatform.jpg',
           aosDelay: 1,
-          href: 'https://www.facebook.com/151776788178402/videos/671231023498013'
+          href: 'https://youtu.be/YjhDtuWaMAA'
         },
         {
-          alt: '聊聊大明星 ft.任賢齊',
-          text: ['聊聊大明星 ft.任賢齊', '直播就像經過後製'],
-          src: 'img/livePortfolio_24.jpg',
+          alt: '商業周刊',
+          text: ['商業周刊', 'BW Talks改變正發聲 外送經濟', '直播平台：Facebook'],
+          src: '/portfolio/2businessWeekly.jpg',
           aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=yJ9YKIOAs6M'
+          href: 'https://fb.watch/4SNjAOlWhe/'
         },
         {
-          alt: '蝦編射起來 到底誰最箭​',
-          text: ['蝦編射起來 到底誰最箭​', '外景直播不受限'],
-          src: 'img/livePortfolio_25.jpg',
+          alt: '中華電信',
+          text: ['中華電信', '5G沉浸式舞台 異地共感', '直播平台：Facebook、Instagram'],
+          src: '/portfolio/3chunghwaTelecom.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/watch/live/?v=2896233803803971&ref=watch_permalink'
+          href: 'https://fb.watch/4Q2B2nSswf/'
         }
-      ]
+      ],
+      list1: [
+        {
+          alt: '蝦皮購物',
+          text: ['蝦皮購物', '你脫單了嗎？蝦編遊樂園約會', '直播平台：蝦皮APP'],
+          src: '/portfolio/4amusementPark.jpg',
+          aosDelay: 1,
+          href: 'https://youtu.be/hbHz56JtvhA?t=1399'
+        },
+        {
+          alt: '聊聊大明星',
+          text: ['聊聊大明星', '大明星咖啡廳！鬼關一日打工仔報到！', '直播平台：Facebook、蝦皮APP'],
+          src: '/portfolio/5chat.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/watch?v=30CS8v2D0n8'
+        },
+        {
+          alt: '佳宜好朋友',
+          text: ['佳宜好朋友', '撼動未來！開箱運動博覽會', '直播平台：Facebook、蝦皮APP'],
+          src: '/portfolio/6sportsExpo.jpg',
+          aosDelay: 3,
+          href: 'https://fb.watch/4Q2ENAT1EL/'
+        }
+      ],
+      list2: [
+        {
+          alt: '蝦皮娛樂線',
+          text: ['蝦皮娛樂線', '百萬點擊保證！唱作OG炸裂開唱！', '直播平台：蝦皮APP'],
+          src: '/portfolio/7shopeeEntertainmentLine.jpg',
+          aosDelay: 1,
+          href: 'https://www.youtube.com/watch?v=q5__nca3OlI'
+        },
+        {
+          alt: '大學奇葩家',
+          text: ['大學奇葩家', '校園高手終局戰　誰是蝦皮發燒星', '直播平台：蝦皮APP'],
+          src: '/portfolio/8universityWonderHome.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/watch?v=BuJIONb8hBg'
+        },
+        {
+          alt: '佳宜好朋友',
+          text: ['佳宜好朋友', '最科技化的享受！齊玩世界瑜珈日', '直播平台：Facebook、蝦皮APP'],
+          src: '/portfolio/9goodFriend.jpg',
+          aosDelay: 3,
+          href: 'https://fb.watch/4Q2Ll7qJiL/'
+        },
+        {
+          alt: 'TechOrange 科技報橘',
+          text: ['TechOrange 科技報橘', '打造高C/P值企業戰情室 智慧工廠單一套件妙方', '直播平台：GoToWebinar'],
+          src: '/portfolio/10techOrange.jpg',
+          aosDelay: 1,
+          href: 'https://youtu.be/18JPPoi-yeU?t=509'
+        },
+        {
+          alt: 'TechOrange 科技報橘',
+          text: ['TechOrange 科技報橘', '2020 Intelligent Asia 亞洲工業4.0智造展', '直播平台：Facebook'],
+          src: '/portfolio/11techOrange.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/watch?v=BuJIONb8hBg'
+        },
+        {
+          alt: '御蓮齋',
+          text: ['御蓮齋', '無添加料理小教室', '直播平台：Facebook'],
+          src: '/portfolio/12yulianzhai.jpg',
+          aosDelay: 3,
+          href: 'https://fb.watch/4Q2Uj5RRqp/'
+        },
+        {
+          alt: '​美味生活 HowLiving',
+          text: ['蝦皮娛樂線', '​StarChef 美味星廚生死鬥', '直播平台：Facebook、YouTube'],
+          src: '/portfolio/13HowLiving.jpg',
+          aosDelay: 1,
+          href: 'https://youtu.be/VbWszTl-52M?t=1507'
+        },
+        {
+          alt: '美味生活 HowLiving',
+          text: ['美味生活 HowLiving', '​一秒變大廚', '直播平台：Facebook、YouTube'],
+          src: '/portfolio/14HowLiving.jpg',
+          aosDelay: 2,
+          href: 'https://youtu.be/_fl5zho6cXo'
+        },
+        {
+          alt: '美味生活 HowLiving',
+          text: ['美味生活 HowLiving', '​大師愛烘焙', '直播平台：Facebook、YouTube'],
+          src: '/portfolio/15HowLiving.jpg',
+          aosDelay: 3,
+          href: 'https://youtu.be/ta3oyO4fKHM'
+        }
+      ],
+      // TODO: 網址連結
+      list3: [
+        {
+          alt: '治平高中',
+          text: ['治平高中', '2020聖誕演唱會'],
+          src: '/portfolio/16highSchool.jpg',
+          aosDelay: 1,
+          href: ''
+        },
+        {
+          alt: '大慶證券',
+          text: ['大慶證券', '春酒午宴星光紅毯'],
+          src: '/portfolio/17daqingSecurities.jpg',
+          aosDelay: 2,
+          href: ''
+        },
+        {
+          alt: '啟蒙盃',
+          text: ['啟蒙盃', '期貨交易競賽'],
+          src: '/portfolio/18enlightenmentCup.jpg',
+          aosDelay: 3,
+          href: ''
+        }
+      ],
+      list4: [
+        {
+          alt: '蝦皮購物',
+          text: ['蝦皮購物', '年貨節 Non-stop 12小時直播！', '直播平台：YouTube、蝦皮APP'],
+          src: '/portfolio/19xiaopiShopping.jpg',
+          aosDelay: 1,
+          href: 'https://www.youtube.com/watch?v=gTP-_Vq0J_0'
+        },
+        {
+          alt: 'udn買東西',
+          text: ['udn買東西', '洗髮界綠寶石 艾瑪絲頭皮淨化液', '直播平台：Facebook'],
+          src: '/portfolio/20udn.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/watch?v=PF2CERY75CE&t=932s'
+        },
+        {
+          alt: '​Sisley Paris',
+          text: ['​Sisley Paris', '居家養成女神豐盈秀髮', '直播平台：Facebook'],
+          src: '/portfolio/21​sisleyParis.jpg',
+          aosDelay: 3,
+          href: 'https://fb.watch/4Q2Yobg4Yz/'
+        }
+      ],
+      list5: [
+        {
+          alt: '靈境殺戮',
+          text: ['靈境殺戮', '最危險的直播 —— EOS', '直播平台：Facebook、YouTube'],
+          src: '/portfolio/22spiritRealmKill.jpg',
+          aosDelay: 1,
+          href: 'https://fb.watch/4Q311SmsCN/'
+        },
+        {
+          alt: 'RO仙境傳說：守護永恆的愛',
+          text: ['RO仙境傳說：守護永恆的愛', '守護仙境傳說 盡情放粽直播', '直播平台：Facebook'],
+          src: '/portfolio/23RORagnarok.jpg',
+          aosDelay: 2,
+          href: 'https://fb.watch/4Q2VsPQUw-/'
+        },
+        {
+          alt: '怪物彈珠EXPO',
+          text: ['​怪物彈珠EXPO', '怪彈季·天界廣場', '​​直播平台：YouTube'],
+          src: '/portfolio/24monsterMarbleEXPO.jpg',
+          aosDelay: 3,
+          href: 'https://www.youtube.com/watch?v=dHJZcaB-nAI&t=12897s'
+        }
+      ],
+      list6: [
+        {
+          alt: '台灣地板滾球運動聯盟',
+          text: ['台灣地板滾球運動聯盟', '亞太區地板滾球公開賽', '直播平台：Facebook、YouTube'],
+          src: '/portfolio/25taiwanBowlingLeague.jpg',
+          aosDelay: 1,
+          href: 'https://fb.watch/4SM0gGEig_/'
+        },
+        {
+          alt: '救國團',
+          text: ['救國團', '全國幼獅青年盃三對三籃球鬥牛賽', '直播平台：Facebook'],
+          src: '/portfolio/26nationalSalvationCorps.jpg',
+          aosDelay: 2,
+          href: 'https://fb.watch/4iXGB6GGam/'
+        }
+      ],
     }
   }
 }
@@ -92,6 +290,9 @@ export default {
 .box {
   min-height: 100vh;
   padding: 3rem;
+  @include phone {
+    padding: 1rem ;
+  }
 }
 .size {
   font-size: 3rem;
@@ -101,8 +302,10 @@ export default {
   &__container {
     display: flex;
     padding: 1.5rem;
+    padding-right: 3rem;
   }
 }
+
 
 /*=============影片=======================*/
 .video {

@@ -23,6 +23,7 @@ $redColor: red;
 
 $pc-media:960px;
 $pad-media:700px;
+$phone-media:450px;
 
 @mixin pc {
   @media (max-width: $pc-media) {
@@ -31,6 +32,11 @@ $pad-media:700px;
 }
 @mixin pad {
   @media (max-width: $pad-media) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: $phone-media) {
     @content;
   }
 }

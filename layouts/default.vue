@@ -83,11 +83,11 @@ export default {
       fixed: false,
       options: { duration: 300, offset: 0, easing: "easeInOutCubic"},
       icon: {
-        src: 'apple-touch-icon-precomposed.png',
+        src: '/apple-touch-icon-precomposed.png',
         alt: 'logo'
       },
       iconLong: {
-        src: 'LOGO/logoLong.png',
+        src: '/LOGO/logoLong.png',
         alt: 'logo'
       },
       items: [

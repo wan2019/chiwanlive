@@ -10,9 +10,12 @@
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <v-col cols="12" align="center">
-        <v-btn color="white--text black" @click="changePage">
-          作品集
-        </v-btn>
+        <div class="portfolio__btn__container">
+          <v-btn color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
+            作品集
+          </v-btn>
+          <img class="portfolio__btn__finger" src="../../static/material/cursor_PNG88.png" alt="" srcset="">
+        </div>
       </v-col>
     </v-row>
   </section>
@@ -58,6 +61,7 @@ export default {
   methods: {
     changePage () {
       console.log('change page');
+      this.$router.push({ path: `/portfolio` })
     }
   }
 };
@@ -87,5 +91,18 @@ export default {
   // background-color: var(--second-color);
   // margin: 1rem;
   // margin-bottom: 2rem;
+}
+.portfolio {
+  &__btn {
+    cursor: pointer;
+    &__container {
+      position: relative;
+    }
+    &__finger {
+      position: absolute;
+      height: 40px;
+      transform: rotate(-20deg) translateX(-22px) translateY(6px);
+    }
+  }
 }
 </style>
