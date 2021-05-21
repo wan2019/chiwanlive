@@ -10,8 +10,8 @@
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <v-col cols="12" align="center">
-        <div class="portfolio__btn__container">
-          <v-btn color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
+        <div class="portfolio__btn__container" data-aos="fade-right">
+          <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
             作品集
           </v-btn>
           <img class="portfolio__btn__finger" src="../../static/material/cursor_PNG88.png" alt="" srcset="">
@@ -100,8 +100,8 @@ export default {
     }
     &__finger {
       position: absolute;
-      height: 40px;
-      transform: rotate(-20deg) translateX(-22px) translateY(6px);
+      height: 60px;
+      transform: rotate(-20deg) translateX(-32px) translateY(16px);
     }
   }
 }

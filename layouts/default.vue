@@ -112,10 +112,15 @@ export default {
           target: '#advantage'
         },
         {
-          title: '精選合作',
-          to: '/',
-          target: '#cooperation'
+          title: '作品集',
+          to: '/portfolio',
+          target: ''
         },
+        // {
+        //   title: '精選合作',
+        //   to: '/',
+        //   target: '#cooperation'
+        // },
         {
           title: '關於我們',
           to: '/',
@@ -125,11 +130,6 @@ export default {
           title: '聯絡我們',
           to: '/',
           target: '#contactUs'
-        },
-        {
-          title: '作品集',
-          to: '/portfolio',
-          target: ''
         }
       ],
       miniVariant: false,

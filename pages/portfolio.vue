@@ -8,7 +8,7 @@
         </div>
       </v-col>
       <!-- 影片檔 -->
-      <v-col cols="12" sm="6" md="6"  class="video__box" >
+      <v-col cols="12" sm="4" md="4"  class="video__box" >
         <div data-aos="fade-right">
           <h3 class="video__title">2020 PROMO</h3>
           <br>
@@ -17,7 +17,9 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" sm="6" md="6" class="video__box">
+      <v-col cols="12" sm="1" md="1"  class="" >
+      </v-col>
+      <v-col cols="12" sm="4" md="4" class="video__box">
         <div data-aos="fade-right">
           <h3 class="video__title">2019 PROMO</h3>
           <br>
@@ -44,7 +46,7 @@
       <!--  -->
       <TitleBox title="現場轉播│多機畫面，大小框！大螢幕轉播"></TitleBox>
       <v-col v-for="(item, i) in list3" cols="12" sm="4" md="4" :key="`list3${i}`"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
+        <ImgBox1 :item="item"></ImgBox1>
       </v-col>
       <!--  -->
       <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人"></TitleBox>
@@ -74,12 +76,14 @@
 <script>
 import IframeBox from '~/components/general/IframeBox'
 import ImgBox from '~/components/portfolio/ImgBox'
+import ImgBox1 from '~/components/portfolio/ImgBox1'
 import TitleBox from '~/components/portfolio/TitleBox'
 
 export default {
   name: '',
   components: {
     ImgBox,
+    ImgBox1,
     TitleBox
   },
   data () {
@@ -97,14 +101,14 @@ export default {
           text: ['商業周刊', 'BW Talks改變正發聲 外送經濟', '直播平台：Facebook'],
           src: '/portfolio/2businessWeekly.jpg',
           aosDelay: 2,
-          href: 'https://fb.watch/4SNjAOlWhe/'
+          href: 'https://www.facebook.com/watch/live/?v=2786575584957630&ref=watch_permalink'
         },
         {
           alt: '中華電信',
           text: ['中華電信', '5G沉浸式舞台 異地共感', '直播平台：Facebook、Instagram'],
           src: '/portfolio/3chunghwaTelecom.jpg',
           aosDelay: 3,
-          href: 'https://fb.watch/4Q2B2nSswf/'
+          href: 'https://www.facebook.com/watch/live/?v=399055964538315&ref=watch_permalink'
         }
       ],
       list1: [
@@ -113,7 +117,7 @@ export default {
           text: ['蝦皮購物', '你脫單了嗎？蝦編遊樂園約會', '直播平台：蝦皮APP'],
           src: '/portfolio/4amusementPark.jpg',
           aosDelay: 1,
-          href: 'https://youtu.be/hbHz56JtvhA?t=1399'
+          href: 'https://www.youtube.com/watch?v=hbHz56JtvhA&t=2512s'
         },
         {
           alt: '聊聊大明星',
@@ -127,7 +131,7 @@ export default {
           text: ['佳宜好朋友', '撼動未來！開箱運動博覽會', '直播平台：Facebook、蝦皮APP'],
           src: '/portfolio/6sportsExpo.jpg',
           aosDelay: 3,
-          href: 'https://fb.watch/4Q2ENAT1EL/'
+          href: 'https://www.facebook.com/watch/live/?v=610314789669789&ref=watch_permalink'
         }
       ],
       list2: [
@@ -150,7 +154,7 @@ export default {
           text: ['佳宜好朋友', '最科技化的享受！齊玩世界瑜珈日', '直播平台：Facebook、蝦皮APP'],
           src: '/portfolio/9goodFriend.jpg',
           aosDelay: 3,
-          href: 'https://fb.watch/4Q2Ll7qJiL/'
+          href: 'https://www.facebook.com/watch/?v=640580150137848'
         },
         {
           alt: 'TechOrange 科技報橘',
@@ -164,14 +168,14 @@ export default {
           text: ['TechOrange 科技報橘', '2020 Intelligent Asia 亞洲工業4.0智造展', '直播平台：Facebook'],
           src: '/portfolio/11techOrange.jpg',
           aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=BuJIONb8hBg'
+          href: 'https://www.facebook.com/watch/live/?v=2689645967987749&ref=watch_permalink'
         },
         {
           alt: '御蓮齋',
           text: ['御蓮齋', '無添加料理小教室', '直播平台：Facebook'],
           src: '/portfolio/12yulianzhai.jpg',
           aosDelay: 3,
-          href: 'https://fb.watch/4Q2Uj5RRqp/'
+          href: 'https://www.facebook.com/watch/live/?v=945997742569198&ref=watch_permalink'
         },
         {
           alt: '​美味生活 HowLiving',
@@ -239,7 +243,7 @@ export default {
           text: ['​Sisley Paris', '居家養成女神豐盈秀髮', '直播平台：Facebook'],
           src: '/portfolio/21​sisleyParis.jpg',
           aosDelay: 3,
-          href: 'https://fb.watch/4Q2Yobg4Yz/'
+          href: 'https://www.facebook.com/watch/live/?v=486044159250706&ref=watch_permalink'
         }
       ],
       list5: [
@@ -255,7 +259,7 @@ export default {
           text: ['RO仙境傳說：守護永恆的愛', '守護仙境傳說 盡情放粽直播', '直播平台：Facebook'],
           src: '/portfolio/23RORagnarok.jpg',
           aosDelay: 2,
-          href: 'https://fb.watch/4Q2VsPQUw-/'
+          href: 'https://www.facebook.com/RO.ForeverLove/videos/281914759663089/'
         },
         {
           alt: '怪物彈珠EXPO',
@@ -310,7 +314,7 @@ export default {
 /*=============影片=======================*/
 .video {
   &__box {
-    padding: 50px;
+    // padding: 50px;
   }
   &__title {
     font-size: 1.5rem;

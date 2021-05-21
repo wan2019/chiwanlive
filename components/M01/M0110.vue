@@ -73,7 +73,7 @@ export default {
       item3: {
         alt: '',
         src: '/img/specialEffect_6.gif',
-        text: ['即時字卡 直播特效', '置入LOGO 、標題、贊助、影片', '獨家特效、動畫、音效'], // TODO: 文字要改
+        text: ['即時字卡', '置入LOGO 、標題、贊助、影片', '直播特效', '獨家特效、動畫、音效'], // TODO: 文字要改
         aosDelay: 1,
         href: ''
       }

@@ -100,12 +100,15 @@ export default {
     width: 0px; 
 }
 .dialog-left {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: orangered;
-    height: 100vh;
-    width: 350px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: orangered;
+  height: 100vh;
+  width: 350px;
+  @include phone {
+    display: none;
+  }
 }
 .dialog-left::before {
   border-color: transparent orangered orangered transparent;
