@@ -1,8 +1,8 @@
 <template>
+<section class="box">
   <v-row id="contactUs" class="contactUsBox">
     <v-col cols="12" class="titleBox">
       <br>
-      <!-- <TitleBox title="聯絡我們"></TitleBox> -->
       <div class="img__box">
         <v-img
           max-width="300px"
@@ -36,6 +36,7 @@
       </div>
     </v-col>
   </v-row>
+</section>
 </template>
 
 <script>
@@ -59,13 +60,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.box {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--orange-color);
+}
 .text {
   &__center {
     text-align: center;
   }
 }
 .contactUsBox {
-  background-color: var(--orange-color);
   padding-bottom: 100px;
 }
 .titleBox {

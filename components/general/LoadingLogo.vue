@@ -38,7 +38,7 @@ export default {
   justify-content: center;
   align-items: center;
   animation: LoadingLogo;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
   opacity: 1;
 }
 @keyframes LoadingLogo{
@@ -64,7 +64,7 @@ export default {
   position: relative;
   overflow: hidden;
   animation: mainBox;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
 }
 @keyframes mainBox{
   0% {
@@ -90,7 +90,7 @@ export default {
   // border: 1px solid red;
   position: absolute;
   animation: blueOne;
-  animation-duration: 1s;
+  animation-duration: 0.375s;
 }
 @keyframes blueOne{
   from {
@@ -109,7 +109,7 @@ export default {
   position: absolute;
   top: 98px;
   animation: orangeOne;
-  animation-duration: 2s;
+  animation-duration: 0.75s;
 }
 @keyframes orangeOne{
   0% {
@@ -133,7 +133,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   animation: rightGroup;
-  animation-duration: 3s;
+  animation-duration: 1.125s;
 }
 @keyframes rightGroup{
   0% {

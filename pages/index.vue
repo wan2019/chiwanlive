@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <v-btn @click="testClick">測試</v-btn> -->
     <!-- logoLoading -->
     <LoadingLogo v-if="logoStatus"></LoadingLogo>
     <!-- 輪播封面 -->
@@ -86,12 +87,18 @@ export default {
   mounted () {
     // this.logoStatus = true
     // setTimeout(() => {
-    //   this.logoStatus = false
+    //   this.logoStatus = true
     // }, 3000)
   },
   methods: {
     doOther () {
       this.$router.push({ path: `/portfolio` })
+    },
+    testClick () {
+      this.logoStatus = true
+    setTimeout(() => {
+      this.logoStatus = false
+    }, 3000)
     }
   }
 }
