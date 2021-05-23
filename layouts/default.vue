@@ -112,7 +112,7 @@ export default {
           target: '#advantage'
         },
         {
-          title: '作品集',
+          title: '直播作品',
           to: '/portfolio',
           target: ''
         },
@@ -139,7 +139,7 @@ export default {
   methods: {
      gotoTarget (item) {
       // TODO: 之後修正路由
-      if (this.$route.path === '/') {
+      if (this.$route.path === '/') { //主頁面 跳到 作品集
         // console.log('say yes');
         if (item.target) {
           this.$vuetify.goTo(item.target, this.options)

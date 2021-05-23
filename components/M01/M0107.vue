@@ -15,7 +15,7 @@
         <p>
         新北市新店區
         <br>
-        Tel -  0988 029 812
+        Tel -  0988 029 812 (13:30-22:30)
         <br>
         Mail - chichiwanwan0417@gmail.com​
         <br>
