@@ -8,11 +8,3 @@ export default ({app}) => {
   });
   // app.AOS = new AOS.refresh(); 
 };
-
-
-  // startEvent: 'DOMContentLoaded',
-  // startEvent: () => {
-
-  // }
-
-  // startEvent: "load"

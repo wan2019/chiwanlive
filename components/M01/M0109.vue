@@ -61,7 +61,11 @@ export default {
   methods: {
     changePage () {
       console.log('change page');
-      this.$router.push({ path: `/portfolio` })
+      console.log('url', `${window.location.protocol}//${window.location.host}`);
+      // const url = `${window.location.protocol}//${window.location.host}https://chiwanlive.com.tw/portfolio`
+      const url = 'https://chiwanlive.com.tw/portfolio'
+      window.open(url)
+      // this.$router.push({ path: `/portfolio` })
     }
   }
 };

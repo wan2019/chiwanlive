@@ -17,7 +17,7 @@
       :key="k"
       class="imgBox__text"
     >
-    <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
+    <v-icon v-if="k%2 === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
       {{each}}</h6>
     <!-- <v-img
         :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
@@ -61,19 +61,14 @@ export default {
   // transform: translate(-6%, -6%);
   // box-shadow: 15px 15px 0px var(--orange-color);
   // transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  
   &__img {
-    transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    box-shadow: 20px 20px 0px var(--orange-color);
-    &:hover {
-      box-shadow: 35px 35px 0px #ff573fb3;
-      transform: translate(-15px, -15px);
-    }
+    // transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    // box-shadow: 20px 20px 0px var(--orange-color);
   }
   &__text {
     margin-top: 0.25rem;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1rem;
+    // text-align: center;
   }
 }
 </style>

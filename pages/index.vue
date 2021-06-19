@@ -1,8 +1,6 @@
 <template>
   <div>
     <!-- <v-btn @click="testClick">測試</v-btn> -->
-    <!-- logoLoading -->
-    <LoadingLogo v-if="logoStatus"></LoadingLogo>
     <!-- 輪播封面 -->
     <M0101 ></M0101>
     <!-- 直播200場 -->
@@ -29,7 +27,6 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import ImgBox from '../components/general/ImgBoxM0105'
-import LoadingLogo from '../components/general/LoadingLogo'
 import TitleBox from '~/components/general/TitleBox'
 import M0101 from '../components/M01/M0101'
 import M0102 from '../components/M01/M0102'
@@ -57,11 +54,10 @@ export default {
     M0108,
     M0109,
     M0110,
-    LoadingLogo,
   },
   data() {
     return {
-      logoStatus: true,
+      logoStatus: false,
       list: [
         {
           alt: '2020 達梭系統臺灣用戶大會',

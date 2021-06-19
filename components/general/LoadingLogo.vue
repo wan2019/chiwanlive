@@ -38,7 +38,7 @@ export default {
   justify-content: center;
   align-items: center;
   animation: LoadingLogo;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   opacity: 1;
 }
 @keyframes LoadingLogo{
@@ -48,6 +48,11 @@ export default {
   }
   77% {
     opacity: 1;
+    width: 100vw;
+    height: 100vh;
+  }
+  88% {
+    opacity: 0.5;
     width: 100vw;
     height: 100vh;
   }
@@ -64,7 +69,7 @@ export default {
   position: relative;
   overflow: hidden;
   animation: mainBox;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 @keyframes mainBox{
   0% {

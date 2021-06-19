@@ -49,11 +49,11 @@
 </template>
 
 <script>
-import ImgBox from '~/components/general/ImgBoxM0105'
+import ImgBox from '~/components/general/ImgBoxM0110'
 
 export default {
   name: '',
-  comments: {
+  components: {
     ImgBox,
   },
   data() {
@@ -73,7 +73,7 @@ export default {
       item3: {
         alt: '',
         src: '/img/specialEffect_6.gif',
-        text: ['即時字卡', '置入LOGO 、標題、贊助、影片', '直播特效', '獨家特效、動畫、音效'], // TODO: 文字要改
+        text: ['即時字卡', '置入LOGO 、標題、贊助、影片', '直播特效', '獨家特效、動畫、音效'], //
         aosDelay: 1,
         href: ''
       }

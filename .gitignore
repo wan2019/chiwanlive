@@ -91,3 +91,6 @@ sw.*
 
 # dist
 *.dist
+
+# dist
+/dist

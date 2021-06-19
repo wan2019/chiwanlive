@@ -1,5 +1,6 @@
 <template>
   <v-app dark>
+    <LoadingLogo v-if="logoStatus"></LoadingLogo>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -56,6 +57,7 @@
           text
         >{{item.title}}</v-btn>
       </div>
+      <!-- <v-btn @click="testClick">測試</v-btn> -->
       <!-- <v-spacer /> -->
     </v-app-bar>
     <!-- main -->
@@ -75,9 +77,15 @@
 </template>
 
 <script>
+import LoadingLogo from '~/components/general/LoadingLogo'
+
 export default {
+  components: {
+    LoadingLogo
+  },
   data () {
     return {
+      logoStatus: true,
       clipped: true,
       drawer: false,
       fixed: false,
@@ -137,21 +145,21 @@ export default {
     }
   },
   methods: {
-     gotoTarget (item) {
+    gotoTarget (item) {
       // TODO: 之後修正路由
       if (this.$route.path === '/') { //主頁面 跳到 作品集
-        // console.log('say yes');
+        console.log('say yes');
         if (item.target) {
-          this.$vuetify.goTo(item.target, this.options)
+          this.$vuetify.goTo(item.target)
         } else {
           this.$router.push({ path: `${item.to}` })
         }
       } else {
-        // console.log('say no');
+        console.log('say no');
         this.$router.push({ path: `/` })
         setTimeout(()=>{
-          this.$vuetify.goTo(item.target, this.options)
-        },500);
+          this.$vuetify.goTo(item.target)
+        },300);
       }
       // this.$vuetify.goTo(item.target, this.options)
       if (this.drawer) {
@@ -164,6 +172,12 @@ export default {
       } else {
         this.$router.push({ path: `/` })
       }
+    },
+    testClick () {
+      this.logoStatus = true
+    setTimeout(() => {
+      this.logoStatus = false
+    }, 3000)
     }
   }
 }
