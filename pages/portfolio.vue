@@ -26,7 +26,8 @@
           <h3 class="video__title">2019 PROMO</h3>
           <br>
           <div class="video-container">
-            <iframe class="resize" width="100%" src="https://www.youtube.com/embed/Uc2SR--kDo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/9scHMQ81cVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe class="resize" width="100%" src="https://www.youtube.com/embed/Uc2SR--kDo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
         </div>
       </v-col>
@@ -77,7 +78,7 @@
 
 <script>
 import IframeBox from '~/components/general/IframeBox'
-import ImgBox from '~/components/portfolio/ImgBox'
+import ImgBox from '~/components/portfolio/ImgBox02'
 import ImgBox1 from '~/components/portfolio/ImgBox1'
 import TitleBox from '~/components/portfolio/TitleBox'
 

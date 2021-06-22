@@ -147,12 +147,12 @@ export default {
   methods: {
     gotoTarget (item) {
       // TODO: 之後修正路由
-      if (this.$route.path === '/') { //主頁面 跳到 作品集
+      if (this.$route.path === '/') {
         console.log('say yes');
         if (item.target) {
           this.$vuetify.goTo(item.target)
         } else {
-          this.$router.push({ path: `${item.to}` })
+          this.$router.push({ path: `${item.to}` }) //主頁面 跳到 作品集
         }
       } else {
         console.log('say no');

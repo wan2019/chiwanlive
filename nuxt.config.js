@@ -20,8 +20,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { property: 'og:description', content:'趣玩影像 ChiWan LIVE，電視台品質的專業直播。' },
+      { hid: 'description', name: 'description', content: '趣玩影像 ChiWan LIVE，電視台品質的專業直播。' },
+      { name:'keywords', content:'趣玩影像,chiwanlive,直播公司,專業直播,活動直播,直播服務' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'google-site-verification', content: 'RFIF4spGaesYL_nkFdCuxh-wFESy94Oy5q89OrJj2Iw'}
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -44,7 +47,13 @@ export default {
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
-
+  auth: {
+    cookie: {
+      options: {
+        sameSite: 'lax',
+      },
+    },
+  },
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
