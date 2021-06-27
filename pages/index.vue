@@ -80,12 +80,6 @@ export default {
       ]
     }
   },
-  mounted () {
-    // this.logoStatus = true
-    // setTimeout(() => {
-    //   this.logoStatus = true
-    // }, 3000)
-  },
   methods: {
     doOther () {
       this.$router.push({ path: `/portfolio` })

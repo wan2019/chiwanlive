@@ -4,7 +4,12 @@
       <v-col cols="12" >
         <div data-aos="fade-right">
           <h1 class="mainColor size" >直播作品</h1>
-          <h2>活動直播│4G包直播│直播節目│現場轉播│電商直播│電競轉播│賽事轉播</h2>
+          <h2>
+            <span v-for="(each, index) in titles" :key="index"> 
+              <span v-if="index !== 0">│</span>
+              <span class="title__style" @click="gotoTarget(each.target)">{{each.title}}</span>
+            </span>
+          </h2>
           <br>
           <br>
         </div>
@@ -33,36 +38,37 @@
       </v-col>
       <!-- <hr size="8px" align="center" width="100%" color="#dedede"> -->
       <!-- 影片檔 end-->
-      <TitleBox title="活動直播│線下活動，線上直播！觀看人數倍數成長"></TitleBox>
+      <TitleBox title="活動直播│線下活動，線上直播！觀看人數倍數成長" id="live"></TitleBox>
       <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
-      <TitleBox title="4G包直播│​機動性高！外景直播不受限"></TitleBox>
+      <TitleBox title="4G包直播│​機動性高！外景直播不受限" id="packageLive"></TitleBox>
       <v-col v-for="(item, i) in list1" cols="12" sm="4" md="4" :key="`list1${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <!--  -->
-      <TitleBox title="直播節目│低成本、高規格！直播節目就像經過後製"></TitleBox>
+      <TitleBox title="直播節目│低成本、高規格！直播節目就像經過後製" id="liveShow"></TitleBox>
       <v-col v-for="(item, i) in list2" cols="12" sm="4" md="4" :key="`list2${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <!--  -->
-      <TitleBox title="現場轉播│多機畫面，大小框！大螢幕轉播"></TitleBox>
+      <TitleBox title="現場轉播│多機畫面，大小框！大螢幕轉播" id="liveBroadcast"></TitleBox>
       <v-col v-for="(item, i) in list3" cols="12" sm="4" md="4" :key="`list3${i}`"  class="imgBox__container">
         <ImgBox1 :item="item"></ImgBox1>
       </v-col>
       <!--  -->
-      <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人"></TitleBox>
+      <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人" id="E-commerce"></TitleBox>
       <v-col v-for="(item, i) in list4" cols="12" sm="4" md="4" :key="`list4${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <!--  -->
-      <TitleBox title="電競轉播│多名玩家，遊戲對戰！串流各大直播平台"></TitleBox>
+      <TitleBox title="電競轉播│多名玩家，遊戲對戰！串流各大直播平台" id="Gaming"></TitleBox>
       <v-col v-for="(item, i) in list5" cols="12" sm="4" md="4" :key="`list5${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <!--  -->
-      <TitleBox title="賽事轉播│即時回放，球評解說！全場記錄精彩重播"></TitleBox>
+
+      <TitleBox title="賽事轉播│即時回放，球評解說！全場記錄精彩重播" id="Tournament"></TitleBox>
       <v-col v-for="(item, i) in list6" cols="12" sm="4" md="4" :key="`list6${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
@@ -89,8 +95,44 @@ export default {
     ImgBox1,
     TitleBox
   },
+  methods: {
+    gotoTarget (target) {
+      console.log('target', target);
+      this.$vuetify.goTo(`#${target}`)
+    }
+  },
   data () {
     return {
+      titles: [
+        {
+          title: '活動直播',
+          target: 'live'
+        },
+        {
+          title: '4G包直播',
+          target: 'packageLive'
+        },
+        {
+          title: '直播節目',
+          target: 'liveShow'
+        },
+        {
+          title: '現場轉播',
+          target: 'liveBroadcast'
+        },
+        {
+          title: '電商直播',
+          target: 'E-commerce'
+        },
+        {
+          title: '電競轉播',
+          target: 'Gaming'
+        },
+        {
+          title: '賽事轉播',
+          target: 'Tournament'
+        }
+      ],
       list: [
         {
           alt: '蝦皮購物',
@@ -310,6 +352,12 @@ export default {
     display: flex;
     padding: 1.5rem;
     padding-right: 3rem;
+  }
+}
+.title__style {
+  cursor: pointer;
+  &:hover {
+    color: blue;
   }
 }
 
