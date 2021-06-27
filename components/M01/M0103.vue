@@ -45,7 +45,7 @@ export default {
         {
           alt: '視訊直播 遠端視訊　即時對話　全球來賓任你邀',
           src: 'img/RemoteVideo_10.jpg',
-          text: ['視訊直播','遠端視訊　即時對話','全球來賓任你邀'],
+          text: ['視訊直播','遠端視訊 即時對話','全球來賓任你邀'],
           aosDelay: 3,
         },
         {

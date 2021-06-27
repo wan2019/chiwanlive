@@ -12,13 +12,14 @@
         ></v-img>
       </a>
       <br>
-      <h6
-        v-for="(each ,k) in item.text"
-        :key="k"
-        class="imgBox__text"
-      >
-        <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
-      {{each}}</h6>
+      <template v-for="(each ,k) in item.text">
+        <h6 v-if="k === 0" :key="k" class="imgBox__text imgBox__title">
+          <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
+          {{each}}
+        </h6>
+        <h6 v-else :key="k" class="imgBox__text">{{each}}</h6>
+        
+      </template>
   </div>
   </div>
 </template>
@@ -65,8 +66,11 @@ export default {
   }
   &__text {
     margin-top: 0.25rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
+  }
+  &__title {
+    font-size: 1.5rem;
   }
 }
 </style>

@@ -4,7 +4,7 @@
       <v-col cols="12" >
         <div data-aos="fade-right">
           <h1 class="mainColor size" >直播作品</h1>
-          <h2>活動直播│電商直播│4G包直播│直播節目│電競轉播│賽事轉播│現場轉播</h2>
+          <h2>活動直播│4G包直播│直播節目│現場轉播│電商直播│電競轉播│賽事轉播</h2>
           <br>
           <br>
         </div>
