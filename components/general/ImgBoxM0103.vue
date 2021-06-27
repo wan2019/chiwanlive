@@ -74,11 +74,11 @@ export default {
     text-align: center;
     z-index: 100;
     margin-top: 0.25rem;
-    font-size: 1.5rem;
-    // font-size: 1.125rem;
+    font-size: 1.25rem;
   }
   &__title {
     font-size: 1.5rem;
+    padding-bottom: 1rem;
   }
 }
 </style>

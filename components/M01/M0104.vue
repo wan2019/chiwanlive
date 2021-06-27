@@ -36,8 +36,8 @@ export default {
           aosDelay: 1,
         },
         {
-          alt: '同時串流各大平台 一場直播同時串流數平台 FB、YouTube 、LINE Zoom、Cisco Webex GoToWebinar、Teams',
-          text: ['同時串流各大平台', '一場直播同時串流數平台', 'FB、YouTube 、LINE 、Zoom', 'Cisco Webex、GoToWebinar'],
+          alt: '同時串流各大平台 一場直播同時串流數平台 FB、YouTube 、LINE Zoom、Webex、Google Meet、Teams',
+          text: ['同時串流各大平台', '一場直播同時串流數平台', 'FB、YouTube 、LINE 、Zoom', 'Webex、Google Meet、Teams'],
           src: 'material/pngwing.com.png',
           href: '',
           width: 230,
