@@ -154,6 +154,27 @@ export default {
           src: '/portfolio/3chunghwaTelecom.jpg',
           aosDelay: 3,
           href: 'https://www.facebook.com/watch/live/?v=399055964538315&ref=watch_permalink'
+        },
+        {
+          alt: '2021總統盃黑客松',
+          text: ['2021總統盃黑客松', '公民許願池暨線上記者會', '直播平台：Facebook'],
+          src: '/portfolio/27Liveevent.jpg',
+          aosDelay: 4,
+          href: 'https://www.facebook.com/ndc.gov.tw/videos/292198282343891/'
+        },
+        {
+          alt: '2021台灣文學',
+          text: ['2021台灣文學', '數位遊戲腳本徵選頒獎典禮', '直播平台：Facebook、YouTube'],
+          src: '/portfolio/28Liveevent.jpg',
+          aosDelay: 5,
+          href: 'https://www.facebook.com/138753722860020/videos/234732411804686'
+        },
+        {
+          alt: '凌陽創新科技',
+          text: ['凌陽創新科技', '上櫃前業績發表會', '直播平台：YouTube'],
+          src: '/portfolio/29Liveevent.jpg',
+          aosDelay: 6,
+          href: 'https://youtu.be/z00_8PLNsvI'
         }
       ],
       list1: [
@@ -188,18 +209,18 @@ export default {
           href: 'https://www.youtube.com/watch?v=q5__nca3OlI'
         },
         {
-          alt: '大學奇葩家',
-          text: ['大學奇葩家', '校園高手終局戰　誰是蝦皮發燒星', '直播平台：蝦皮APP'],
-          src: '/portfolio/8universityWonderHome.jpg',
+          alt: 'The DoDo Men 嘟嘟人',
+          text: ['The DoDo Men 嘟嘟人', '三十萬訂閱音樂會', '直播平台：YouTube'],
+          src: '/portfolio/8universityWonderHome.jpeg',
           aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=BuJIONb8hBg'
+          href: 'https://youtu.be/uyv4cpD7ktA'
         },
         {
-          alt: '佳宜好朋友',
-          text: ['佳宜好朋友', '最科技化的享受！齊玩世界瑜珈日', '直播平台：Facebook、蝦皮APP'],
-          src: '/portfolio/9goodFriend.jpg',
+          alt: '翻轉世界的行動力',
+          text: ['翻轉世界的行動力', '重新思考東南亞移工的跨國旅程', '直播平台：Facebook'],
+          src: '/portfolio/9Onlinecourse.jpeg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/watch/?v=640580150137848'
+          href: 'https://www.facebook.com/TechnologiesDept/videos/341741747584173/'
         },
         {
           alt: 'TechOrange 科技報橘',
@@ -224,7 +245,7 @@ export default {
         },
         {
           alt: '​美味生活 HowLiving',
-          text: ['蝦皮娛樂線', '​StarChef 美味星廚生死鬥', '直播平台：Facebook、YouTube'],
+          text: ['​美味生活 HowLiving', '​StarChef 美味星廚生死鬥', '直播平台：Facebook、YouTube'],
           src: '/portfolio/13HowLiving.jpg',
           aosDelay: 1,
           href: 'https://youtu.be/VbWszTl-52M?t=1507'
