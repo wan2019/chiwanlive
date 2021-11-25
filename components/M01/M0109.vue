@@ -35,11 +35,11 @@ export default {
     return {
       list: [
         {
-          alt: '2020 達梭系統臺灣用戶大會',
-          text: ['2020 達梭系統臺灣用戶大會', '線下活動 線上直播'],
-          src: 'img/livePortfolio_23.jpg',
+          alt: '新北國王籃球隊成軍記者會',
+          text: ['新北國王籃球隊成軍記者會', '線下活動 線上直播'],
+          src: 'img/pressConferenceLive.jpeg',
           aosDelay: 1,
-          href: 'https://www.facebook.com/151776788178402/videos/671231023498013'
+          href: 'https://youtu.be/ow59e0TGRBQ'
         },
         {
           alt: '聊聊大明星 ft.任賢齊',
@@ -49,11 +49,11 @@ export default {
           href: 'https://www.youtube.com/watch?v=yJ9YKIOAs6M'
         },
         {
-          alt: '蝦編射起來 到底誰最箭​',
-          text: ['蝦編射起來 到底誰最箭​', '外景直播不受限'],
-          src: 'img/livePortfolio_25.jpg',
+          alt: '疫後新解方 達人投資術​',
+          text: ['疫後新解方 達人投資術​', '全遠端視訊直播'],
+          src: 'img/livePortfolio_25.jpeg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/watch/live/?v=2896233803803971&ref=watch_permalink'
+          href: 'https://youtu.be/NigJsU8Em6w'
         }
       ]
     };

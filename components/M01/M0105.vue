@@ -31,7 +31,7 @@ export default {
           src: 'img/LiveWorks_16.png',
           text: ['科技報橘'],
           aosDelay: 1,
-          href: 'https://www.facebook.com/TechOrange/videos/212676336655250'
+          href: 'https://www.youtube.com/watch?v=6BTyFrHIBIk'
         },
         {
           alt: '蝦皮購物',
