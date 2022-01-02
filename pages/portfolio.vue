@@ -226,7 +226,7 @@ export default {
         {
           alt: '永和聲活圈',
           text: ['永和聲活圈力', '永和之快問快答', '直播平台：Facebook'],
-          src: '/portfolio/pass.jpeg',
+          src: '/portfolio/pass.jpg',
           aosDelay: 3,
           href: 'https://www.facebook.com/ntpcyonghe/videos/700380928015676/'
         },
