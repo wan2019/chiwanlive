@@ -62,8 +62,21 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/google-gtag'
   ],
-
+  'google-gtag':{ // google-gtag 追蹤
+    id: 'G-0K34JXRCEW', // 必填，請填寫剛申請到的追蹤碼ID
+    config:{
+      // 這裡是填寫對gtag的需求選項」
+      anonymize_ip: true, 
+      send_page_view: false, // 避免頁面刷新時後的重複追蹤
+      linker:{ // 跨域追蹤，追蹤兩個相關但不同網域的頁面
+        domains:['chiwanlive.com.tw']
+      }
+    },
+    debug: true, // 允許在開發中進行追蹤
+    disableAutoPageTrack: false // 關閉追蹤每個頁面路由
+  },
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
