@@ -225,7 +225,7 @@ export default {
       list2: [
         {
           alt: '永和聲活圈',
-          text: ['永和聲活圈力', '永和之快問快答', '直播平台：Facebook'],
+          text: ['永和聲活圈', '永和之快問快答', '直播平台：Facebook'],
           src: '/portfolio/pass.jpg',
           aosDelay: 3,
           href: 'https://www.facebook.com/ntpcyonghe/videos/700380928015676/'
@@ -314,7 +314,7 @@ export default {
       list4: [
          {
           alt: 'VOGUE ',
-          text: ['VOGUE ', '2021 Riveted Fashion', '直播平台：Facebook'],
+          text: ['VOGUE ', 'NUNA 2021 Riveted Fashion', '直播平台：Facebook'],
           src: '/portfolio/vogue.jpg',
           aosDelay: 1,
           href: 'https://www.facebook.com/VogueTW/videos/228740602623290/'
