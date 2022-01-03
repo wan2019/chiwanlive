@@ -13,7 +13,7 @@
     </v-col>
     <v-col cols="12" sm="12" md="6" class="box__right">
       <div data-aos="fade-right" data-aos-delay="300">
-        <h1 class="box__right__title">每年直播場次 <span class="box__right__number">200</span><i class="mdi mdi-trending-up trending"></i></h1>
+        <h1 class="box__right__title">每年直播場次 <span class="box__right__number">100</span><i class="mdi mdi-trending-up trending"></i></h1>
       </div>
     </v-col>
 </v-row>
@@ -23,7 +23,7 @@
     <v-img src="material/Daco_2499475.png" width="100%"></v-img>
   </div>
   <h1 class="box__phone__title">每年直播場次</h1>
-  <h1 class="box__phone__title"><span class="box__right__number">200</span><i class="mdi mdi-trending-up trending"></i></h1>
+  <h1 class="box__phone__title"><span class="box__right__number">100</span><i class="mdi mdi-trending-up trending"></i></h1>
 </div>
 </div>
 </template>

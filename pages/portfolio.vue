@@ -42,10 +42,11 @@
       <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
-      <TitleBox title="4G包直播│​機動性高！外景直播不受限" id="packageLive"></TitleBox>
-      <v-col v-for="(item, i) in list1" cols="12" sm="4" md="4" :key="`list1${i}`"  class="imgBox__container">
+       <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人" id="E-commerce"></TitleBox>
+      <v-col v-for="(item, i) in list4" cols="12" sm="4" md="4" :key="`list4${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
+  
       <!--  -->
       <TitleBox title="直播節目│低成本、高規格！直播節目就像經過後製" id="liveShow"></TitleBox>
       <v-col v-for="(item, i) in list2" cols="12" sm="4" md="4" :key="`list2${i}`"  class="imgBox__container">
@@ -57,8 +58,8 @@
         <ImgBox1 :item="item"></ImgBox1>
       </v-col>
       <!--  -->
-      <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人" id="E-commerce"></TitleBox>
-      <v-col v-for="(item, i) in list4" cols="12" sm="4" md="4" :key="`list4${i}`"  class="imgBox__container">
+      <TitleBox title="4G包直播│​機動性高！外景直播不受限" id="packageLive"></TitleBox>
+      <v-col v-for="(item, i) in list1" cols="12" sm="4" md="4" :key="`list1${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <!--  -->
@@ -109,8 +110,8 @@ export default {
           target: 'live'
         },
         {
-          title: '4G包直播',
-          target: 'packageLive'
+          title: '電商直播',
+          target: 'E-commerce'
         },
         {
           title: '直播節目',
@@ -120,9 +121,9 @@ export default {
           title: '現場轉播',
           target: 'liveBroadcast'
         },
-        {
-          title: '電商直播',
-          target: 'E-commerce'
+         {
+          title: '4G包直播',
+          target: 'packageLive'
         },
         {
           title: '電競轉播',
@@ -134,6 +135,27 @@ export default {
         }
       ],
       list: [
+        {
+          alt: '德麥法國萊思克盃',
+          text: ['德麥法國萊思克盃', '2021國王派冠軍賽', '直播平台：YouTube'],
+          src: '/portfolio/lescure2.jpg',
+          aosDelay: 1,
+          href: 'https://youtu.be/9oTLE7GKOQ8'
+        },
+        {
+          alt: '東吳大學EMBA',
+          text: ['東吳大學EMBA', '永續經營．獲利創益 ESG座談會', '直播平台：YouTube'],
+          src: '/portfolio/ESG.jpg',
+          aosDelay: 1,
+          href: 'https://www.youtube.com/watch?v=VUCTRJ13h_0'
+        },
+        {
+          alt: '頂福陵園',
+          text: ['頂福陵園', '110年度中元法會', '直播平台：YouTube'],
+          src: '/portfolio/dinfucem.jpg',
+          aosDelay: 1,
+          href: 'https://youtu.be/xjuW71YyMB8'
+        },
         {
           alt: '蝦皮購物',
           text: ['蝦皮購物', '2020決戰蝦皮伸展台', '直播平台：Facebook、YouTube​、蝦皮APP'],
@@ -170,12 +192,12 @@ export default {
           href: 'https://www.facebook.com/138753722860020/videos/234732411804686'
         },
         {
-          alt: '凌陽創新科技',
-          text: ['凌陽創新科技', '上櫃前業績發表會', '直播平台：YouTube'],
-          src: '/portfolio/29Liveevent.jpg',
-          aosDelay: 6,
-          href: 'https://youtu.be/z00_8PLNsvI'
-        }
+          alt: '科技報橘',
+          text: ['科技報橘', '2020 達梭系統台灣用戶大會', '直播平台：GoToWebinar'],
+          src: '/img/livePortfolio_23.jpg',
+          aosDelay: 1,
+          href: 'https://www.facebook.com/151776788178402/videos/671231023498013'
+        },
       ],
       list1: [
         {
@@ -202,6 +224,13 @@ export default {
       ],
       list2: [
         {
+          alt: '永和聲活圈',
+          text: ['永和聲活圈', '永和之快問快答', '直播平台：Facebook'],
+          src: '/portfolio/pass.jpg',
+          aosDelay: 3,
+          href: 'https://www.facebook.com/ntpcyonghe/videos/700380928015676/'
+        },
+        {
           alt: '蝦皮娛樂線',
           text: ['蝦皮娛樂線', '百萬點擊保證！唱作OG炸裂開唱！', '直播平台：蝦皮APP'],
           src: '/portfolio/7shopeeEntertainmentLine.jpg',
@@ -214,13 +243,6 @@ export default {
           src: '/portfolio/8universityWonderHome.jpeg',
           aosDelay: 2,
           href: 'https://youtu.be/uyv4cpD7ktA'
-        },
-        {
-          alt: '翻轉世界的行動力',
-          text: ['翻轉世界的行動力', '重新思考東南亞移工的跨國旅程', '直播平台：Facebook'],
-          src: '/portfolio/9Onlinecourse.jpeg',
-          aosDelay: 3,
-          href: 'https://www.facebook.com/TechnologiesDept/videos/341741747584173/'
         },
         {
           alt: 'TechOrange 科技報橘',
@@ -290,7 +312,28 @@ export default {
         }
       ],
       list4: [
+         {
+          alt: 'VOGUE ',
+          text: ['VOGUE ', 'NUNA 2021 Riveted Fashion', '直播平台：Facebook'],
+          src: '/portfolio/vogue.jpg',
+          aosDelay: 1,
+          href: 'https://www.facebook.com/VogueTW/videos/228740602623290/'
+        },
         {
+          alt: 'GoStyle購世代',
+          text: ['GoStyle購世代', '台way購物節5購讚', '直播平台：Facebook'],
+          src: '/portfolio/gostyle.jpg',
+          aosDelay: 2,
+          href: 'https://www.facebook.com/Gostylelife/videos/427928042131299/'
+        },
+        {
+          alt: '​Epson',
+          text: ['​Epson', '聖誕節標籤應用大解密', '直播平台：Facebook'],
+          src: '/portfolio/epson2.jpg',
+          aosDelay: 3,
+          href: 'https://www.facebook.com/epson.com.tw/videos/329616195380728/'
+        },
+         {
           alt: '蝦皮購物',
           text: ['蝦皮購物', '年貨節 Non-stop 12小時直播！', '直播平台：YouTube、蝦皮APP'],
           src: '/portfolio/19xiaopiShopping.jpg',
