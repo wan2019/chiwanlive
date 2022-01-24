@@ -1,17 +1,6 @@
 <template>
   <div  class="imgBox">
     <div data-aos="fade-right" :data-aos-delay="aosDelay">
-    <!-- <img
-      class="VuetifyLogo grey lighten-2"
-      :alt="item.alt"
-      :src="item.src"
-    > -->
-    <!-- <v-img
-      :src="item.src"
-      :alt="item.alt"
-      class="imgBox__img Logo"
-      eager
-    ></v-img> -->
     <v-img
       :src="item.src"
       :alt="item.alt"
@@ -19,13 +8,6 @@
       class="imgBox__img"
       eager
     ></v-img>
-    <!-- <h6
-      v-for="(each ,k) in item.text"
-      :key="k"
-      class="imgBox__text"
-    >
-    <v-icon v-if="k === 0" class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
-    {{each}}</h6> -->
     <template v-for="(each ,k) in item.text" >
       <h4 v-if="k === 0" :key="k" class="imgBox__text imgBox__title">
         <v-icon class="icon__sty mainColor">mdi-play-circle-outline</v-icon>
@@ -62,12 +44,8 @@ export default {
 
 <style lang="scss" scoped>
 .imgBox {
-  // border: 1px solid blue;
-  // background-color: #eee;
-  // padding: 1rem 0.75rem;
   width: 100%;
   &__img {
-    // border-radius: 0.5rem;
     margin-bottom: 1rem;
   }
   &__text {

@@ -34,13 +34,11 @@
 </template>
 
 <script>
-import ImgBox from '~/components/general/ImgBoxM0102'
 import TitleBox from '~/components/general/TitleBox'
 
 export default {
   name: '',
   components: {
-    ImgBox,
     TitleBox
   },
   data() {
