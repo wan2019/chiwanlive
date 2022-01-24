@@ -81,15 +81,15 @@ import LoadingLogo from '~/components/general/LoadingLogo'
 
 export default {
   components: {
-    LoadingLogo
+    LoadingLogo,
   },
-  created () {
-     this.$nextTick(() => {
-        // 禁用右键
-        document.oncontextmenu = new Function("event.returnValue=false");
-        // 禁用选择
-        document.onselectstart = new Function("event.returnValue=false");
-      });
+  mounted() {
+    this.$nextTick(() => {
+      // 禁用右鍵
+      document.oncontextmenu = new Function("event.returnValue=false");
+      // 禁用選擇
+      document.onselectstart = new Function("event.returnValue=false");
+    });
   },
   data () {
     return {
@@ -107,7 +107,7 @@ export default {
         alt: 'logo'
       },
       items: [
-         {
+        {
           title: '首頁',
           to: '/',
           target: '#top'
@@ -146,6 +146,11 @@ export default {
           title: '聯絡我們',
           to: '/',
           target: '#contactUs'
+        },
+        {
+          title: '攝影棚', // FIXME: 按鈕名字
+          to: '/studio',
+          target: ''
         }
       ],
       miniVariant: false,
