@@ -87,7 +87,7 @@
 import IframeBox from '~/components/general/IframeBox'
 import ImgBox from '~/components/portfolio/ImgBox02'
 import ImgBox1 from '~/components/portfolio/ImgBox1'
-import TitleBox from '~/components/portfolio/TitleBox'
+import TitleBox from '~/components/portfolio/Title'
 
 export default {
   name: '',
