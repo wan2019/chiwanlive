@@ -43,7 +43,7 @@ export default {
       list: [
         {
           alt: 'LOGO',
-          src: '/LOGO/fb__4.jpg' // FIXME: 直播攝影棚上方的圖片
+          src: '/LOGO/ChiWanLIVEstudio.jpg' // FIXME: 直播攝影棚上方的圖片
         }
       ],
       phoneList: [

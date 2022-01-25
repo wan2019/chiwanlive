@@ -22,39 +22,39 @@ export default {
     return {
       list2: [ // FIXME: 攝影圖片
         {
-          alt: '活動直播－線下活動　線上直播　觀看人數倍數成長',
-          src: 'img/liveStream_8.jpg',
-          text: ['訪談'],
+          alt: '攝影棚場景1',
+          src: 'img/Livephoto1.jpg',
+          text: ['雙人訪談'],
           aosDelay: 1,
         },
         {
-          alt: '4G包直播 8張網卡聚合  外景直播不斷線',
-          src: 'img/OutdoorLiveBroadcast_12.jpg',
-          text: ['訪談'],
+          alt: '攝影棚場景2',
+          src: 'img/Livephoto2.jpg',
+          text: ['節目'],
           aosDelay: 2,
         },
         {
-          alt: '視訊直播 遠端視訊　即時對話　全球來賓任你邀',
-          src: 'img/RemoteVideo_10.jpg',
-          text: ['訪談'],
+          alt: '攝影棚場景3',
+          src: 'img/Livephoto3.jpg',
+          text: ['綠幕'],
           aosDelay: 3,
         },
         {
-          alt: '現場轉播 多機畫面 大螢幕現場LIVE',
-          src: 'img/LiveBroadcast_11.jpg',
-          text: ['訪談'],
+          alt: '攝影棚場景4',
+          src: 'img/Livephoto4.jpg',
+          text: ['四人訪談'],
           aosDelay: 4,
         },
         {
-          alt: '現場轉播 多機畫面 大螢幕現場LIVE',
-          src: 'img/LiveBroadcast_11.jpg',
-          text: ['訪談'],
+          alt: '攝影棚場景5',
+          src: 'img/Livephoto5.jpg',
+          text: ['電商'],
           aosDelay: 5,
         },
         {
-          alt: '現場轉播 多機畫面 大螢幕現場LIVE',
-          src: 'img/LiveBroadcast_11.jpg',
-          text: ['訪談'],
+          alt: '攝影棚場景6',
+          src: 'img/Livephoto6.jpg',
+          text: ['廚房'],
           aosDelay: 6,
         }
       ]
