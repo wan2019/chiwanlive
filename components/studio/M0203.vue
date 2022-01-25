@@ -19,8 +19,11 @@
       </v-col>
       <v-col cols="12" sm="6" md="6" align="center">
         <!-- FIXME: 直播洽詢 -->
-        <h3>直播洽詢+LINE XXXX</h3>
-        <h3>*直播攝影XXXXX</h3>
+        <h3>趣玩影像專屬直播棚</h3>
+        <h3>開幕期間不需場地費</h3>
+        <h3>直播洽詢 +LINE @kqa0233a</h3>
+        ​<h3>  </h3>
+        ​<h3>＊攝影棚不對外租借</h3>
       </v-col>
     </v-row>
   </section>
@@ -38,29 +41,29 @@ export default {
     return {
       list: [ // FIXME: 攝影機 - 作品集頁
         {
-          alt: '線下活動 線上互動 活動直播線上線下兩者兼顧 增加品牌、產品、資訊曝光',
-          text: ['線下活動 線上互動 ', '活動直播', '線上線下兩者兼顧', '增加品牌、產品、資訊曝光'],
-          src: 'material/macbookAir.png',
+          alt: '攝影棚位置',
+          text: ['位置', '​南京復興站7號出口', '走路3分鐘', '停車場林立'],
+          src: 'material/live1.png',
           href: '',
-          width: 200,
+          width: 150,
           bottom: 0,
           aosDelay: 1,
         },
         {
-          alt: '同時串流各大平台 一場直播同時串流數平台 FB、YouTube 、LINE Zoom、Webex、Google Meet、Teams',
-          text: ['同時串流各大平台', '一場直播同時串流數平台', 'FB、YouTube 、LINE 、Zoom', 'Webex、Google Meet、Teams'],
-          src: 'material/macbookAir.png',
+          alt: '攝影棚設備',
+          text: ['專業設備', '導播台、廣播級攝影機', '混音器、領夾麥克風', '監看螢幕、LED棚燈'],
+          src: 'material/live2.png',
           href: '',
-          width: 200,
+          width: 150,
           bottom: 0,
           aosDelay: 2,
         },
         {
-          alt: '直播就是活動記錄 直播後的影片不需剪輯 即是完整的活動記錄 網路上回放再增觀看數',
-          text: ['直播就是活動記錄', '直播後的影片不需後製', '即是完整活動記錄', '網路上回放再增觀看數'],
-          src: 'material/macbookAir.png',
+          alt: '攝影棚環境',
+          text: ['環境', '​39坪舒適空間', '化妝間、休息室', '可架設背板'],
+          src: 'material/live3.png',
           href: '',
-          width: 200,
+          width: 150,
           bottom: 0,
           aosDelay: 3,
         }
@@ -70,7 +73,7 @@ export default {
           alt: '',
           src: 'LOGO/logoLong.png', // FIXME: logo圖片
           href: '',
-          width: 200,
+          width: 400,
           bottom: 0,
         },
       ],
