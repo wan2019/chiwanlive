@@ -1,4 +1,5 @@
 <template>
+<div>
   <section class="box">
     <v-row justify="center" align="center">
       <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
@@ -13,7 +14,15 @@
         </div>
       </v-col>
     </v-row>
-    <v-row justify="center" align="center">
+    <br>
+    <br>
+    <br>
+  </section>
+  <section class="infoBox">
+    <br>
+    <br>
+    <br>
+    <v-row justify="center" align="center" >
       <v-col cols="12" sm="6" md="6" align="center">
         <ImgBox :item="list2[0]"></ImgBox>
       </v-col>
@@ -27,6 +36,7 @@
       </v-col>
     </v-row>
   </section>
+</div>
 </template>
 
 <script>
@@ -60,7 +70,7 @@ export default {
         },
         {
           alt: '攝影棚環境',
-          text: ['環境', '​39坪舒適空間', '化妝間、休息室', '可架設背板'],
+          text: ['環境', '​39坪舒適空間', '化妝台、休息室', '可架設背板'],
           src: 'material/live3.png',
           href: '',
           width: 150,
@@ -100,8 +110,10 @@ export default {
   padding: 1.5rem;
 }
 .box {
-  min-height: 100vh;
   padding: 3rem;
+}
+.infoBox {
+  background-color: #eee;
 }
 .portfolio {
   &__btn {
