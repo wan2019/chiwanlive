@@ -23,37 +23,37 @@ export default {
       list2: [ // FIXME: 攝影圖片
         {
           alt: '攝影棚場景1',
-          src: 'img/Livephoto1.jpg',
+          src: '/img/Livephoto1.jpg',
           text: ['雙人訪談'],
           aosDelay: 1,
         },
         {
           alt: '攝影棚場景2',
-          src: 'img/Livephoto2.jpg',
+          src: '/img/Livephoto2.jpg',
           text: ['節目'],
           aosDelay: 2,
         },
         {
           alt: '攝影棚場景3',
-          src: 'img/Livephoto3.jpg',
+          src: '/img/Livephoto3.jpg',
           text: ['綠幕'],
           aosDelay: 3,
         },
         {
           alt: '攝影棚場景4',
-          src: 'img/Livephoto4.jpg',
+          src: '/img/Livephoto4.jpg',
           text: ['四人訪談'],
           aosDelay: 4,
         },
         {
           alt: '攝影棚場景5',
-          src: 'img/Livephoto5.jpg',
+          src: '/img/Livephoto5.jpg',
           text: ['電商'],
           aosDelay: 5,
         },
         {
           alt: '攝影棚場景6',
-          src: 'img/Livephoto6.jpg',
+          src: '/img/Livephoto6.jpg',
           text: ['廚房'],
           aosDelay: 6,
         }

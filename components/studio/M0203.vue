@@ -53,7 +53,7 @@ export default {
         {
           alt: '攝影棚位置',
           text: ['位置', '​南京復興站7號出口', '走路3分鐘', '停車場林立'],
-          src: 'material/live1.png',
+          src: '/material/live1.png',
           href: '',
           width: 150,
           bottom: 0,
@@ -62,7 +62,7 @@ export default {
         {
           alt: '攝影棚設備',
           text: ['專業設備', '導播台、廣播級攝影機', '混音器、領夾麥克風', '監看螢幕、LED棚燈'],
-          src: 'material/live2.png',
+          src: '/material/live2.png',
           href: '',
           width: 150,
           bottom: 0,
@@ -71,7 +71,7 @@ export default {
         {
           alt: '攝影棚環境',
           text: ['環境', '​39坪舒適空間', '化妝台、休息室', '可架設背板'],
-          src: 'material/live3.png',
+          src: '/material/live3.png',
           href: '',
           width: 150,
           bottom: 0,
@@ -81,7 +81,7 @@ export default {
       list2: [
         {
           alt: '',
-          src: 'LOGO/logoLong.png', // FIXME: logo圖片
+          src: '/LOGO/logoLong.png', // FIXME: logo圖片
           href: '',
           width: 400,
           bottom: 0,
