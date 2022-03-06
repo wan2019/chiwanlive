@@ -27,7 +27,7 @@
     <div class="box__textBox">
       <div class="text__container">
         <div data-aos="fade-right" data-aos-duration="1000">
-          <h2 class="center">活動直播│電商直播│直播節目│電競轉播│賽事轉播│4G包直播</h2>
+          <h2 class="center">活動直播│電商直播│直播節目│電競轉播│賽事轉播│4G包直播│直播攝影棚</h2>
         </div>
       </div>
     </div>
