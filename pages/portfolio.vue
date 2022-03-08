@@ -17,10 +17,10 @@
       <!-- 影片檔 -->
       <v-col cols="12" sm="4" md="4"  class="video__box" >
         <div data-aos="fade-right">
-          <h3 class="video__title">2020 PROMO</h3>
+          <h3 class="video__title">2021 PROMO</h3>
           <br>
           <div class="video-container" >
-            <iframe  width="100%" src="https://www.youtube.com/embed/0n-o9SeJ3u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe  width="100%" src="https://www.youtube.com/embed/_yfs5VE1wTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </v-col>
@@ -28,10 +28,10 @@
       </v-col>
       <v-col cols="12" sm="4" md="4" class="video__box">
         <div data-aos="fade-right">
-          <h3 class="video__title">2019 PROMO</h3>
+          <h3 class="video__title">2020 PROMO</h3>
           <br>
           <div class="video-container">
-            <iframe width="100%" src="https://www.youtube.com/embed/9scHMQ81cVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/0n-o9SeJ3u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <!-- <iframe class="resize" width="100%" src="https://www.youtube.com/embed/Uc2SR--kDo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
         </div>

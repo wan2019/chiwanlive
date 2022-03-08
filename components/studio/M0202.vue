@@ -54,7 +54,7 @@ export default {
         {
           alt: '攝影棚場景6',
           src: '/img/Livephoto6.jpg',
-          text: ['廚房'],
+          text: ['中島廚房'],
           aosDelay: 6,
         }
       ]
