@@ -113,6 +113,7 @@ export default {
 }
 .infoBox {
   background-color: #eee;
+  padding: 0 3rem;
 }
 .portfolio {
   &__btn {
