@@ -13,7 +13,7 @@
     <v-col cols="12" sm="4" md="4">
       <div class="infoCard">
         <p>
-        新北市新店區
+        台北市松山區
         <br>
         Tel -  0988 029 812 (13:30-20:00)
         <br>
