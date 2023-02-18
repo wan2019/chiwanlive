@@ -35,25 +35,25 @@ export default {
     return {
       list: [
         {
-          alt: '新北國王籃球隊成軍記者會',
-          text: ['新北國王籃球隊成軍記者會', '線下活動 線上直播'],
-          src: 'img/pressConferenceLive.jpeg',
+          alt: 'HYUNDAI新車上市發表會',
+          text: ['HYUNDAI新車上市發表會', '線下活動 線上直播'],
+          src: 'img/live1_HYUNDAI.jpg',
           aosDelay: 1,
-          href: 'https://youtu.be/ow59e0TGRBQ'
+          href: 'https://www.youtube.com/watch?v=CP5tRulF2k8'
         },
         {
           alt: '聊聊大明星 ft.任賢齊',
           text: ['聊聊大明星 ft.任賢齊', '直播就像經過後製'],
           src: 'img/livePortfolio_24.jpg',
           aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=yJ9YKIOAs6M'
+          href: 'https://www.facebook.com/ShopeeTW/videos/306260070529351'
         },
         {
-          alt: '疫後新解方 達人投資術​',
-          text: ['疫後新解方 達人投資術​', '全遠端視訊直播'],
-          src: 'img/livePortfolio_25.jpeg',
+          alt: '點亮投資方向 存好債系列講座​',
+          text: ['點亮投資方向 存好債系列講座​', '全遠端視訊直播'],
+          src: 'img/live_3.jpg',
           aosDelay: 3,
-          href: 'https://youtu.be/NigJsU8Em6w'
+          href: 'https://www.youtube.com/watch?v=bEU2G8iQMGA'
         }
       ]
     };

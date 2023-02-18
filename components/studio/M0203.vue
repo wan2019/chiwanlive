@@ -5,10 +5,14 @@
       <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
         <ImgBox :item="item"></ImgBox>
       </v-col>
+      <TitleBox class="mainColor" style="font-size: 1.75rem;letter-spacing:0.1em;" title="攝影棚直播案例"></TitleBox>
+      <v-col v-for="(item, i) in list5" cols="12" sm="4" md="4" :key="`list5${i}`"  class="imgBox__container">
+        <ImgBox2 :item="item"></ImgBox2>
+      </v-col>
       <v-col cols="12" align="center">
         <div class="portfolio__btn__container" data-aos="fade-right">
           <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
-            作品集
+            更多作品
           </v-btn>
           <img class="portfolio__btn__finger" src="../../static/material/cursor_PNG88.png" alt="" srcset="">
         </div>
@@ -40,11 +44,15 @@
 
 <script>
 import ImgBox from '@/components/studio/M0203ImgBox.vue';
+import ImgBox2 from '~/components/portfolio/ImgBox02';
+import TitleBox from '~/components/portfolio/Title';
 
 export default {
   name: '',
   components: {
     ImgBox,
+    ImgBox2,
+    TitleBox,
   },
   data() {
     return {
@@ -60,7 +68,7 @@ export default {
         },
         {
           alt: '攝影棚設備',
-          text: ['專業設備', '導播台、廣播級攝影機', '混音器、領夾麥克風', '50吋監看螢幕、LED棚燈', '300M/100M有線網路'],
+          text: ['專業設備', '導播台、廣播級攝影機', '混音器、領夾麥克風', '50吋監看螢幕、LED棚燈', '500M/250M有線網路'],
           src: '/material/live2.png',
           href: '',
           width: 150,
@@ -86,6 +94,29 @@ export default {
           bottom: 0,
         },
       ],
+      list5: [
+        {
+          alt: '民報',
+          text: ['民報', '2022選後政治情勢'],
+          src: '/img/livestudio_1.jpg',
+          aosDelay: 1,
+          href: 'https://www.youtube.com/live/9FLva0pA1rk?feature=share'
+        },
+        {
+          alt: 'Sisley Paris',
+          text: ['Sisley Paris', '奢寵生日慶'],
+          src: '/img/livestudio_2.jpeg',
+          aosDelay: 2,
+          href: 'https://www.facebook.com/watch/live/?ref=watch_permalink&v=5784415938254600'
+        },
+        {
+          alt: '國泰綜合證券',
+          text: ['國泰綜合證券', '2023全球投資展望線上論壇'],
+          src: '/img/livestudio_3.jpeg',
+          aosDelay: 3,
+          href: 'https://www.youtube.com/live/EedcmL_r53A?feature=share'
+        }
+      ],
     };
   },
   methods: {
@@ -109,7 +140,7 @@ export default {
   padding: 1.5rem;
 }
 .box {
-  padding: 3rem;
+  padding: 3rem 2rem;
 }
 .infoBox {
   background-color: #eee;
@@ -126,6 +157,14 @@ export default {
       height: 60px;
       transform: rotate(-20deg) translateX(-32px) translateY(16px);
     }
+  }
+}
+
+.imgBox {
+  &__container {
+    display: flex;
+    padding: 1.5rem;
+    padding-right: 3rem;
   }
 }
 </style>

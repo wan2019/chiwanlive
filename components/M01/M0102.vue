@@ -56,7 +56,7 @@ export default {
         },
         {
           alt: '專業收音',
-          src: 'img/SoundMixer_3.jpg',
+          src: 'img/mixer.jpg',
           text: ['專業收音','多軌混音器', '領夾式無線麥克風']
         },{
           alt: '攝影棚燈',

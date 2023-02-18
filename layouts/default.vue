@@ -138,6 +138,11 @@ export default {
         //   target: '#cooperation'
         // },
         {
+          title: '攝影棚', // FIXME: 按鈕名字
+          to: '/studio',
+          target: ''
+        },
+        {
           title: '關於我們',
           to: '/',
           target: '#aboutUs'
@@ -146,11 +151,6 @@ export default {
           title: '聯絡我們',
           to: '/',
           target: '#contactUs'
-        },
-        {
-          title: '攝影棚', // FIXME: 按鈕名字
-          to: '/studio',
-          target: ''
         }
       ],
       miniVariant: false,

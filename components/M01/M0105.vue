@@ -3,7 +3,7 @@
     <v-row id="cooperation" class="cooperation" justify="center" align="center">
       <v-col cols="12">
         <br>
-        <TitleBox title="精選合作"></TitleBox>
+        <TitleBox title=""></TitleBox>
         <br>
       </v-col>
       <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="test__red">
@@ -28,24 +28,24 @@ export default {
       list: [
         {
           alt: '科技報橘',
-          src: 'img/LiveWorks_16.png',
+          src: 'img/live_1-1.jpg',
           text: ['科技報橘'],
           aosDelay: 1,
-          href: 'https://www.youtube.com/watch?v=6BTyFrHIBIk'
+          href: 'https://www.facebook.com/TechOrange/videos/1112631522994212'
         },
         {
-          alt: '蝦皮購物',
-          text: ['蝦皮購物'],
-          src: 'img/LiveWorks_17.jpg',
+          alt: 'COMPUTEX',
+          text: ['COMPUTEX'],
+          src: 'img/live_1-2.jpg',
           aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=OlIFCuCkl1o'
+          href: 'https://www.youtube.com/watch?v=dmUlO9VPqIg'
         },
         {
-          alt: '商業周刊',
-          text: ['商業周刊'],
-          src: 'img/LiveWorks_18.jpg',
+          alt: '關鍵評論網',
+          text: ['關鍵評論網'],
+          src: 'img/live_1-3.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/bwnet.fans/videos/3430742300304487'
+          href: 'https://www.facebook.com/TheNewsLens/videos/315156554159334'
         },
         
       ]

@@ -63,24 +63,18 @@
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <!--  -->
-      <TitleBox title="電競轉播│多名玩家，遊戲對戰！串流各大直播平台" id="Gaming"></TitleBox>
-      <v-col v-for="(item, i) in list5" cols="12" sm="4" md="4" :key="`list5${i}`"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
-      </v-col>
-      <!--  -->
-
-      <TitleBox title="賽事轉播│即時回放，球評解說！全場記錄精彩重播" id="Tournament"></TitleBox>
-      <v-col v-for="(item, i) in list6" cols="12" sm="4" md="4" :key="`list6${i}`"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
+      <v-col cols="12" align="center">
+        <div class="portfolio__btn__container" data-aos="fade-right">
+          <br />
+          <br />
+          <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
+            歷年直播作品
+          </v-btn>
+          <img class="portfolio__btn__finger" src="@/static/material/cursor_PNG88.png" alt="" srcset="">
+        </div>
       </v-col>
     </v-row>
   </section>
-  <!-- <v-row id="portfolio">
-    <v-col class="text-center">
-      
-    </v-col>
-    活動直播│線下活動，線上直播！觀看人數倍數成長
-  </v-row> -->
 </template>
 
 <script>
@@ -100,6 +94,10 @@ export default {
     gotoTarget (target) {
       console.log('target', target);
       this.$vuetify.goTo(`#${target}`)
+    },
+    changePage () {
+      const url = 'https://www.facebook.com/chichiwanwanlive';
+      window.open(url)
     }
   },
   data () {
@@ -125,78 +123,71 @@ export default {
           title: '4G包直播',
           target: 'packageLive'
         },
-        {
-          title: '電競轉播',
-          target: 'Gaming'
-        },
-        {
-          title: '賽事轉播',
-          target: 'Tournament'
-        }
+      
       ],
       list: [
         {
-          alt: '德麥法國萊思克盃',
-          text: ['德麥法國萊思克盃', '2021國王派冠軍賽', '直播平台：YouTube'],
-          src: '/portfolio/lescure2.jpg',
+          alt: '國泰世華銀行',
+          text: ['國泰世華銀行', '2023全球投資趨勢論壇'],
+          src: '/img/liveevent_1.jpg',
           aosDelay: 1,
-          href: 'https://youtu.be/9oTLE7GKOQ8'
+          href: 'https://www.youtube.com/watch?v=cBJy-MzxlIU'
         },
         {
-          alt: '東吳大學EMBA',
-          text: ['東吳大學EMBA', '永續經營．獲利創益 ESG座談會', '直播平台：YouTube'],
-          src: '/portfolio/ESG.jpg',
-          aosDelay: 1,
-          href: 'https://www.youtube.com/watch?v=VUCTRJ13h_0'
+          alt: '2022 CEDAW',
+          text: ['2022 CEDAW', '第四次國家報告國際審查會議(中英頻道)'],
+          src: '/img/liveevent_2_CEDAW.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/watch?v=dj9cnZlO6Xo'
         },
         {
-          alt: '頂福陵園',
-          text: ['頂福陵園', '110年度中元法會', '直播平台：YouTube'],
-          src: '/portfolio/dinfucem.jpg',
-          aosDelay: 1,
-          href: 'https://youtu.be/xjuW71YyMB8'
+          alt: 'VOGUE',
+          text: ['VOGUE', '2022臺北時裝週國際時尚論壇'],
+          src: '/img/liveevent_3.jpg',
+          aosDelay: 3,
+          href: 'https://www.youtube.com/watch?v=CLIeDYXsvUA'
         },
         {
-          alt: '蝦皮購物',
-          text: ['蝦皮購物', '2020決戰蝦皮伸展台', '直播平台：Facebook、YouTube​、蝦皮APP'],
-          src: '/portfolio/1shrimpStretchingPlatform.jpg',
+          alt: '臺北市職業籃球員職業工會',
+          text: ['臺北市職業籃球員職業工會', '成立記者會'],
+          src: '/img/liveevent_6.jpeg',
           aosDelay: 1,
-          href: 'https://youtu.be/YjhDtuWaMAA'
+          href: 'https://www.youtube.com/watch?v=_BVFxkr4b_8'
+        },
+        {
+          alt: '仙女姐姐來我家 ',
+          text: ['仙女姐姐來我家 ', '首映記者會'],
+          src: '/img/liveevent_4.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/watch?v=0TiZlG9pxZs'
+        },
+        {
+          alt: '新北國王',
+          text: ['新北國王', '新北市政府冠名合作暨新北國王成軍記者會'],
+          src: '/img/pressConferenceLive.jpeg',
+          aosDelay: 3,
+          href: 'https://www.youtube.com/watch?v=ow59e0TGRBQ'
+        },
+        {
+          alt: 'SEMI',
+          text: ['SEMI', '台灣國際智慧能源週論壇(中英頻道)'],
+          src: '/img/liveevent_5.jpg',
+          aosDelay: 1,
+          href: 'https://www.facebook.com/SEMITaiwan/videos/490135336360319/'
         },
         {
           alt: '商業周刊',
-          text: ['商業周刊', 'BW Talks改變正發聲 外送經濟', '直播平台：Facebook'],
+          text: ['商業周刊', 'BW Talks改變正發聲 外送經濟'],
           src: '/portfolio/2businessWeekly.jpg',
           aosDelay: 2,
           href: 'https://www.facebook.com/watch/live/?v=2786575584957630&ref=watch_permalink'
         },
         {
-          alt: '中華電信',
-          text: ['中華電信', '5G沉浸式舞台 異地共感', '直播平台：Facebook、Instagram'],
-          src: '/portfolio/3chunghwaTelecom.jpg',
+          alt: '蝦皮購物',
+          text: ['蝦皮購物', '2020決戰蝦皮伸展台'],
+          src: '/portfolio/1shrimpStretchingPlatform.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/watch/live/?v=399055964538315&ref=watch_permalink'
-        },
-        {
-          alt: '2021總統盃黑客松',
-          text: ['2021總統盃黑客松', '公民許願池暨線上記者會', '直播平台：Facebook'],
-          src: '/portfolio/27Liveevent.jpg',
-          aosDelay: 4,
-          href: 'https://www.facebook.com/ndc.gov.tw/videos/292198282343891/'
-        },
-        {
-          alt: '2021台灣文學',
-          text: ['2021台灣文學', '數位遊戲腳本徵選頒獎典禮', '直播平台：Facebook、YouTube'],
-          src: '/portfolio/28Liveevent.jpg',
-          aosDelay: 5,
-          href: 'https://www.facebook.com/138753722860020/videos/234732411804686'
-        },
-        {
-          alt: '科技報橘',
-          text: ['科技報橘', '2020 達梭系統台灣用戶大會', '直播平台：GoToWebinar'],
-          src: '/img/livePortfolio_23.jpg',
-          aosDelay: 1,
-          href: 'https://www.facebook.com/151776788178402/videos/671231023498013'
+          href: 'https://youtu.be/YjhDtuWaMAA'
         },
       ],
       list1: [
@@ -224,175 +215,96 @@ export default {
       ],
       list2: [
         {
-          alt: '永和聲活圈',
-          text: ['永和聲活圈', '永和之快問快答', '直播平台：Facebook'],
-          src: '/portfolio/pass.jpg',
-          aosDelay: 3,
-          href: 'https://www.facebook.com/ntpcyonghe/videos/700380928015676/'
+          alt: '關鍵評論網',
+          text: ['關鍵評論網', '2022永豐DAWHO之夜'],
+          src: '/img/liveshow_1.jpg',
+          aosDelay: 1,
+          href: 'https://www.facebook.com/TheNewsLens/videos/1727099380994771/'
         },
         {
-          alt: '蝦皮娛樂線',
-          text: ['蝦皮娛樂線', '百萬點擊保證！唱作OG炸裂開唱！', '直播平台：蝦皮APP'],
-          src: '/portfolio/7shopeeEntertainmentLine.jpg',
+          alt: 'Anue鉅亨',
+          text: ['Anue鉅亨', '備戰通膨巨獸來襲！遠銀外匯總經全攻略'],
+          src: '/img/liveshow_2.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/live/qvsPmyc0Jr4?feature=share'
+        },
+        {
+          alt: 'TechOrange 科技報橘',
+          text: ['TechOrange 科技報橘', '行銷5.0時代 解密MarTech數位經濟浪潮'],
+          src: '/img/liveshow_4.jpeg',
+          aosDelay: 3,
+          href: 'https://www.facebook.com/watch/live/?ref=watch_permalink&v=551295106501340'
+        },
+        {
+          alt: '德麥法國萊思克盃',
+          text: ['德麥法國萊思克盃', '2022烘焙職人冠軍賽'],
+          src: '/img/liveshow_3.jpg',
           aosDelay: 1,
-          href: 'https://www.youtube.com/watch?v=q5__nca3OlI'
+          href: 'https://www.youtube.com/live/YVXQPA8M9OE?feature=share'
         },
         {
           alt: 'The DoDo Men 嘟嘟人',
-          text: ['The DoDo Men 嘟嘟人', '三十萬訂閱音樂會', '直播平台：YouTube'],
+          text: ['The DoDo Men 嘟嘟人', '三十萬訂閱音樂會'],
           src: '/portfolio/8universityWonderHome.jpeg',
           aosDelay: 2,
           href: 'https://youtu.be/uyv4cpD7ktA'
         },
         {
-          alt: 'TechOrange 科技報橘',
-          text: ['TechOrange 科技報橘', '打造高C/P值企業戰情室 智慧工廠單一套件妙方', '直播平台：GoToWebinar'],
-          src: '/portfolio/10techOrange.jpg',
-          aosDelay: 1,
-          href: 'https://youtu.be/18JPPoi-yeU?t=509'
-        },
-        {
-          alt: 'TechOrange 科技報橘',
-          text: ['TechOrange 科技報橘', '2020 Intelligent Asia 亞洲工業4.0智造展', '直播平台：Facebook'],
-          src: '/portfolio/11techOrange.jpg',
-          aosDelay: 2,
-          href: 'https://www.facebook.com/watch/live/?v=2689645967987749&ref=watch_permalink'
-        },
-        {
-          alt: '御蓮齋',
-          text: ['御蓮齋', '無添加料理小教室', '直播平台：Facebook'],
-          src: '/portfolio/12yulianzhai.jpg',
+          alt: '永和聲活圈',
+          text: ['永和聲活圈', '永和之快問快答'],
+          src: '/portfolio/pass.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/watch/live/?v=945997742569198&ref=watch_permalink'
+          href: 'https://www.facebook.com/ntpcyonghe/videos/700380928015676/'
         },
-        {
-          alt: '​美味生活 HowLiving',
-          text: ['​美味生活 HowLiving', '​StarChef 美味星廚生死鬥', '直播平台：Facebook、YouTube'],
-          src: '/portfolio/13HowLiving.jpg',
-          aosDelay: 1,
-          href: 'https://youtu.be/VbWszTl-52M?t=1507'
-        },
-        {
-          alt: '美味生活 HowLiving',
-          text: ['美味生活 HowLiving', '​一秒變大廚', '直播平台：Facebook、YouTube'],
-          src: '/portfolio/14HowLiving.jpg',
-          aosDelay: 2,
-          href: 'https://youtu.be/_fl5zho6cXo'
-        },
-        {
-          alt: '美味生活 HowLiving',
-          text: ['美味生活 HowLiving', '​大師愛烘焙', '直播平台：Facebook、YouTube'],
-          src: '/portfolio/15HowLiving.jpg',
-          aosDelay: 3,
-          href: 'https://youtu.be/ta3oyO4fKHM'
-        }
+
+        
       ],
       // TODO: 網址連結
       list3: [
         {
-          alt: '治平高中',
-          text: ['治平高中', '2020聖誕演唱會'],
-          src: '/portfolio/16highSchool.jpg',
+          alt: '中磊電子',
+          text: ['中磊電子', '2023 Sercomm New Year Party'],
+          src: '/img/PD_1.jpg',
           aosDelay: 1,
           href: ''
         },
         {
-          alt: '大慶證券',
-          text: ['大慶證券', '春酒午宴星光紅毯'],
-          src: '/portfolio/17daqingSecurities.jpg',
+          alt: 'CISCO',
+          text: ['CISCO', 'Engage Taipei ALL IN'],
+          src: '/img/PD_2.jpg',
           aosDelay: 2,
           href: ''
         },
         {
-          alt: '啟蒙盃',
-          text: ['啟蒙盃', '期貨交易競賽'],
-          src: '/portfolio/18enlightenmentCup.jpg',
+          alt: '治平高中',
+          text: ['治平高中', '2020聖誕演唱會'],
+          src: '/portfolio/16highSchool.jpg',
           aosDelay: 3,
           href: ''
         }
       ],
       list4: [
-         {
+        {
           alt: 'VOGUE ',
-          text: ['VOGUE ', 'NUNA 2021 Riveted Fashion', '直播平台：Facebook'],
-          src: '/portfolio/vogue.jpg',
+          text: ['VOGUE ', 'DARPHIN女力直播對談'],
+          src: '/img/liveshop_1.jpg',
           aosDelay: 1,
-          href: 'https://www.facebook.com/VogueTW/videos/228740602623290/'
+          href: 'https://www.facebook.com/VogueTW/videos/2241448406014364'
         },
         {
-          alt: 'GoStyle購世代',
-          text: ['GoStyle購世代', '台way購物節5購讚', '直播平台：Facebook'],
-          src: '/portfolio/gostyle.jpg',
+          alt: 'Sisley Paris',
+          text: ['Sisley Paris', '1分鐘瞬效拋光！女神奢燦肌瞬間get！'],
+          src: '/img/liveshop_2.jpg',
           aosDelay: 2,
-          href: 'https://www.facebook.com/Gostylelife/videos/427928042131299/'
+          href: 'https://www.facebook.com/SisleyParisTaiwan/videos/1111467402820278'
         },
         {
           alt: '​Epson',
-          text: ['​Epson', '聖誕節標籤應用大解密', '直播平台：Facebook'],
-          src: '/portfolio/epson2.jpg',
+          text: ['​Epson', '遠端列印生活辦公神隊友'],
+          src: '/img/liveshop_3.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/epson.com.tw/videos/329616195380728/'
+          href: 'https://www.facebook.com/3c.sunfar/videos/5758109310879023'
         },
-         {
-          alt: '蝦皮購物',
-          text: ['蝦皮購物', '年貨節 Non-stop 12小時直播！', '直播平台：YouTube、蝦皮APP'],
-          src: '/portfolio/19xiaopiShopping.jpg',
-          aosDelay: 1,
-          href: 'https://www.youtube.com/watch?v=gTP-_Vq0J_0'
-        },
-        {
-          alt: 'udn買東西',
-          text: ['udn買東西', '洗髮界綠寶石 艾瑪絲頭皮淨化液', '直播平台：Facebook'],
-          src: '/portfolio/20udn.jpg',
-          aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=PF2CERY75CE&t=932s'
-        },
-        {
-          alt: '​Sisley Paris',
-          text: ['​Sisley Paris', '居家養成女神豐盈秀髮', '直播平台：Facebook'],
-          src: '/portfolio/21​sisleyParis.jpg',
-          aosDelay: 3,
-          href: 'https://www.facebook.com/watch/live/?v=486044159250706&ref=watch_permalink'
-        }
-      ],
-      list5: [
-        {
-          alt: '靈境殺戮',
-          text: ['靈境殺戮', '最危險的直播 —— EOS', '直播平台：Facebook、YouTube'],
-          src: '/portfolio/22spiritRealmKill.jpg',
-          aosDelay: 1,
-          href: 'https://fb.watch/4Q311SmsCN/'
-        },
-        {
-          alt: 'RO仙境傳說：守護永恆的愛',
-          text: ['RO仙境傳說：守護永恆的愛', '守護仙境傳說 盡情放粽直播', '直播平台：Facebook'],
-          src: '/portfolio/23RORagnarok.jpg',
-          aosDelay: 2,
-          href: 'https://www.facebook.com/RO.ForeverLove/videos/281914759663089/'
-        },
-        {
-          alt: '怪物彈珠EXPO',
-          text: ['​怪物彈珠EXPO', '怪彈季·天界廣場', '​​直播平台：YouTube'],
-          src: '/portfolio/24monsterMarbleEXPO.jpg',
-          aosDelay: 3,
-          href: 'https://www.youtube.com/watch?v=dHJZcaB-nAI&t=12897s'
-        }
-      ],
-      list6: [
-        {
-          alt: '台灣地板滾球運動聯盟',
-          text: ['台灣地板滾球運動聯盟', '亞太區地板滾球公開賽', '直播平台：Facebook、YouTube'],
-          src: '/portfolio/25taiwanBowlingLeague.jpg',
-          aosDelay: 1,
-          href: 'https://fb.watch/4SM0gGEig_/'
-        },
-        {
-          alt: '救國團',
-          text: ['救國團', '全國幼獅青年盃三對三籃球鬥牛賽', '直播平台：Facebook'],
-          src: '/portfolio/26nationalSalvationCorps.jpg',
-          aosDelay: 2,
-          href: 'https://fb.watch/4iXGB6GGam/'
-        }
       ],
     }
   }
@@ -465,6 +377,20 @@ height: 100%;}
     #no1 {width: 90%;}
     
     
+}
+
+.portfolio {
+  &__btn {
+    cursor: pointer;
+    &__container {
+      position: relative;
+    }
+    &__finger {
+      position: absolute;
+      height: 60px;
+      transform: rotate(-20deg) translateX(-32px) translateY(16px);
+    }
+  }
 }
 
 </style>

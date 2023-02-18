@@ -1,7 +1,7 @@
 <template>
   <section class="box">
     <div class="carouselBox">
-      <!-- TODO: 寬度要再修改 -->
+      <!-- TODO: 首頁 -->
       <v-carousel
       id="top"
       cycle
@@ -27,10 +27,20 @@
     <div class="box__textBox">
       <div class="text__container">
         <div data-aos="fade-right" data-aos-duration="1000">
-          <h2 class="center">活動直播│電商直播│直播節目│電競轉播│賽事轉播│4G包直播│直播攝影棚</h2>
+          <h2 class="center">活動直播│直播節目│現場轉播│遠端視訊連線│4G包</h2>
         </div>
       </div>
     </div>
+    <v-row>
+      <v-col cols="12" align="center">
+        <div class="portfolio__btn__container" data-aos="fade-right">
+          <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
+            直播攝影棚
+          </v-btn>
+          <img class="portfolio__btn__finger" src="@/static/material/cursor_PNG88.png" alt="" srcset="">
+        </div>
+      </v-col>
+    </v-row>
   </section>
 </template>
 
@@ -55,7 +65,13 @@ export default {
     };
   },
   computed: {
-  }
+  },
+  methods: {
+    changePage () {
+      const url = 'https://chiwanlive.com.tw/studio'
+      window.open(url)
+    }
+  },
 };
 </script>
 
@@ -66,6 +82,7 @@ export default {
     display: flex;
     .text__container {
       margin: 100px auto;
+      margin-bottom: 20px;
     }
   }
 }
@@ -80,6 +97,21 @@ export default {
     display: none;
     @include phone {
       display: inline;
+    }
+  }
+}
+
+.portfolio {
+  &__btn {
+    cursor: pointer;
+    &__container {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    &__finger {
+      position: absolute;
+      height: 60px;
+      transform: rotate(-20deg) translateX(-32px) translateY(16px);
     }
   }
 }
