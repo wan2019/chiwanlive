@@ -217,14 +217,14 @@ export default {
         {
           alt: '關鍵評論網',
           text: ['關鍵評論網', '2022永豐DAWHO之夜'],
-          src: '/img/liveshow_1.jpg',
+          src: '/img/liveshow_1.JPG',
           aosDelay: 1,
           href: 'https://www.facebook.com/TheNewsLens/videos/1727099380994771/'
         },
         {
           alt: 'Anue鉅亨',
           text: ['Anue鉅亨', '備戰通膨巨獸來襲！遠銀外匯總經全攻略'],
-          src: '/img/liveshow_2.jpg',
+          src: '/img/liveshow_2.JPG',
           aosDelay: 2,
           href: 'https://www.youtube.com/live/qvsPmyc0Jr4?feature=share'
         },
