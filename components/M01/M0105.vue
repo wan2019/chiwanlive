@@ -27,25 +27,25 @@ export default {
     return {
       list: [
         {
-          alt: '科技報橘',
-          src: 'img/live_1-1.jpg',
-          text: ['科技報橘'],
+          alt: 'Sisley Paris',
+          src: 'img/2024live1.jpg',
+          text: ['Sisley Paris'],
           aosDelay: 1,
-          href: 'https://www.facebook.com/TechOrange/videos/1112631522994212'
+          href: 'https://fb.watch/pAjHUwF22C/?'
         },
         {
-          alt: 'COMPUTEX',
-          text: ['COMPUTEX'],
-          src: 'img/live_1-2.jpg',
+          alt: '科技報橘',
+          text: ['科技報橘'],
+          src: 'img/2024live2.jpg',
           aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=dmUlO9VPqIg'
+          href: 'https://www.youtube.com/live/NRxvtIbw9M4?si=l98Vii6LCLV_BO3Y'
         },
         {
           alt: '關鍵評論網',
           text: ['關鍵評論網'],
-          src: 'img/live_1-3.jpg',
+          src: 'img/2024live3.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/TheNewsLens/videos/315156554159334'
+          href: 'https://fb.watch/pAjs0pip5o/?'
         },
         
       ]

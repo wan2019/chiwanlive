@@ -3,18 +3,63 @@
     <v-row id="portfolio" class="portfolio" justify="center" align="center">
       <v-col cols="12" >
         <div data-aos="fade-right">
-          <h1 class="mainColor size" >直播作品</h1>
-          <h2>
-            <span v-for="(each, index) in titles" :key="index"> 
-              <span v-if="index !== 0">│</span>
-              <span class="title__style" @click="gotoTarget(each.target)">{{each.title}}</span>
-            </span>
-          </h2>
+          <div style="text-align: center;">
+            <h1 class="mainColor size" >直播作品</h1>
+          </div>
+          <br>
+          <br>
+          <div style="text-align: center;">
+            <h2 class="mainColor" style="font-size: 1.8em;">
+              <span v-for="(each, index) in titles" :key="index"> 
+                <span v-if="index !== 0">│</span>
+                <span class="title__style" @click="gotoTarget(each.target)">{{each.title}}</span>
+              </span>
+            </h2>
+          </div>
           <br>
           <br>
         </div>
       </v-col>
-      <!-- 影片檔 -->
+
+      <TitleBox title="活動直播│線下活動，線上直播！觀看人數倍數成長" id="live" style="margin-top: 1rem;"></TitleBox>
+      <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+      <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人" id="E-commerce"></TitleBox>
+      <v-col v-for="(item, i) in list4" cols="12" sm="4" md="4" :key="`list4${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+  
+      <!--  -->
+      <TitleBox title="直播節目│低成本、高規格！直播節目就像經過後製" id="liveShow"></TitleBox>
+      <v-col v-for="(item, i) in list2" cols="12" sm="4" md="4" :key="`list2${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+      <!--  -->
+      <TitleBox title="現場轉播│多機畫面，大小框！大螢幕轉播" id="liveBroadcast"></TitleBox>
+      <v-col v-for="(item, i) in list3" cols="12" sm="4" md="4" :key="`list3${i}`"  class="imgBox__container">
+        <ImgBox1 :item="item"></ImgBox1>
+      </v-col>
+      <!--  -->
+      <TitleBox title="4G包直播│​機動性高！外景直播不受限" id="packageLive"></TitleBox>
+      <v-col v-for="(item, i) in list1" cols="12" sm="4" md="4" :key="`list1${i}`"  class="imgBox__container">
+        <ImgBox :item="item"></ImgBox>
+      </v-col>
+
+      <!-- 按鈕 -->
+      <v-col cols="12" align="center">
+        <div class="portfolio__btn__container" data-aos="fade-right">
+          <br />
+          <br />
+          <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
+            歷年直播作品
+          </v-btn>
+          <img class="portfolio__btn__finger" src="@/static/material/cursor_PNG88.png" alt="" srcset="">
+        </div>
+      </v-col>
+
+      <!-- video -->
+      <TitleBox title="" id=""></TitleBox>
       <v-col cols="12" sm="4" md="4"  class="video__box" >
         <div data-aos="fade-right">
           <h3 class="video__title">2021 PROMO</h3>
@@ -36,43 +81,7 @@
           </div>
         </div>
       </v-col>
-      <!-- <hr size="8px" align="center" width="100%" color="#dedede"> -->
-      <!-- 影片檔 end-->
-      <TitleBox title="活動直播│線下活動，線上直播！觀看人數倍數成長" id="live"></TitleBox>
-      <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
-      </v-col>
-       <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人" id="E-commerce"></TitleBox>
-      <v-col v-for="(item, i) in list4" cols="12" sm="4" md="4" :key="`list4${i}`"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
-      </v-col>
-  
-      <!--  -->
-      <TitleBox title="直播節目│低成本、高規格！直播節目就像經過後製" id="liveShow"></TitleBox>
-      <v-col v-for="(item, i) in list2" cols="12" sm="4" md="4" :key="`list2${i}`"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
-      </v-col>
-      <!--  -->
-      <TitleBox title="現場轉播│多機畫面，大小框！大螢幕轉播" id="liveBroadcast"></TitleBox>
-      <v-col v-for="(item, i) in list3" cols="12" sm="4" md="4" :key="`list3${i}`"  class="imgBox__container">
-        <ImgBox1 :item="item"></ImgBox1>
-      </v-col>
-      <!--  -->
-      <TitleBox title="4G包直播│​機動性高！外景直播不受限" id="packageLive"></TitleBox>
-      <v-col v-for="(item, i) in list1" cols="12" sm="4" md="4" :key="`list1${i}`"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
-      </v-col>
-      <!--  -->
-      <v-col cols="12" align="center">
-        <div class="portfolio__btn__container" data-aos="fade-right">
-          <br />
-          <br />
-          <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
-            歷年直播作品
-          </v-btn>
-          <img class="portfolio__btn__finger" src="@/static/material/cursor_PNG88.png" alt="" srcset="">
-        </div>
-      </v-col>
+
     </v-row>
   </section>
 </template>
@@ -119,7 +128,7 @@ export default {
           title: '現場轉播',
           target: 'liveBroadcast'
         },
-         {
+        {
           title: '4G包直播',
           target: 'packageLive'
         },
@@ -127,11 +136,11 @@ export default {
       ],
       list: [
         {
-          alt: '國泰世華銀行',
-          text: ['國泰世華銀行', '2023全球投資趨勢論壇'],
-          src: '/img/liveevent_1.jpg',
+          alt: '2030教育AI年會',
+          text: ['2030教育AI年會', '雙語教育與 AI'],
+          src: '/img/2024live5.jpg',
           aosDelay: 1,
-          href: 'https://www.youtube.com/watch?v=cBJy-MzxlIU'
+          href: 'https://www.youtube.com/live/1d4NVjezAew?si=GSoH9RcJzUnJLIJj'
         },
         {
           alt: '2022 CEDAW',
@@ -142,7 +151,7 @@ export default {
         },
         {
           alt: 'VOGUE',
-          text: ['VOGUE', '2022臺北時裝週國際時尚論壇'],
+          text: ['VOGUE', '臺北時裝週國際時尚論壇'],
           src: '/img/liveevent_3.jpg',
           aosDelay: 3,
           href: 'https://www.youtube.com/watch?v=CLIeDYXsvUA'
@@ -193,21 +202,21 @@ export default {
       list1: [
         {
           alt: '蝦皮購物',
-          text: ['蝦皮購物', '你脫單了嗎？蝦編遊樂園約會', '直播平台：蝦皮APP'],
+          text: ['蝦皮購物', '你脫單了嗎？蝦編遊樂園約會'],
           src: '/portfolio/4amusementPark.jpg',
           aosDelay: 1,
           href: 'https://www.youtube.com/watch?v=hbHz56JtvhA&t=2512s'
         },
         {
-          alt: '聊聊大明星',
-          text: ['聊聊大明星', '大明星咖啡廳！鬼關一日打工仔報到！', '直播平台：Facebook、蝦皮APP'],
-          src: '/portfolio/5chat.jpg',
+          alt: '科技報橘',
+          text: ['科技報橘', '是德科技電子量測論壇'],
+          src: '/img/2024live9.jpg',
           aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=30CS8v2D0n8'
+          href: 'https://fb.watch/nakh-WMcPa/?mibextid=cr9u03'
         },
         {
           alt: '佳宜好朋友',
-          text: ['佳宜好朋友', '撼動未來！開箱運動博覽會', '直播平台：Facebook、蝦皮APP'],
+          text: ['佳宜好朋友', '撼動未來！開箱運動博覽會'],
           src: '/portfolio/6sportsExpo.jpg',
           aosDelay: 3,
           href: 'https://www.facebook.com/watch/live/?v=610314789669789&ref=watch_permalink'
@@ -215,18 +224,18 @@ export default {
       ],
       list2: [
         {
-          alt: '關鍵評論網',
-          text: ['關鍵評論網', '2022永豐DAWHO之夜'],
-          src: '/img/liveshow_1.JPG',
+          alt: 'COMPUTEX',
+          text: ['COMPUTEX', 'CPX ON AIR 8'],
+          src: '/img/2024live7.JPG',
           aosDelay: 1,
-          href: 'https://www.facebook.com/TheNewsLens/videos/1727099380994771/'
+          href: 'https://www.youtube.com/live/C0B7Z5q6KFU?si=GCg8jm60tJyWTY-g'
         },
         {
-          alt: 'Anue鉅亨',
-          text: ['Anue鉅亨', '備戰通膨巨獸來襲！遠銀外匯總經全攻略'],
-          src: '/img/liveshow_2.JPG',
+          alt: '良醫健康網',
+          text: ['良醫健康網', '扭轉行動力·讓您健康有活力'],
+          src: '/img/2024live8.JPG',
           aosDelay: 2,
-          href: 'https://www.youtube.com/live/qvsPmyc0Jr4?feature=share'
+          href: 'https://fb.watch/j88SjFssgK/?mibextid=v7YzmG'
         },
         {
           alt: 'TechOrange 科技報橘',
@@ -293,10 +302,10 @@ export default {
         },
         {
           alt: 'Sisley Paris',
-          text: ['Sisley Paris', '1分鐘瞬效拋光！女神奢燦肌瞬間get！'],
-          src: '/img/liveshop_2.jpg',
+          text: ['Sisley Paris', '打造夏日濾鏡妝'],
+          src: '/img/2024live6.jpg',
           aosDelay: 2,
-          href: 'https://www.facebook.com/SisleyParisTaiwan/videos/1111467402820278'
+          href: 'https://fb.watch/l2P1POiVsm/?mibextid=dg3Xzg'
         },
         {
           alt: '​Epson',

@@ -49,11 +49,11 @@ export default {
           href: 'https://www.facebook.com/ShopeeTW/videos/306260070529351'
         },
         {
-          alt: '點亮投資方向 存好債系列講座​',
-          text: ['點亮投資方向 存好債系列講座​', '全遠端視訊直播'],
-          src: 'img/live_3.jpg',
+          alt: '2024全球投資趨勢論壇​',
+          text: ['2024全球投資趨勢論壇​', '現場遠端雙向互動'],
+          src: 'img/2024live4.jpg',
           aosDelay: 3,
-          href: 'https://www.youtube.com/watch?v=bEU2G8iQMGA'
+          href: 'https://www.youtube.com/live/FjoZCPjeCB8?si=6VMVpqa845X-9xQW'
         }
       ]
     };

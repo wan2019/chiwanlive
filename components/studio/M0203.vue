@@ -11,6 +11,7 @@
       </v-col>
       <v-col cols="12" align="center">
         <div class="portfolio__btn__container" data-aos="fade-right">
+          <br />
           <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
             更多作品
           </v-btn>
@@ -68,7 +69,7 @@ export default {
         },
         {
           alt: '攝影棚設備',
-          text: ['專業設備', '導播台、廣播級攝影機', '混音器、領夾麥克風', '50吋監看螢幕、LED棚燈', '500M/250M有線網路'],
+          text: ['專業設備', '導播台、廣播級攝影機', '混音器、領夾麥克風', '50吋監看螢幕、LED棚燈', '500M/500M有線網路'],
           src: '/material/live2.png',
           href: '',
           width: 150,
@@ -96,6 +97,27 @@ export default {
       ],
       list5: [
         {
+          alt: '鉅亨網',
+          text: ['鉅亨網', '升息循環迎終局 總經外匯關鍵展望'],
+          src: '/img/2024live10.jpg',
+          aosDelay: 1,
+          href: 'https://www.youtube.com/live/yQVARylN8QA?si=JZdWDNisQGVQzVeT'
+        },
+        {
+          alt: 'Sisley Paris',
+          text: ['Sisley Paris', '1滴奇蹟 睡出名媛金緻光'],
+          src: '/img/2024live11.jpg',
+          aosDelay: 2,
+          href: 'https://fb.watch/nuvFpQt8OW/?mibextid=cr9u03'
+        },
+        {
+          alt: '世界展望會',
+          text: ['世界展望會', '飢餓三十走進台灣角落 看見偏鄉社工上山下海的日常'],
+          src: '/img/2024live12.jpg',
+          aosDelay: 3,
+          href: 'https://www.facebook.com/WorldVisionTW/videos/647736393635983/'
+        },
+        {
           alt: '民報',
           text: ['民報', '2022選後政治情勢'],
           src: '/img/livestudio_1.jpg',
@@ -115,7 +137,7 @@ export default {
           src: '/img/livestudio_3.jpeg',
           aosDelay: 3,
           href: 'https://www.youtube.com/live/EedcmL_r53A?feature=share'
-        }
+        },
       ],
     };
   },
