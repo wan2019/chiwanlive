@@ -226,14 +226,14 @@ export default {
         {
           alt: 'COMPUTEX',
           text: ['COMPUTEX', 'CPX ON AIR 8'],
-          src: '/img/2024live7.JPG',
+          src: '/img/2024live7.jpg',
           aosDelay: 1,
           href: 'https://www.youtube.com/live/C0B7Z5q6KFU?si=GCg8jm60tJyWTY-g'
         },
         {
           alt: '良醫健康網',
           text: ['良醫健康網', '扭轉行動力·讓您健康有活力'],
-          src: '/img/2024live8.JPG',
+          src: '/img/2024live8.jpg',
           aosDelay: 2,
           href: 'https://fb.watch/j88SjFssgK/?mibextid=v7YzmG'
         },
