@@ -23,7 +23,7 @@
             <!-- <v-icon>{{ item.icon }}</v-icon> -->
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -57,7 +57,7 @@
           text
         >{{item.title}}</v-btn>
       </div>
-      <!-- <v-btn @click="testClick">測試</v-btn> -->
+      <!-- <v-btn @click="showAnimation">展示動畫</v-btn> -->
       <!-- <v-spacer /> -->
     </v-app-bar>
     <!-- main -->
@@ -160,21 +160,26 @@ export default {
   methods: {
     gotoTarget (item) {
       // TODO: 之後修正路由
-      if (this.$route.path === '/') {
-        console.log('say yes');
+      if (this.$route.path === '/') { // 當前在主頁的時候會進入這裡
         if (item.target) {
           this.$vuetify.goTo(item.target)
         } else {
-          this.$router.push({ path: `${item.to}` }) //主頁面 跳到 作品集
+          // 從直播作品和攝影棚頁面會跳到這裡
+          this.$router.push({ path: `${item.to}` })
         }
       } else {
-        console.log('say no');
-        this.$router.push({ path: `/` })
-        setTimeout(()=>{
-          this.$vuetify.goTo(item.target)
-        },300);
+        // 從作品集跳到其他頁時
+        if (item.target) {
+          // 正常情境時
+          this.$router.push({ path: `/` });
+          setTimeout(()=>{
+            this.$vuetify.goTo(item.target)
+          },300);
+        } else {
+          // 從直播作品和攝影棚頁面會跳到這裡
+          this.$router.push({ path: `${item.to}` })
+        }
       }
-      // this.$vuetify.goTo(item.target, this.options)
       if (this.drawer) {
         this.drawer = false
       }
@@ -186,11 +191,11 @@ export default {
         this.$router.push({ path: `/` })
       }
     },
-    testClick () {
+    showAnimation () {
       this.logoStatus = true
-    setTimeout(() => {
-      this.logoStatus = false
-    }, 3000)
+      setTimeout(() => {
+        this.logoStatus = false
+      }, 3000)
     }
   }
 }

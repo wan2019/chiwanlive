@@ -32,6 +32,8 @@ sh ./deploy.sh
 # 上版完成後需要重新設定網址位置
 chiwanlive.com.tw
 ```
-T
+
+直接 run npm run serve 
+
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
