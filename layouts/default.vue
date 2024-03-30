@@ -85,7 +85,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      // 禁用右鍵
+      // TODO: 禁用右鍵
       document.oncontextmenu = new Function("event.returnValue=false");
       // 禁用選擇
       document.onselectstart = new Function("event.returnValue=false");
@@ -132,13 +132,8 @@ export default {
           to: '/portfolio',
           target: ''
         },
-        // {
-        //   title: '精選合作',
-        //   to: '/',
-        //   target: '#cooperation'
-        // },
         {
-          title: '攝影棚', // FIXME: 按鈕名字
+          title: '攝影棚',
           to: '/studio',
           target: ''
         },
@@ -159,7 +154,7 @@ export default {
   },
   methods: {
     gotoTarget (item) {
-      // TODO: 之後修正路由
+      // TODO: Navigation Bar（導航欄）切換時的特殊邏輯
       if (this.$route.path === '/') { // 當前在主頁的時候會進入這裡
         if (item.target) {
           this.$vuetify.goTo(item.target)

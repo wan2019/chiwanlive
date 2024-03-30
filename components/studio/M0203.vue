@@ -32,7 +32,6 @@
         <ImgBox :item="list2[0]"></ImgBox>
       </v-col>
       <v-col cols="12" sm="6" md="6" align="center">
-        <!-- FIXME: 直播洽詢 -->
         <h3>趣玩影像專屬直播棚</h3>
         <h3>直播洽詢 +LINE @kqa0233a</h3>
         ​<h3>  </h3>
@@ -57,7 +56,7 @@ export default {
   },
   data() {
     return {
-      list: [ // FIXME: 攝影機 - 作品集頁
+      list: [
         {
           alt: '攝影棚位置',
           text: ['位置', '​南京復興站7號出口', '走路3分鐘', '附近停車場多'],
@@ -89,7 +88,7 @@ export default {
       list2: [
         {
           alt: '',
-          src: '/LOGO/logoLong.png', // FIXME: logo圖片
+          src: '/LOGO/logoLong.png',
           href: '',
           width: 400,
           bottom: 0,

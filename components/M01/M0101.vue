@@ -1,7 +1,7 @@
 <template>
   <section class="box">
     <div class="carouselBox">
-      <!-- TODO: 首頁 -->
+      <!-- TODO: 首頁頁面 -->
       <v-carousel
       id="top"
       cycle
@@ -49,7 +49,6 @@ export default {
   name: '',
   data() {
     return {
-      // TODO: 改名
       list: [
         {
           alt: 'LOGO',

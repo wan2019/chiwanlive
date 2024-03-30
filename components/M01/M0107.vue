@@ -22,10 +22,11 @@
         ＋LINE詢問報價
         @kqa0233a
       </p>
-       </div>
+      </div>
     </v-col>
     <v-col cols="12" sm="4" md="4">
       <div class="fbCard">
+        <!-- FIXME: 主控台會報錯，應該是fb的問題，待修 -->
         <iframe  frame :src="`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchichiwanwanlive%2F&amp;tabs=timeline&amp;width=340&amp;height=${fbHight}&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId`" width="340" :height="fbHight" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
     </v-col>

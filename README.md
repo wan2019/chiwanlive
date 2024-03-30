@@ -37,3 +37,7 @@ chiwanlive.com.tw
 
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+# 提示
+FIXME: 為待修問題
+TODO: 有時間可以修的問題，及寫特殊邏輯的地方

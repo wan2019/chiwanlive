@@ -43,13 +43,13 @@ export default {
       list: [
         {
           alt: 'LOGO',
-          src: '/LOGO/ChiWanLIVEstudio.jpg' // FIXME: 直播攝影棚上方的圖片
+          src: '/LOGO/ChiWanLIVEstudio.jpg'
         }
       ],
       phoneList: [
         {
           alt: 'LOGO',
-          src: '/LOGO/phone2.png' // FIXME: 直播攝影棚在手機模式的上方圖片 
+          src: '/LOGO/phone2.png'
         }
       ]
     };
