@@ -133,11 +133,6 @@ export default {
           target: ''
         },
         {
-          title: '攝影棚',
-          to: '/studio',
-          target: ''
-        },
-        {
           title: '關於我們',
           to: '/',
           target: '#aboutUs'

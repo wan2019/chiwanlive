@@ -31,16 +31,6 @@
         </div>
       </div>
     </div>
-    <v-row>
-      <v-col cols="12" align="center">
-        <div class="portfolio__btn__container" data-aos="fade-right">
-          <v-btn x-large color="white--text" class="portfolio__btn" style="background-color:#FF573F" @click="changePage">
-            直播攝影棚
-          </v-btn>
-          <img class="portfolio__btn__finger" src="@/static/material/cursor_PNG88.png" alt="" srcset="">
-        </div>
-      </v-col>
-    </v-row>
   </section>
 </template>
 
