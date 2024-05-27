@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark class="container">
     <h1 v-if="error.statusCode === 404">
       {{ pageNotFound }}
     </h1>
@@ -7,7 +7,7 @@
       {{ otherError }}
     </h1>
     <NuxtLink to="/">
-      Home page
+      首頁
     </NuxtLink>
   </v-app>
 </template>
@@ -23,7 +23,7 @@ export default {
   },
   data () {
     return {
-      pageNotFound: '404 Not Found',
+      pageNotFound: '404 此頁面不存在',
       otherError: 'An error occurred'
     }
   },
@@ -33,12 +33,19 @@ export default {
     return {
       title
     }
-  }
+  },
+  created() {
+    this.$router.push({ path: `/` });
+  },
 }
 </script>
 
 <style scoped>
 h1 {
   font-size: 20px;
+}
+.container {
+  text-align: center;
+  padding-top: 2rem;
 }
 </style>

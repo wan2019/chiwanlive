@@ -55,12 +55,6 @@ export default {
   },
   computed: {
   },
-  methods: {
-    changePage () {
-      const url = 'https://chiwanlive.com.tw/studio'
-      window.open(url)
-    }
-  },
 };
 </script>
 
