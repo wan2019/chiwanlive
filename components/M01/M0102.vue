@@ -67,7 +67,7 @@ export default {
           src: 'img/PhotoStudio_7.jpg',
           text: ['到府直播','任何場地', '一秒搭建攝影棚']
         },{
-          alt: '專屬直播棚',
+          alt: '直播節目',
           src: 'img/ChiWanLIVEstudio1.jpg',
           text: ['直播節目','專業技術', '電視台品質']
         }
