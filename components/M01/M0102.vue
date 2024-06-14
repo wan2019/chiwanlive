@@ -69,7 +69,7 @@ export default {
         },{
           alt: '專屬直播棚',
           src: 'img/ChiWanLIVEstudio1.jpg',
-          text: ['直播攝影棚','專業技術、設備、場景', '一次擁有']
+          text: ['直播節目','專業技術', '電視台品質']
         }
       ],
       list2: [
