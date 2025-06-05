@@ -22,7 +22,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'og:description', content:'趣玩影像 ChiWan LIVE，電視台品質的專業直播。' },
       { hid: 'description', name: 'description', content: '趣玩影像 ChiWan LIVE，電視台品質的專業直播。' },
-      { name:'keywords', content:'趣玩影像,直播公司,專業直播,活動直播,直播服務,直播場地,直播攝影棚,轉播工程,轉播公司,chiwanlive' },
+      // 關鍵字 keywords
+      { name:'keywords', content:'趣玩影像,直播公司,專業直播,活動直播,直播服務,直播場地,直播攝影棚,轉播工程,轉播公司,chiwanlive,專業直播,直播廠商,轉播團隊,轉播廠商,多機直播' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'google-site-verification', content: 'RFIF4spGaesYL_nkFdCuxh-wFESy94Oy5q89OrJj2Iw'}
     ],
