@@ -44,7 +44,7 @@ export default {
         {
           alt: 'The DoDo Men 三十萬訂閱音樂會',
           text: ['The DoDo Men 三十萬訂閱音樂會', '直播就像經過後製'],
-          src: 'img/8universityWonderHome.jpeg',
+          src: 'portfolio/8universityWonderHome.jpeg',
           aosDelay: 2,
           href: 'https://www.youtube.com/live/uyv4cpD7ktA?si=CQHG6dKvEamK1Hdz'
         },
