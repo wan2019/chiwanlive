@@ -42,15 +42,15 @@ export default {
           href: 'https://www.youtube.com/watch?v=CP5tRulF2k8'
         },
         {
-          alt: '聊聊大明星 ft.任賢齊',
-          text: ['聊聊大明星 ft.任賢齊', '直播就像經過後製'],
-          src: 'img/livePortfolio_24.jpg',
+          alt: 'The DoDo Men 三十萬訂閱音樂會',
+          text: ['The DoDo Men 三十萬訂閱音樂會', '直播就像經過後製'],
+          src: 'img/8universityWonderHome.jpeg',
           aosDelay: 2,
-          href: 'https://www.facebook.com/ShopeeTW/videos/306260070529351'
+          href: 'https://www.youtube.com/live/uyv4cpD7ktA?si=CQHG6dKvEamK1Hdz'
         },
         {
-          alt: '2024全球投資趨勢論壇​',
-          text: ['2024全球投資趨勢論壇​', '現場遠端雙向互動'],
+          alt: '全球投資趨勢論壇​',
+          text: ['全球投資趨勢論壇​', '現場遠端雙向互動'],
           src: 'img/2024live4.jpg',
           aosDelay: 3,
           href: 'https://www.youtube.com/live/FjoZCPjeCB8?si=6VMVpqa845X-9xQW'

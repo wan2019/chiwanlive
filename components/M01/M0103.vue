@@ -49,9 +49,9 @@ export default {
           aosDelay: 3,
         },
         {
-          alt: '現場轉播 多機畫面 大螢幕現場LIVE',
+          alt: '錄影轉播 多機錄影 大螢幕現場LIVE',
           src: 'img/LiveBroadcast_11.jpg',
-          text: ['現場轉播','多機畫面','大螢幕現場LIVE'],
+          text: ['錄影轉播','多機錄影','大螢幕現場LIVE'],
           aosDelay: 4,
         }
       ]

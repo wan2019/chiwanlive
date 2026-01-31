@@ -22,27 +22,23 @@
       </v-col>
 
       <TitleBox title="活動直播│線下活動，線上直播！觀看人數倍數成長" id="live" style="margin-top: 1rem;"></TitleBox>
-      <v-col v-for="(item, i) in list" cols="12" sm="4" md="4" :key="i"  class="imgBox__container">
+      <v-col v-for="(item, i) in list0" cols="12" sm="4" md="4" :key="`list0${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
-      <TitleBox title="電商直播│限時促銷，流量變現！直播導購銷量驚人" id="E-commerce"></TitleBox>
-      <v-col v-for="(item, i) in list4" cols="12" sm="4" md="4" :key="`list4${i}`"  class="imgBox__container">
-        <ImgBox :item="item"></ImgBox>
-      </v-col>
-  
+
       <!--  -->
       <TitleBox title="直播節目│低成本、高規格！直播節目就像經過後製" id="liveShow"></TitleBox>
       <v-col v-for="(item, i) in list2" cols="12" sm="4" md="4" :key="`list2${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
       <!--  -->
-      <TitleBox title="現場轉播│多機畫面，大小框！大螢幕轉播" id="liveBroadcast"></TitleBox>
+      <TitleBox title="錄影轉播│多機錄影，大小框！大螢幕轉播" id="liveBroadcast"></TitleBox>
       <v-col v-for="(item, i) in list3" cols="12" sm="4" md="4" :key="`list3${i}`"  class="imgBox__container">
         <ImgBox1 :item="item"></ImgBox1>
       </v-col>
       <!--  -->
       <TitleBox title="4G包直播│​機動性高！外景直播不受限" id="packageLive"></TitleBox>
-      <v-col v-for="(item, i) in list1" cols="12" sm="4" md="4" :key="`list1${i}`"  class="imgBox__container">
+      <v-col v-for="(item, i) in list5" cols="12" sm="4" md="4" :key="`list5${i}`"  class="imgBox__container">
         <ImgBox :item="item"></ImgBox>
       </v-col>
 
@@ -117,15 +113,11 @@ export default {
           target: 'live'
         },
         {
-          title: '電商直播',
-          target: 'E-commerce'
-        },
-        {
           title: '直播節目',
           target: 'liveShow'
         },
         {
-          title: '現場轉播',
+          title: '錄影轉播',
           target: 'liveBroadcast'
         },
         {
@@ -134,186 +126,141 @@ export default {
         },
       
       ],
-      list: [
+      list0: [
         {
           alt: '2030教育AI年會',
-          text: ['2030教育AI年會', '雙語教育與 AI'],
+          text: ['2030教育AI年會', '三機直播|簡報大小框|無線圖傳'],
           src: '/img/2024live5.jpg',
           aosDelay: 1,
           href: 'https://www.youtube.com/live/1d4NVjezAew?si=GSoH9RcJzUnJLIJj'
         },
         {
-          alt: '2022 CEDAW',
-          text: ['2022 CEDAW', '第四次國家報告國際審查會議(中英頻道)'],
+          alt: 'CEDAW 審查會議',
+          text: ['CEDAW 審查會議', '四機直播|同步口譯|即時字幕|手語框'],
           src: '/img/liveevent_2_CEDAW.jpg',
           aosDelay: 2,
           href: 'https://www.youtube.com/watch?v=dj9cnZlO6Xo'
         },
         {
-          alt: 'VOGUE',
-          text: ['VOGUE', '臺北時裝週國際時尚論壇'],
+          alt: 'VOGUE 臺北時裝週國際論壇',
+          text: ['VOGUE 臺北時裝週國際論壇', '雙機直播|視訊連線|簡報大小框'],
           src: '/img/liveevent_3.jpg',
           aosDelay: 3,
           href: 'https://www.youtube.com/watch?v=CLIeDYXsvUA'
         },
         {
-          alt: '臺北市職業籃球員職業工會',
-          text: ['臺北市職業籃球員職業工會', '成立記者會'],
-          src: '/img/liveevent_6.jpeg',
-          aosDelay: 1,
-          href: 'https://www.youtube.com/watch?v=_BVFxkr4b_8'
-        },
-        {
-          alt: '仙女姐姐來我家 ',
-          text: ['仙女姐姐來我家 ', '首映記者會'],
-          src: '/img/liveevent_4.jpg',
-          aosDelay: 2,
-          href: 'https://www.youtube.com/watch?v=0TiZlG9pxZs'
-        },
-        {
-          alt: '新北國王',
-          text: ['新北國王', '新北市政府冠名合作暨新北國王成軍記者會'],
+          alt: '新北國王 成軍記者會',
+          text: ['新北國王 成軍記者會', '三機直播|無線圖傳|雙平台直播'],
           src: '/img/pressConferenceLive.jpeg',
-          aosDelay: 3,
+          aosDelay: 1,
           href: 'https://www.youtube.com/watch?v=ow59e0TGRBQ'
         },
         {
-          alt: 'SEMI',
-          text: ['SEMI', '台灣國際智慧能源週論壇(中英頻道)'],
-          src: '/img/liveevent_5.jpg',
-          aosDelay: 1,
-          href: 'https://www.facebook.com/SEMITaiwan/videos/490135336360319/'
-        },
-        {
-          alt: '商業周刊',
-          text: ['商業周刊', 'BW Talks改變正發聲 外送經濟'],
+          alt: '商業周刊 BW Talks改變正發聲',
+          text: ['商業周刊 BW Talks改變正發聲', '四機直播|多平台直播|直播特效'],
           src: '/portfolio/2businessWeekly.jpg',
           aosDelay: 2,
-          href: 'https://www.facebook.com/watch/live/?v=2786575584957630&ref=watch_permalink'
+          href: 'https://youtu.be/HQPCibOuvkY?si=Q23fLZfcKmIzR26u'
         },
         {
-          alt: '蝦皮購物',
-          text: ['蝦皮購物', '2020決戰蝦皮伸展台'],
+          alt: '決戰蝦皮伸展台',
+          text: ['決戰蝦皮伸展台', '五機直播|多平台直播'],
           src: '/portfolio/1shrimpStretchingPlatform.jpg',
           aosDelay: 3,
           href: 'https://youtu.be/YjhDtuWaMAA'
         },
-      ],
-      list1: [
         {
-          alt: '蝦皮購物',
-          text: ['蝦皮購物', '你脫單了嗎？蝦編遊樂園約會'],
+          alt: 'Anue鉅亨 投資視野無邊界',
+          text: ['Anue鉅亨 投資視野無邊界', '雙機直播|簡報大小框'],
+          src: '/img/2026live5.jpg',
+          aosDelay: 1,
+          href: 'https://www.youtube.com/live/q7moHHiN0uQ?si=sriu8pxtObAnq3uE'
+        },
+        {
+          alt: '綠色奧斯卡頒獎典禮',
+          text: ['綠色奧斯卡頒獎典禮', '雙機直播|鏡面設計|無線圖傳'],
+          src: '/img/2026live3.jpg',
+          aosDelay: 2,
+          href: 'https://www.youtube.com/live/obWg3LzEAeA?si=E6sNiHa7wQ9nC8Vr'
+        },
+        {
+          alt: '亞洲地區信用補充機構聯盟年會',
+          text: ['亞洲地區信用補充機構聯盟年會', '雙機直播|簡報大小框|螢幕轉播'],
+          src: '/img/2026live4.jpg',
+          aosDelay: 3,
+          href: 'https://www.youtube.com/live/TtkEOsj41lQ?si=T6qKI_Qmq26ajvL4'
+        },
+      ],
+      list5: [
+        {
+          alt: '蝦皮購物 蝦編遊樂園約會',
+          text: ['蝦皮購物 蝦編遊樂園約會', '雙機直播|4G包直播|直播特效'],
           src: '/portfolio/4amusementPark.jpg',
           aosDelay: 1,
           href: 'https://www.youtube.com/watch?v=hbHz56JtvhA&t=2512s'
         },
         {
-          alt: '科技報橘',
-          text: ['科技報橘', '是德科技電子量測論壇'],
+          alt: '科技報橘 電子量測論壇',
+          text: ['科技報橘 電子量測論壇', '單機直播|4G包直播'],
           src: '/img/2024live9.jpg',
           aosDelay: 2,
-          href: 'https://fb.watch/nakh-WMcPa/?mibextid=cr9u03'
+          href: ''
         },
         {
-          alt: '佳宜好朋友',
-          text: ['佳宜好朋友', '撼動未來！開箱運動博覽會'],
+          alt: '佳宜好朋友 開箱運動博覽會',
+          text: ['佳宜好朋友 開箱運動博覽會', '雙機直播|4G包直播|直播特效'],
           src: '/portfolio/6sportsExpo.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/watch/live/?v=610314789669789&ref=watch_permalink'
+          href: 'https://youtu.be/0dLonm0hmPM?si=mM2A7zigV_c9lnph'
         }
       ],
       list2: [
         {
-          alt: 'COMPUTEX',
-          text: ['COMPUTEX', 'CPX ON AIR 8'],
+          alt: 'COMPUTEX CPX ON AIR',
+          text: ['COMPUTEX CPX ON AIR', '雙機直播|鏡面設計|簡報大小框'],
           src: '/img/2024live7.jpg',
           aosDelay: 1,
           href: 'https://www.youtube.com/live/C0B7Z5q6KFU?si=GCg8jm60tJyWTY-g'
         },
         {
-          alt: '良醫健康網',
-          text: ['良醫健康網', '扭轉行動力·讓您健康有活力'],
-          src: '/img/2024live8.jpg',
-          aosDelay: 2,
-          href: 'https://fb.watch/j88SjFssgK/?mibextid=v7YzmG'
-        },
-        {
-          alt: 'TechOrange 科技報橘',
-          text: ['TechOrange 科技報橘', '行銷5.0時代 解密MarTech數位經濟浪潮'],
-          src: '/img/liveshow_4.jpeg',
-          aosDelay: 3,
-          href: 'https://www.facebook.com/watch/live/?ref=watch_permalink&v=551295106501340'
-        },
-        {
           alt: '德麥法國萊思克盃',
-          text: ['德麥法國萊思克盃', '2022烘焙職人冠軍賽'],
+          text: ['德麥法國萊思克盃', '四機直播|8+1框|無線圖傳'],
           src: '/img/liveshow_3.jpg',
-          aosDelay: 1,
+          aosDelay: 2,
           href: 'https://www.youtube.com/live/YVXQPA8M9OE?feature=share'
         },
         {
-          alt: 'The DoDo Men 嘟嘟人',
-          text: ['The DoDo Men 嘟嘟人', '三十萬訂閱音樂會'],
-          src: '/portfolio/8universityWonderHome.jpeg',
-          aosDelay: 2,
-          href: 'https://youtu.be/uyv4cpD7ktA'
-        },
-        {
-          alt: '永和聲活圈',
-          text: ['永和聲活圈', '永和之快問快答'],
-          src: '/portfolio/pass.jpg',
+          alt: '國際大風吹',
+          text: ['國際大風吹', '三機直播|視訊連線|簡報大小框'],
+          src: '/img/2026live2.jpg',
           aosDelay: 3,
-          href: 'https://www.facebook.com/ntpcyonghe/videos/700380928015676/'
+          href: 'https://www.youtube.com/live/gP7V-oLVi5k?si=_hcz4RjLYavs0iO6'
         },
 
-        
       ],
       // 網址連結
       list3: [
         {
-          alt: '中磊電子',
-          text: ['中磊電子', '2023 Sercomm New Year Party'],
+          alt: '中磊電子 Sercomm New Year Party',
+          text: ['中磊電子 Sercomm New Year Party', '三機直播|視訊連線|無線圖傳'],
           src: '/img/PD_1.jpg',
           aosDelay: 1,
           href: ''
         },
         {
-          alt: 'CISCO',
-          text: ['CISCO', 'Engage Taipei ALL IN'],
+          alt: 'CISCO Engage Taipei ALL IN',
+          text: ['CISCO Engage Taipei ALL IN', '雙機直播|簡報大小框'],
           src: '/img/PD_2.jpg',
           aosDelay: 2,
           href: ''
         },
         {
-          alt: '治平高中',
-          text: ['治平高中', '2020聖誕演唱會'],
+          alt: '治平高中 聖誕演唱會',
+          text: ['治平高中 聖誕演唱會', '四機轉播|無線圖傳'],
           src: '/portfolio/16highSchool.jpg',
           aosDelay: 3,
           href: ''
         }
-      ],
-      list4: [
-        {
-          alt: 'VOGUE ',
-          text: ['VOGUE ', 'DARPHIN女力直播對談'],
-          src: '/img/liveshop_1.jpg',
-          aosDelay: 1,
-          href: 'https://www.facebook.com/VogueTW/videos/2241448406014364'
-        },
-        {
-          alt: 'Sisley Paris',
-          text: ['Sisley Paris', '打造夏日濾鏡妝'],
-          src: '/img/2024live6.jpg',
-          aosDelay: 2,
-          href: 'https://fb.watch/l2P1POiVsm/?mibextid=dg3Xzg'
-        },
-        {
-          alt: '​Epson',
-          text: ['​Epson', '遠端列印生活辦公神隊友'],
-          src: '/img/liveshop_3.jpg',
-          aosDelay: 3,
-          href: 'https://www.facebook.com/3c.sunfar/videos/5758109310879023'
-        },
       ],
     }
   }

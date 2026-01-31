@@ -27,7 +27,7 @@
     <div class="box__textBox">
       <div class="text__container">
         <div data-aos="fade-right" data-aos-duration="1000">
-          <h2 class="center">活動直播│直播節目│現場轉播│遠端視訊連線│4G包</h2>
+          <h2 class="center">EFP│活動直播│多機轉播│多機錄影│視訊連線│4G包</h2>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ export default {
           src: 'img/2024live1.jpg',
           text: ['Sisley Paris'],
           aosDelay: 1,
-          href: 'https://fb.watch/pAjHUwF22C/?'
+          href: ''
         },
         {
           alt: '科技報橘',
@@ -41,11 +41,11 @@ export default {
           href: 'https://www.youtube.com/live/NRxvtIbw9M4?si=l98Vii6LCLV_BO3Y'
         },
         {
-          alt: '關鍵評論網',
-          text: ['關鍵評論網'],
-          src: 'img/2024live3.jpg',
+          alt: '良醫健康網',
+          text: ['良醫健康網'],
+          src: 'img/2026live1.jpg',
           aosDelay: 3,
-          href: 'https://fb.watch/pAjs0pip5o/?'
+          href: 'https://www.youtube.com/live/ni64AzIGJgo?si=emSAusl9oo9wpB6v'
         },
         
       ]

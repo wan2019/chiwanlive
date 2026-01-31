@@ -58,26 +58,7 @@ export default {
   data() {
     return {
       logoStatus: false,
-      list: [
-        {
-          alt: '2020 達梭系統臺灣用戶大會',
-          text: ['2020 達梭系統臺灣用戶大會', '線下活動 線上直播'],
-          src: 'img/livePortfolio_23.jpg',
-          href: 'https://www.facebook.com/151776788178402/videos/671231023498013'
-        },
-        {
-          alt: '聊聊大明星 ft.任賢齊',
-          text: ['聊聊大明星 ft.任賢齊', '直播就像經過後製'],
-          src: 'img/livePortfolio_24.jpg',
-          href: 'https://www.youtube.com/watch?v=yJ9YKIOAs6M'
-        },
-        {
-          alt: '蝦編射起來 到底誰最箭​',
-          text: ['蝦編射起來 到底誰最箭​', '外景直播不受限'],
-          src: 'img/livePortfolio_25.jpg',
-          href: 'https://www.facebook.com/watch/live/?v=2896233803803971&ref=watch_permalink'
-        }
-      ]
+      list: []
     }
   },
   methods: {
