@@ -2,7 +2,11 @@
   <div class="imgBox">
     <!-- 精選合作 -->
     <div data-aos="fade-right" :data-aos-delay="aosDelay" >
-    <a :href="item.href" target="_blank" rel="noopener noreferrer">
+    <a
+      :href="item.href !== '' ? item.href : undefined "
+      target="_blank"
+      rel="noopener noreferrer"
+    >
     <v-img
       :src="item.src"
       :alt="item.alt"
