@@ -64,7 +64,7 @@ export default {
   &__textBox{
     display: flex;
     .text__container {
-      margin: 85px auto 20px;
+      margin: 10vh auto;
     }
   }
 }

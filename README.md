@@ -33,7 +33,7 @@ sh ./deploy.sh
 # 順便推送 git push 把code 推到 master
 git push
 
-# 上版完成後需要重新設定網址位置 github 位置: https://github.com/wan2019/chiwanlive/settings/pages 
+# 上版完成後需要重新設定網址位置 github 位置: https://github.com/wan2019/chiwanlive/settings/pages
 chiwanlive.com.tw
 ```
 
