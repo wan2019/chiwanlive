@@ -1,7 +1,11 @@
 <template>
   <div class="imgBox">
     <div data-aos="fade-right" :data-aos-delay="aosDelay" >
-      <a :href="item.href" target="_blank" rel="noopener noreferrer">
+      <a
+        :href="item.href !== '' ? item.href : undefined "
+        target="_blank"
+        el="noopener noreferrer"
+      >
         <v-img
           :src="item.src"
           :alt="item.alt"
