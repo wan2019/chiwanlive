@@ -58,8 +58,6 @@
       <TitleBox title="" id=""></TitleBox>
       <v-col cols="12" sm="4" md="4"  class="video__box" >
         <div data-aos="fade-right">
-          <h3 class="video__title">2021 PROMO</h3>
-          <br>
           <div class="video-container" >
             <iframe  width="100%" src="https://www.youtube.com/embed/_yfs5VE1wTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -69,14 +67,13 @@
       </v-col>
       <v-col cols="12" sm="4" md="4" class="video__box">
         <div data-aos="fade-right">
-          <h3 class="video__title">2020 PROMO</h3>
-          <br>
           <div class="video-container">
             <iframe width="100%" src="https://www.youtube.com/embed/0n-o9SeJ3u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <!-- <iframe class="resize" width="100%" src="https://www.youtube.com/embed/Uc2SR--kDo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
         </div>
       </v-col>
+      <v-col cols="12" class="h70"></v-col>
 
     </v-row>
   </section>
@@ -136,7 +133,7 @@ export default {
         },
         {
           alt: 'CEDAW 審查會議',
-          text: ['CEDAW 審查會議', '四機直播|同步口譯|即時字幕|手語框'],
+          text: ['CEDAW 審查會議', '四機直播|中英頻道|即時字幕|手語框'],
           src: '/img/liveevent_2_CEDAW.jpg',
           aosDelay: 2,
           href: 'https://www.youtube.com/watch?v=dj9cnZlO6Xo'
@@ -248,9 +245,9 @@ export default {
           href: ''
         },
         {
-          alt: 'CISCO Engage Taipei ALL IN',
-          text: ['CISCO Engage Taipei ALL IN', '雙機直播|簡報大小框'],
-          src: '/img/PD_2.jpg',
+          alt: 'KIRE 2026演唱會',
+          text: ['KIRE 2026演唱會', '雙機錄影轉播|無線圖傳'],
+          src: '/img/2026live6.jpg',
           aosDelay: 2,
           href: ''
         },
@@ -347,6 +344,10 @@ height: 100%;}
       transform: rotate(-20deg) translateX(-32px) translateY(16px);
     }
   }
+}
+
+.h70 {
+  height: 70px;
 }
 
 </style>
