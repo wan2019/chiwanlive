@@ -25,7 +25,7 @@ export default {
       // 關鍵字 keywords
       { name:'keywords', content:'趣玩影像,直播公司,專業直播,活動直播,直播服務,轉播工程,轉播公司,chiwanlive,直播廠商,轉播團隊,轉播廠商,多機直播,EFP,4G包直播,多機錄影,多機轉播,直播團隊' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'google-site-verification', content: 'RFIF4spGaesYL_nkFdCuxh-wFESy94Oy5q89OrJj2Iw'}
+      { name: 'google-site-verification', content: 'lAHy-fPb_Orz0lXabQ-re_nT8_gw12EPdqREp5tI_Wg'}
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
